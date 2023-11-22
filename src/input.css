@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    @font-face {
+        font-family:"Inter Black";
+        src: url("../fonts/Inter-Black.ttf") format("ttf");
+        font-display:swap; 
+    }
+};
+@layer components {
+    .notification::after{
+     content: '';
+     position: absolute;
+     border-radius: 50%;
+     width: 10px;
+     height: 10px;
+     background-color: red;
+     -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+     -ms-border-radius: 50%;
+     -o-border-radius: 50%;
+
+}
+}
