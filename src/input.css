@@ -9,8 +9,20 @@
         src: url("../fonts/Inter-Black.ttf") format("ttf");
         font-display:swap; 
     }
-};
+}
 @layer components {
+        /* رنگ اسکرول بار */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+::-webkit-scrollbar-thumb {
+    background-color: #474747;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color:transparent;
+  }
+  
 .background_color{
     background:
     radial-gradient(rgba(0,0,0,0.15) 60%,transparent 0 ),

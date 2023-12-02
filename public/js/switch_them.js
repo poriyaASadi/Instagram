@@ -2,7 +2,6 @@ let icon_them_switch = document.getElementById("icon-them");
 let cheng_icon = document.querySelector('.cheng-icon');
 
 icon_them_switch.addEventListener('click' , function () {
-    console.log('df');
     if(localStorage.theme === "dark"){
     document.documentElement.classList.remove("dark");
     localStorage.theme = "light";
