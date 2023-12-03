@@ -318,8 +318,8 @@ start main project ====> for mobile
             <!-- -----------swiper pagination -->
            <!-- ------------- swiper pagination end -->
            <!-- ---------- save comment -->
-                 <div class="child:w-6 child:h-6 flex child:dark:text-white justify-center items-center">
-                   <svg>
+                 <div class="child:w-6 child:h-6 flex text-black  justify-center items-center">
+                   <svg class="text-black dark:text-white" id="save_post_icon">
                      <use href="#save"></use>
                    </svg>
                  </div>
@@ -505,13 +505,13 @@ start main project ====> for mobile
   <!--    comment show box -->
   <div id="comment_main" class="w-[100%] transition h-[100vh] absolute left-0 right-0 -top-[100vh] bottom-0 bg-white dark:bg-black px-[15px] z-10">
     <!-- head comment -->
-    <div class="w-full h-12 flex justify-between items-center  border-b border-zinc-200">
-      <p class="flex text-lg font-medium">comment
+    <div class="w-full h-12 flex justify-between items-center  border-b dark:border-none border-zinc-200">
+      <p class="flex text-lg font-medium dark:text-white">comment
         <svg class="w-6 h-6">
           <use href="#comment_icon_chat"></use>
         </svg>
       </p>
-      <svg class="w-6 h-6 cursor-pointer" id="back_icon_comment">
+      <svg class="w-6 h-6 cursor-pointer dark:text-white" id="back_icon_comment">
         <use href="#back"></use>
       </svg>
     </div>
@@ -519,7 +519,7 @@ start main project ====> for mobile
     <!-- 
       about post user
       -->
-      <div class="w-full tracking-[0.07px] my-2 child:dark:text-white border-b pb-2">
+      <div class="w-full tracking-[0.07px] my-2 child:dark:text-white border-b dark:border-none pb-2">
         <div class="flex justify-start items-center gap-x-2">
           <img src="./images/48f1801e657b098f5792c61365f65c75.png" class="w-5 h-5 rounded-full" alt="post-user">
           <span class="inline-block text-sm">Liked by craig_love and 44,686 others</span>
@@ -533,12 +533,12 @@ start main project ====> for mobile
    <div class="w-full max-h-[100vh] mt-3 overflow-y-scroll" id="main_comment">
        <!-- --------box 1 -->
         <div class="mb-2">
-        <div class="w-full flex justify-start items-center gap-x-1">
+        <div class="w-full flex justify-start items-center gap-x-1 child:dark:text-white">
         <img src="./images/face/5904c9ce3cfb08e4c032b5a473d5648d.png" alt="face"
         class="w-5 h-5 rounded-full">
         <p class="text-sm font-medium cursor-pointer">mariya</p>
         </div>
-        <div class="text-sm tracking-tight leading-5 font-normal">
+        <div class="text-sm tracking-tight leading-5 font-normal dark:text-white">
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, dolorem.</p>
         </div>
         </div>
@@ -548,10 +548,10 @@ start main project ====> for mobile
    <!-- 
     --------- > input box comment users  
     -->
-      <div class="w-full h-12 absolute left-0 right-0 bottom-0 bg-white">
+      <div class="w-full h-12 absolute left-0 right-0 bottom-0 bg-white dark:bg-black">
         <div class="w-full h-full flex justify-center items-center gap-x-1 px-[15px]">
          <input type="text" placeholder="type" name="comment_user" id="input_comment_post"
-         class="bg-transparent outline-none text-sm placeholder:text-sm w-full px-2 font-medium">
+         class="bg-transparent outline-none text-sm dark:text-white placeholder:text-sm w-full px-2 font-medium">
          <button type="button" class="text-sm cursor-pointer text-zinc-500 font-medium border-l pl-2 border-zinc-400" id="button_creat_post_comment">send</button>
         </div>
       </div>
