@@ -32,6 +32,7 @@
         <!-- ------- links end -->
         <style>
           #particles-js{
+            display: none;
             position: absolute;
             width:0%;
             height: 100vh;
@@ -43,7 +44,7 @@
     }
         </style>
 </head>
-<body class="bg-slate-50 dark:bg-black overflow-hidden">
+<body class="bg-slate-50 dark:bg-black w-full h-[100vh]  overflow-hidden">
 <!-- 
    all svg 
  -->
@@ -98,8 +99,8 @@ start project
 
  -->
  
-<div id="particles-js" class="bg-black dark:bg-zinc-600"></div>
- <div class="max-w-sm h-[100vh] mx-auto z-10 relative">
+ <div id="particles-js" class="bg-black dark:bg-zinc-600"></div>
+ <div class="max-w-sm h-full mx-auto z-10 relative">
  <!-- ---------- header -->
  <header class="h-10 w-full border-b border-zinc-200 bg-white dark:bg-black dark:border-none">
  <div class="h-full flex justify-between gap-1 items-center px-4">
@@ -138,7 +139,7 @@ start project
           <svg class="">
             <use href="#activityfeed"></use>
           </svg>
-          <div class="rounded-full w-8 h-8 overflow-hidden">
+          <div class="rounded-full w-8 h-8 overflow-hidden" id="user_acount">
             <img src="./images/2ccd27fc12336a7a8e13d5879814b13c.png" alt="profile-user" class="w-full rounded-full object-cover">
           </div>
       </div>
@@ -150,114 +151,110 @@ start project
 start main project ====> for mobile 
 
  -->
- <main class="w-full h-full bg-white dark:bg-black z-10">
-  <!-- slider status ===== start -->
-          <section class="overflow-x-hidden overscroll-x-contain  border  border-blue-95 dark:border-none
-          p-4 w-full auto-cols-max" id="scroll-users-status">
-               <div class="grid grid-flow-col gap-4">
-                <!-- content -->
-                  <div class="grid  m-0 text-center relative hover:scale-110 ">
-                    <div class="inline-block w-14 h-14 rounded-full background_color">
-                      <img src="./images/027410390877dbe19c213b2e6ee60b75.png" alt="" class="rounded-full
-                      w-[100%] h-[100%] object-cover clip-path">
-                    </div>
-                    <div>
-                      <p class="font-staus-bar">poriya</p>
-                    </div>
-                  </div>
-                  <!-- content end -->
-                  <!-- content -->
-                  <div class="grid  m-0 text-center relative hover:scale-110 ">
-                    <div class="inline-block w-14 h-14 rounded-full background_color  live-box">
-                      <img src="./images/48f1801e657b098f5792c61365f65c75.png" alt="" class="rounded-full
-                      w-[100%] h-[100%] object-cover clip-path">
-                    </div>
-                    <div>
-                      <p class="font-staus-bar">ali</p>
-                    </div>
-                  </div>
-                  <!-- content end -->
-                  <!-- content -->
-                  <div class="grid  m-0 text-center relative hover:scale-110 ">
-                    <div class="inline-block w-14 h-14 rounded-full background_color">
-                      <img src="./images/18583bf15a6bdc083bcee64acc58ed55.png" alt="" class="rounded-full
-                      w-[100%] h-[100%] object-cover clip-path">
-                    </div>
-                    <div>
-                      <p class="font-staus-bar">mariya</p>
-                    </div>
-                  </div>
-                  <!-- content end -->
-                  <!-- content -->
-                  <div class="grid  m-0 text-center relative hover:scale-110 ">
-                    <div class="inline-block w-14 h-14 rounded-full background_color">
-                      <img src="./images/2ccd27fc12336a7a8e13d5879814b13c.png" alt="" class="rounded-full
-                      w-[100%] h-[100%] object-cover clip-path">
-                    </div>
-                    <div>
-                      <p class="font-staus-bar">mahdi</p>
-                    </div>
-                  </div>
-                  <!-- content end -->
-                  <!-- content -->
-                  <div class="grid  m-0 text-center relative hover:scale-110 ">
-                    <div class="inline-block w-14 h-14 rounded-full background_color">
-                      <img src="./images/027410390877dbe19c213b2e6ee60b75.png" alt="" class="rounded-full
-                      w-[100%] h-[100%] object-cover clip-path">
-                    </div>
-                    <div>
-                      <p class="font-staus-bar">ahmad</p>
-                    </div>
-                  </div>
-                  <!-- content end -->
-                  <!-- content -->
-                  <div class="grid  m-0 text-center relative hover:scale-110 ">
-                    <div class="inline-block w-14 h-14 rounded-full background_color">
-                      <img src="./images/18583bf15a6bdc083bcee64acc58ed55.png" alt="" class="rounded-full
-                      w-[100%] h-[100%] object-cover clip-path">
-                    </div>
-                    <div>
-                      <p class="font-staus-bar">malika</p>
-                    </div>
-                  </div>
-                  <!-- content end -->
-                  <!-- content -->
-                  <div class="grid  m-0 text-center relative hover:scale-110 ">
-                    <div class="inline-block w-14 h-14 rounded-full background_color">
-                      <img src="./images/48f1801e657b098f5792c61365f65c75.png" alt="" class="rounded-full
-                      w-[100%] h-[100%] object-cover clip-path">
-                    </div>
-                    <div>
-                      <p class="font-staus-bar">baback</p>
-                    </div>
-                  </div>
-                  <!-- content end -->
-                  <!-- content -->
-                  <div class="grid  m-0 text-center relative hover:scale-110 ">
-                    <div class="inline-block w-14 h-14 rounded-full background_color">
-                      <img src="./images/027410390877dbe19c213b2e6ee60b75.png" alt="" class="rounded-full
-                      w-[100%] h-[100%] object-cover clip-path">
-                    </div>
-                    <div>
-                      <p class="font-staus-bar">hadi</p>
-                    </div>
-                  </div>
-                  <!-- content end -->
-               </div>
-          </section>
-  <!-- slider status end ===== -->
-
+ <main class="w-full h-full bg-white dark:bg-black overscroll-y-auto  overflow-y-scroll">
+   <!-- slider status ===== start -->
+   <section class="overflow-x-hidden overscroll-x-contain  border  border-blue-95 dark:border-none
+   p-4 w-full auto-cols-max" id="scroll-users-status">
+        <div class="grid grid-flow-col gap-4">
+         <!-- content -->
+           <div class="grid  m-0 text-center relative hover:scale-110 ">
+             <div class="inline-block w-14 h-14 rounded-full background_color">
+               <img src="./images/027410390877dbe19c213b2e6ee60b75.png" alt="" class="rounded-full
+               w-[100%] h-[100%] object-cover clip-path">
+             </div>
+             <div>
+               <p class="font-staus-bar">poriya</p>
+             </div>
+           </div>
+           <!-- content end -->
+           <!-- content -->
+           <div class="grid  m-0 text-center relative hover:scale-110 ">
+             <div class="inline-block w-14 h-14 rounded-full background_color  live-box">
+               <img src="./images/48f1801e657b098f5792c61365f65c75.png" alt="" class="rounded-full
+               w-[100%] h-[100%] object-cover clip-path">
+             </div>
+             <div>
+               <p class="font-staus-bar">ali</p>
+             </div>
+           </div>
+           <!-- content end -->
+           <!-- content -->
+           <div class="grid  m-0 text-center relative hover:scale-110 ">
+             <div class="inline-block w-14 h-14 rounded-full background_color">
+               <img src="./images/18583bf15a6bdc083bcee64acc58ed55.png" alt="" class="rounded-full
+               w-[100%] h-[100%] object-cover clip-path">
+             </div>
+             <div>
+               <p class="font-staus-bar">mariya</p>
+             </div>
+           </div>
+           <!-- content end -->
+           <!-- content -->
+           <div class="grid  m-0 text-center relative hover:scale-110 ">
+             <div class="inline-block w-14 h-14 rounded-full background_color">
+               <img src="./images/2ccd27fc12336a7a8e13d5879814b13c.png" alt="" class="rounded-full
+               w-[100%] h-[100%] object-cover clip-path">
+             </div>
+             <div>
+               <p class="font-staus-bar">mahdi</p>
+             </div>
+           </div>
+           <!-- content end -->
+           <!-- content -->
+           <div class="grid  m-0 text-center relative hover:scale-110 ">
+             <div class="inline-block w-14 h-14 rounded-full background_color">
+               <img src="./images/027410390877dbe19c213b2e6ee60b75.png" alt="" class="rounded-full
+               w-[100%] h-[100%] object-cover clip-path">
+             </div>
+             <div>
+               <p class="font-staus-bar">ahmad</p>
+             </div>
+           </div>
+           <!-- content end -->
+           <!-- content -->
+           <div class="grid  m-0 text-center relative hover:scale-110 ">
+             <div class="inline-block w-14 h-14 rounded-full background_color">
+               <img src="./images/18583bf15a6bdc083bcee64acc58ed55.png" alt="" class="rounded-full
+               w-[100%] h-[100%] object-cover clip-path">
+             </div>
+             <div>
+               <p class="font-staus-bar">malika</p>
+             </div>
+           </div>
+           <!-- content end -->
+           <!-- content -->
+           <div class="grid  m-0 text-center relative hover:scale-110 ">
+             <div class="inline-block w-14 h-14 rounded-full background_color">
+               <img src="./images/48f1801e657b098f5792c61365f65c75.png" alt="" class="rounded-full
+               w-[100%] h-[100%] object-cover clip-path">
+             </div>
+             <div>
+               <p class="font-staus-bar">baback</p>
+             </div>
+           </div>
+           <!-- content end -->
+           <!-- content -->
+           <div class="grid  m-0 text-center relative hover:scale-110 ">
+             <div class="inline-block w-14 h-14 rounded-full background_color">
+               <img src="./images/027410390877dbe19c213b2e6ee60b75.png" alt="" class="rounded-full
+               w-[100%] h-[100%] object-cover clip-path">
+             </div>
+             <div>
+               <p class="font-staus-bar">hadi</p>
+             </div>
+           </div>
+           <!-- content end -->
+        </div>
+   </section>
+<!-- slider status end ===== -->
   <!-- section main all opshtion -->
-  <section class=" h-full w-ful mt-[11px] z-10 overflow-hidden">
-    <div class="swiper_2 w-full h-[100%] -z-10">
-      <div class="swiper-wrapper">
-        <!-- ////////// -->
-       
-        <!-- ////////// -->
-        <div class="swiper-slide">
-          <div> 
+  <section class="w-ful h-full mt-[11px] ">
+    <div class="pb-[100px]">
+     <!-- ----------- all post main  -->
+        <!-- ====post==== -->
+          <div class="border-b border-zinc-200 dark:border-zinc-600 mb-2"> 
             <!-- -------===> box - user optshpion -->
-                <div class="w-full h-full px-1">
+                <div class="w-full h-full px-1 ">
                    <!-- ------ box titile -->
                    <div class="h-full overflow-hidden flex justify-between items-center">
                      <!-- --- img user -->
@@ -334,176 +331,465 @@ start main project ====> for mobile
                   <span class="inline-block text-sm">Liked by craig_love and 44,686 others</span>
                 </div>
                 <div class="text-sm mt-1 flex justify-end">
-                   <p class="pppp"><span class="font-medium">joshua_I </span>The game in Japan was amazing and I want to share some photos Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ab quae nostrum non, voluptatibus adipisci nobis sunt possimus? Nulla, fugiat!</p>
+                   <p class="line-clamp-2"  id="text_more_post"><span class="font-medium">joshua_I </span>The game in Japan was amazing and I want to share some photos Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ab quae nostrum non, voluptatibus adipisci nobis sunt possimus? Nulla, fugiat!</p>
                 </div>
            <!-- ------------------------------ commnet end -->
          </div>
          <!-- ----- slider main end -->
              </div>
-              </div>
-        </div>
-        <!-- ///////// -->
-        <div class="swiper-slide">
-          <div>
-            <!-- -------===> box - user optshpion -->
-                <div class="w-full h-full px-1">
-                   <!-- ------ box titile -->
-                   <div class="h-full overflow-hidden flex justify-between items-center">
-                     <!-- --- img user -->
-                     <div class="flex items-center">
-                         <div class="w-8 h-8 rounded-full">
-                         <img src="./images/2ccd27fc12336a7a8e13d5879814b13c.png" class="w-full h-full object-cover rounded-full" alt="img-user">
-                         </div>
-                         <div class="pl-[10px] child:text-sm leading-none tracking-tighter dark:text-white">
-                         <p class="font-medium">joshua_I</p>
-                         <p class="font-normal">tokyo, Japan</p>
-                         </div>
+            
+          </div>
+       <!-- -------------- -->
+       <!-- ====post==== -->
+          <div class="border-b border-zinc-200 dark:border-zinc-600 mb-2"> 
+        <!-- -------===> box - user optshpion -->
+            <div class="w-full h-full px-1 ">
+               <!-- ------ box titile -->
+               <div class="h-full overflow-hidden flex justify-between items-center">
+                 <!-- --- img user -->
+                 <div class="flex items-center">
+                     <div class="w-8 h-8 rounded-full">
+                     <img src="./images/2ccd27fc12336a7a8e13d5879814b13c.png" class="w-full h-full object-cover rounded-full" alt="img-user">
                      </div>
-                     <!-- --- img user end -->
-                     <!-- ----- ... -->
-                     <div class="flex justify-center items-center p-2 cursor-pointer">
-                      <svg class="w-6 h-6 dark:text-white">
-                       <use href="#more-icon"></use>
-                      </svg>
+                     <div class="pl-[10px] child:text-sm leading-none tracking-tighter dark:text-white">
+                     <p class="font-medium cursor-pointer">joshua_I</p>
+                     <p class="font-normal">tokyo, Japan</p>
                      </div>
-                     <!-- ----- ... -->
-                   </div>
-                </div>
-            <!-- ------===> box - user optshpion end  -->
-         <div class="my-2"> 
-          <!-- Slider main container -->
-         <div class="swiper">
-           <!-- Additional required wrapper -->
-           <div class="swiper-wrapper">
-             <!-- Slides -->
-             <div class="swiper-slide">
-               <img  src="./images/face/ce7e32c5013518aa6e932c543a55a3c9 - Copy.png"  class="active_image" alt="">
-             </div>
-             <div class="swiper-slide">
-               <img src="./images/face/65769a04f3b5bad56365e101c778a7c1.png" class="active_image"  alt="">
-             </div>
-             <div class="swiper-slide">
-               <img src="./images/face/ce7e32c5013518aa6e932c543a55a3c9 - Copy.png" class="active_image"  alt="">
-             </div>
-           </div>
-         <!-- ------------------ -->
-         <div class="swiper-pagination"></div>
-         </div>
-          <!-- nav bar main option -->
-          <div class="w-full h-8 relative flex justify-between mt-3 items-center px-1">
-            <div class="flex justify-center items-center child:dark:text-white  child:w-6 child:h-6 gap-x-2">
-             <!-- ------ icon comment -->
-             <svg id="like">
-               <use href="#activityfeed"></use>
-             </svg>
-             <svg>
-               <use href="#comment"></use>
-             </svg>
-             <svg>
-               <use href="#massege"></use>
-             </svg>
-            </div>
-            <!-- ------- icon comment end -->
-            <!-- -----------swiper pagination -->
-           <!-- ------------- swiper pagination end -->
-           <!-- ---------- save comment -->
-                 <div class="child:w-6 child:h-6 flex child:dark:text-white justify-center items-center">
-                   <svg>
-                     <use href="#save"></use>
-                   </svg>
                  </div>
-            </div>
-         
-         </div>
-         <!-- ----- slider main end -->
-              </div>
-        </div>
-        <!-- ////////// -->
-        <div class="swiper-slide">
-          <div>
-            <!-- -------===> box - user optshpion -->
-                <div class="w-full h-full px-1">
-                   <!-- ------ box titile -->
-                   <div class="h-full overflow-hidden flex justify-between items-center">
-                     <!-- --- img user -->
-                     <div class="flex items-center">
-                         <div class="w-8 h-8 rounded-full">
-                         <img src="./images/2ccd27fc12336a7a8e13d5879814b13c.png" class="w-full h-full object-cover rounded-full" alt="img-user">
-                         </div>
-                         <div class="pl-[10px] child:text-sm leading-none tracking-tighter dark:text-white">
-                         <p class="font-medium">joshua_I</p>
-                         <p class="font-normal">tokyo, Japan</p>
-                         </div>
-                     </div>
-                     <!-- --- img user end -->
-                     <!-- ----- ... -->
-                     <div class="flex justify-center items-center p-2 cursor-pointer">
-                      <svg class="w-6 h-6 dark:text-white">
-                       <use href="#more-icon"></use>
-                      </svg>
-                     </div>
-                     <!-- ----- ... -->
-                   </div>
-                </div>
-            <!-- ------===> box - user optshpion end  -->
-         <div class="my-2"> 
-          <!-- Slider main container -->
-         <div class="swiper">
-           <!-- Additional required wrapper -->
-           <div class="swiper-wrapper">
-             <!-- Slides -->
-             <div class="swiper-slide">
-               <img  src="./images/face/5904c9ce3cfb08e4c032b5a473d5648d.png"  class="active_image" alt="">
-             </div>
-             <div class="swiper-slide">
-               <img src="./images/face/65769a04f3b5bad56365e101c778a7c1.png" class="active_image"  alt="">
-             </div>
-             <div class="swiper-slide">
-               <img src="./images/face/ce7e32c5013518aa6e932c543a55a3c9 - Copy.png" class="active_image"  alt="">
-             </div>
-           </div>
-         <!-- ------------------ -->
-         <div class="swiper-pagination"></div>
-         </div>
-          <!-- nav bar main option -->
-          <div class="w-full h-8 relative flex justify-between mt-3 items-center px-1">
-            <div class="flex justify-center items-center child:w-6 child:h-6 gap-x-2
-            child:dark:text-white">
-             <!-- ------ icon comment -->
-             <svg id="like">
-               <use href="#activityfeed"></use>
-             </svg>
-             <svg id="show-comment">
-               <use href="#comment"></use>
-             </svg>
-             <svg>
-               <use href="#massege"></use>
-             </svg>
-            </div>
-            <!-- ------- icon comment end -->
-            <!-- -----------swiper pagination -->
-           <!-- ------------- swiper pagination end -->
-           <!-- ---------- save comment -->
-                 <div class="child:w-6 child:h-6 child:dark:text-white flex justify-center items-center">
-                   <svg>
-                     <use href="#save"></use>
-                   </svg>
+                 <!-- --- img user end -->
+                 <!-- ----- ... -->
+                 <div class="flex justify-center items-center p-2 cursor-pointer">
+                  <svg class="w-6 h-6 dark:text-white cursor-default">
+                   <use href="#more-icon"></use>
+                  </svg>
                  </div>
+                 <!-- ----- ... -->
+               </div>
             </div>
-         
+        <!-- ------===> box - user optshpion end  -->
+     <div class="my-2"> 
+      <!-- Slider main container -->
+     <div class="swiper">
+       <!-- Additional required wrapper -->
+       <div class="swiper-wrapper">
+         <!-- Slides -->
+         <div class="swiper-slide">
+           <img  src="./images/face/5904c9ce3cfb08e4c032b5a473d5648d.png"  class="active_image" alt="">
          </div>
-         <!-- ----- slider main end -->
+         <div class="swiper-slide">
+           <img src="./images/face/65769a04f3b5bad56365e101c778a7c1.png" class="active_image"  alt="">
+         </div>
+         <div class="swiper-slide">
+           <img src="./images/face/ce7e32c5013518aa6e932c543a55a3c9 - Copy.png" class="active_image"  alt="">
+         </div>
+       </div>
+     <!-- ------------------ -->
+     <div class="swiper-pagination"></div>
+     </div>
+      <!-- nav bar main option -->
+      <div class="w-full h-8 relative flex justify-between mt-3 items-center px-1">
+        <div class="flex justify-center items-center child:dark:text-white child:w-6 child:h-6 gap-x-2">
+         <!-- ------ icon comment -->
+         <svg id="like">
+           <use href="#activityfeed"></use>
+         </svg>
+         <svg id="comment_icon">
+           <use href="#comment"></use>
+         </svg>
+         <svg>
+           <use href="#massege"></use>
+         </svg>
+        </div>
+        <!-- ------- icon comment end -->
+        <!-- -----------swiper pagination -->
+       <!-- ------------- swiper pagination end -->
+       <!-- ---------- save comment -->
+             <div class="child:w-6 child:h-6 flex text-black  justify-center items-center">
+               <svg class="text-black dark:text-white" id="save_post_icon">
+                 <use href="#save"></use>
+               </svg>
              </div>
         </div>
-        <!-- ///////// -->
-      </div>
+       <!-- ---------- comment for post main user -->
+       <!-- 
+        about post user
+        -->
+         <div class="w-full px-[15px] tracking-[0.07px] my-2 child:dark:text-white">
+            <div class="flex justify-start items-center gap-x-2">
+              <img src="./images/48f1801e657b098f5792c61365f65c75.png" class="w-5 h-5 rounded-full" alt="post-user">
+              <span class="inline-block text-sm">Liked by craig_love and 44,686 others</span>
+            </div>
+            <div class="text-sm mt-1 flex justify-end">
+               <p class="line-clamp-2"  id="text_more_post"><span class="font-medium">joshua_I </span>The game in Japan was amazing and I want to share some photos Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ab quae nostrum non, voluptatibus adipisci nobis sunt possimus? Nulla, fugiat!</p>
+            </div>
+       <!-- ------------------------------ commnet end -->
+     </div>
+     <!-- ----- slider main end -->
+         </div>
+        
+          </div>
+       <!-- -------------- -->
+       <!-- ====post==== -->
+          <div class="border-b border-zinc-200 dark:border-zinc-600 mb-2"> 
+        <!-- -------===> box - user optshpion -->
+            <div class="w-full h-full px-1 ">
+               <!-- ------ box titile -->
+               <div class="h-full overflow-hidden flex justify-between items-center">
+                 <!-- --- img user -->
+                 <div class="flex items-center">
+                     <div class="w-8 h-8 rounded-full">
+                     <img src="./images/2ccd27fc12336a7a8e13d5879814b13c.png" class="w-full h-full object-cover rounded-full" alt="img-user">
+                     </div>
+                     <div class="pl-[10px] child:text-sm leading-none tracking-tighter dark:text-white">
+                     <p class="font-medium cursor-pointer">joshua_I</p>
+                     <p class="font-normal">tokyo, Japan</p>
+                     </div>
+                 </div>
+                 <!-- --- img user end -->
+                 <!-- ----- ... -->
+                 <div class="flex justify-center items-center p-2 cursor-pointer">
+                  <svg class="w-6 h-6 dark:text-white cursor-default">
+                   <use href="#more-icon"></use>
+                  </svg>
+                 </div>
+                 <!-- ----- ... -->
+               </div>
+            </div>
+        <!-- ------===> box - user optshpion end  -->
+     <div class="my-2"> 
+      <!-- Slider main container -->
+     <div class="swiper">
+       <!-- Additional required wrapper -->
+       <div class="swiper-wrapper">
+         <!-- Slides -->
+         <div class="swiper-slide">
+           <img  src="./images/face/ce7e32c5013518aa6e932c543a55a3c9 - Copy.png"  class="active_image" alt="">
+         </div>
+         <div class="swiper-slide">
+           <img src="./images/face/65769a04f3b5bad56365e101c778a7c1.png" class="active_image"  alt="">
+         </div>
+         <div class="swiper-slide">
+           <img src="./images/face/ce7e32c5013518aa6e932c543a55a3c9 - Copy.png" class="active_image"  alt="">
+         </div>
+       </div>
+     <!-- ------------------ -->
+     <div class="swiper-pagination"></div>
+     </div>
+      <!-- nav bar main option -->
+      <div class="w-full h-8 relative flex justify-between mt-3 items-center px-1">
+        <div class="flex justify-center items-center child:dark:text-white child:w-6 child:h-6 gap-x-2">
+         <!-- ------ icon comment -->
+         <svg id="like">
+           <use href="#activityfeed"></use>
+         </svg>
+         <svg id="comment_icon">
+           <use href="#comment"></use>
+         </svg>
+         <svg>
+           <use href="#massege"></use>
+         </svg>
+        </div>
+        <!-- ------- icon comment end -->
+        <!-- -----------swiper pagination -->
+       <!-- ------------- swiper pagination end -->
+       <!-- ---------- save comment -->
+             <div class="child:w-6 child:h-6 flex text-black  justify-center items-center">
+               <svg class="text-black dark:text-white" id="save_post_icon">
+                 <use href="#save"></use>
+               </svg>
+             </div>
+        </div>
+       <!-- ---------- comment for post main user -->
+       <!-- 
+        about post user
+        -->
+         <div class="w-full px-[15px] tracking-[0.07px] my-2 child:dark:text-white">
+            <div class="flex justify-start items-center gap-x-2">
+              <img src="./images/48f1801e657b098f5792c61365f65c75.png" class="w-5 h-5 rounded-full" alt="post-user">
+              <span class="inline-block text-sm">Liked by craig_love and 44,686 others</span>
+            </div>
+            <div class="text-sm mt-1 flex justify-end">
+               <p class="line-clamp-2"  id="text_more_post"><span class="font-medium">joshua_I </span>The game in Japan was amazing and I want to share some photos Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ab quae nostrum non, voluptatibus adipisci nobis sunt possimus? Nulla, fugiat!</p>
+            </div>
+       <!-- ------------------------------ commnet end -->
+     </div>
+     <!-- ----- slider main end -->
+         </div>
+        
+          </div>
+       <!-- -------------- -->
+       <!-- ====post==== -->
+          <div class="border-b border-zinc-200 dark:border-zinc-600 mb-2"> 
+        <!-- -------===> box - user optshpion -->
+            <div class="w-full h-full px-1 ">
+               <!-- ------ box titile -->
+               <div class="h-full overflow-hidden flex justify-between items-center">
+                 <!-- --- img user -->
+                 <div class="flex items-center">
+                     <div class="w-8 h-8 rounded-full">
+                     <img src="./images/2ccd27fc12336a7a8e13d5879814b13c.png" class="w-full h-full object-cover rounded-full" alt="img-user">
+                     </div>
+                     <div class="pl-[10px] child:text-sm leading-none tracking-tighter dark:text-white">
+                     <p class="font-medium cursor-pointer">joshua_I</p>
+                     <p class="font-normal">tokyo, Japan</p>
+                     </div>
+                 </div>
+                 <!-- --- img user end -->
+                 <!-- ----- ... -->
+                 <div class="flex justify-center items-center p-2 cursor-pointer">
+                  <svg class="w-6 h-6 dark:text-white cursor-default">
+                   <use href="#more-icon"></use>
+                  </svg>
+                 </div>
+                 <!-- ----- ... -->
+               </div>
+            </div>
+        <!-- ------===> box - user optshpion end  -->
+     <div class="my-2"> 
+      <!-- Slider main container -->
+     <div class="swiper">
+       <!-- Additional required wrapper -->
+       <div class="swiper-wrapper">
+         <!-- Slides -->
+         <div class="swiper-slide">
+           <img  src="./images/face/65769a04f3b5bad56365e101c778a7c1.png"  class="active_image" alt="">
+         </div>
+         <div class="swiper-slide">
+           <img src="./images/face/65769a04f3b5bad56365e101c778a7c1.png" class="active_image"  alt="">
+         </div>
+         <div class="swiper-slide">
+           <img src="./images/face/ce7e32c5013518aa6e932c543a55a3c9 - Copy.png" class="active_image"  alt="">
+         </div>
+       </div>
+     <!-- ------------------ -->
+     <div class="swiper-pagination"></div>
+     </div>
+      <!-- nav bar main option -->
+      <div class="w-full h-8 relative flex justify-between mt-3 items-center px-1">
+        <div class="flex justify-center items-center child:dark:text-white child:w-6 child:h-6 gap-x-2">
+         <!-- ------ icon comment -->
+         <svg id="like">
+           <use href="#activityfeed"></use>
+         </svg>
+         <svg id="comment_icon">
+           <use href="#comment"></use>
+         </svg>
+         <svg>
+           <use href="#massege"></use>
+         </svg>
+        </div>
+        <!-- ------- icon comment end -->
+        <!-- -----------swiper pagination -->
+       <!-- ------------- swiper pagination end -->
+       <!-- ---------- save comment -->
+             <div class="child:w-6 child:h-6 flex text-black  justify-center items-center">
+               <svg class="text-black dark:text-white" id="save_post_icon">
+                 <use href="#save"></use>
+               </svg>
+             </div>
+        </div>
+       <!-- ---------- comment for post main user -->
+       <!-- 
+        about post user
+        -->
+         <div class="w-full px-[15px] tracking-[0.07px] my-2 child:dark:text-white">
+            <div class="flex justify-start items-center gap-x-2">
+              <img src="./images/48f1801e657b098f5792c61365f65c75.png" class="w-5 h-5 rounded-full" alt="post-user">
+              <span class="inline-block text-sm">Liked by craig_love and 44,686 others</span>
+            </div>
+            <div class="text-sm mt-1 flex justify-end">
+               <p class="line-clamp-2"  id="text_more_post"><span class="font-medium">joshua_I </span>The game in Japan was amazing and I want to share some photos Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ab quae nostrum non, voluptatibus adipisci nobis sunt possimus? Nulla, fugiat!</p>
+            </div>
+       <!-- ------------------------------ commnet end -->
+     </div>
+     <!-- ----- slider main end -->
+         </div>
+        
+          </div>
+      <!-- -------------- -->
+       <!-- ====post==== -->
+          <div class="border-b border-zinc-200 dark:border-zinc-600 mb-2"> 
+        <!-- -------===> box - user optshpion -->
+            <div class="w-full h-full px-1 ">
+               <!-- ------ box titile -->
+               <div class="h-full overflow-hidden flex justify-between items-center">
+                 <!-- --- img user -->
+                 <div class="flex items-center">
+                     <div class="w-8 h-8 rounded-full">
+                     <img src="./images/2ccd27fc12336a7a8e13d5879814b13c.png" class="w-full h-full object-cover rounded-full" alt="img-user">
+                     </div>
+                     <div class="pl-[10px] child:text-sm leading-none tracking-tighter dark:text-white">
+                     <p class="font-medium cursor-pointer">joshua_I</p>
+                     <p class="font-normal">tokyo, Japan</p>
+                     </div>
+                 </div>
+                 <!-- --- img user end -->
+                 <!-- ----- ... -->
+                 <div class="flex justify-center items-center p-2 cursor-pointer">
+                  <svg class="w-6 h-6 dark:text-white cursor-default">
+                   <use href="#more-icon"></use>
+                  </svg>
+                 </div>
+                 <!-- ----- ... -->
+               </div>
+            </div>
+        <!-- ------===> box - user optshpion end  -->
+     <div class="my-2"> 
+      <!-- Slider main container -->
+     <div class="swiper">
+       <!-- Additional required wrapper -->
+       <div class="swiper-wrapper">
+         <!-- Slides -->
+         <div class="swiper-slide">
+           <img  src="./images/face/ce7e32c5013518aa6e932c543a55a3c9 - Copy.png"  class="active_image" alt="">
+         </div>
+         <div class="swiper-slide">
+           <img src="./images/face/65769a04f3b5bad56365e101c778a7c1.png" class="active_image"  alt="">
+         </div>
+         <div class="swiper-slide">
+           <img src="./images/face/ce7e32c5013518aa6e932c543a55a3c9 - Copy.png" class="active_image"  alt="">
+         </div>
+       </div>
+     <!-- ------------------ -->
+     <div class="swiper-pagination"></div>
+     </div>
+      <!-- nav bar main option -->
+      <div class="w-full h-8 relative flex justify-between mt-3 items-center px-1">
+        <div class="flex justify-center items-center child:dark:text-white child:w-6 child:h-6 gap-x-2">
+         <!-- ------ icon comment -->
+         <svg id="like">
+           <use href="#activityfeed"></use>
+         </svg>
+         <svg id="comment_icon">
+           <use href="#comment"></use>
+         </svg>
+         <svg>
+           <use href="#massege"></use>
+         </svg>
+        </div>
+        <!-- ------- icon comment end -->
+        <!-- -----------swiper pagination -->
+       <!-- ------------- swiper pagination end -->
+       <!-- ---------- save comment -->
+             <div class="child:w-6 child:h-6 flex text-black  justify-center items-center">
+               <svg class="text-black dark:text-white" id="save_post_icon">
+                 <use href="#save"></use>
+               </svg>
+             </div>
+        </div>
+       <!-- ---------- comment for post main user -->
+       <!-- 
+        about post user
+        -->
+         <div class="w-full px-[15px] tracking-[0.07px] my-2 child:dark:text-white">
+            <div class="flex justify-start items-center gap-x-2">
+              <img src="./images/48f1801e657b098f5792c61365f65c75.png" class="w-5 h-5 rounded-full" alt="post-user">
+              <span class="inline-block text-sm">Liked by craig_love and 44,686 others</span>
+            </div>
+            <div class="text-sm mt-1 flex justify-end">
+               <p class="line-clamp-2"  id="text_more_post"><span class="font-medium">joshua_I </span>The game in Japan was amazing and I want to share some photos Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ab quae nostrum non, voluptatibus adipisci nobis sunt possimus? Nulla, fugiat!</p>
+            </div>
+       <!-- ------------------------------ commnet end -->
+     </div>
+     <!-- ----- slider main end -->
+         </div>
+        
+          </div>
+      <!-- -------------- -->  
+       <!-- ====post==== -->
+          <div class="border-b border-zinc-200 dark:border-zinc-600 mb-2"> 
+        <!-- -------===> box - user optshpion -->
+            <div class="w-full h-full px-1 ">
+               <!-- ------ box titile -->
+               <div class="h-full overflow-hidden flex justify-between items-center">
+                 <!-- --- img user -->
+                 <div class="flex items-center">
+                     <div class="w-8 h-8 rounded-full">
+                     <img src="./images/2ccd27fc12336a7a8e13d5879814b13c.png" class="w-full h-full object-cover rounded-full" alt="img-user">
+                     </div>
+                     <div class="pl-[10px] child:text-sm leading-none tracking-tighter dark:text-white">
+                     <p class="font-medium cursor-pointer">joshua_I</p>
+                     <p class="font-normal">tokyo, Japan</p>
+                     </div>
+                 </div>
+                 <!-- --- img user end -->
+                 <!-- ----- ... -->
+                 <div class="flex justify-center items-center p-2 cursor-pointer">
+                  <svg class="w-6 h-6 dark:text-white cursor-default">
+                   <use href="#more-icon"></use>
+                  </svg>
+                 </div>
+                 <!-- ----- ... -->
+               </div>
+            </div>
+        <!-- ------===> box - user optshpion end  -->
+     <div class="my-2"> 
+      <!-- Slider main container -->
+     <div class="swiper">
+       <!-- Additional required wrapper -->
+       <div class="swiper-wrapper">
+         <!-- Slides -->
+         <div class="swiper-slide">
+           <img  src="./images/face/5904c9ce3cfb08e4c032b5a473d5648d.png"  class="active_image" alt="">
+         </div>
+         <div class="swiper-slide">
+           <img src="./images/face/65769a04f3b5bad56365e101c778a7c1.png" class="active_image"  alt="">
+         </div>
+         <div class="swiper-slide">
+           <img src="./images/face/ce7e32c5013518aa6e932c543a55a3c9 - Copy.png" class="active_image"  alt="">
+         </div>
+       </div>
+     <!-- ------------------ -->
+     <div class="swiper-pagination"></div>
+     </div>
+      <!-- nav bar main option -->
+      <div class="w-full h-8 relative flex justify-between mt-3 items-center px-1">
+        <div class="flex justify-center items-center child:dark:text-white child:w-6 child:h-6 gap-x-2">
+         <!-- ------ icon comment -->
+         <svg id="like">
+           <use href="#activityfeed"></use>
+         </svg>
+         <svg id="comment_icon">
+           <use href="#comment"></use>
+         </svg>
+         <svg>
+           <use href="#massege"></use>
+         </svg>
+        </div>
+        <!-- ------- icon comment end -->
+        <!-- -----------swiper pagination -->
+       <!-- ------------- swiper pagination end -->
+       <!-- ---------- save comment -->
+             <div class="child:w-6 child:h-6 flex text-black  justify-center items-center">
+               <svg class="text-black dark:text-white" id="save_post_icon">
+                 <use href="#save"></use>
+               </svg>
+             </div>
+        </div>
+       <!-- ---------- comment for post main user -->
+       <!-- 
+        about post user
+        -->
+         <div class="w-full px-[15px] tracking-[0.07px] my-2 child:dark:text-white">
+            <div class="flex justify-start items-center gap-x-2">
+              <img src="./images/48f1801e657b098f5792c61365f65c75.png" class="w-5 h-5 rounded-full" alt="post-user">
+              <span class="inline-block text-sm">Liked by craig_love and 44,686 others</span>
+            </div>
+            <div class="text-sm mt-1 flex justify-end">
+               <p class="line-clamp-2"  id="text_more_post"><span class="font-medium">joshua_I </span>The game in Japan was amazing and I want to share some photos Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ab quae nostrum non, voluptatibus adipisci nobis sunt possimus? Nulla, fugiat!</p>
+            </div>
+       <!-- ------------------------------ commnet end -->
+     </div>
+     <!-- ----- slider main end -->
+         </div>
+        
+          </div>
+      <!-- -------------- -->
+       <!------------ all post end  -->
     </div>
   </section>
-
-
-
   <!--    comment show box -->
-  <div id="comment_main" class="w-[100%] transition h-[100vh] absolute left-0 right-0 -top-[100vh] bottom-0 bg-white dark:bg-black px-[15px] z-10">
+  <div id="comment_main" class="w-[100%] transition h-[100vh] absolute left-0 right-0 bottom-0 -top-[100vh]  bg-white dark:bg-black px-[15px] z-10">
     <!-- head comment -->
     <div class="w-full h-12 flex justify-between items-center  border-b dark:border-none border-zinc-200">
       <p class="flex text-lg font-medium dark:text-white">comment
@@ -533,7 +819,7 @@ start main project ====> for mobile
    <div class="w-full max-h-[100vh] mt-3 overflow-y-scroll" id="main_comment">
        <!-- --------box 1 -->
         <div class="mb-2">
-        <div class="w-full flex justify-start items-center gap-x-1 child:dark:text-white">
+        <div class="w-full flex justify-start items-center gap-x-1 mb-[.5rem] child:dark:text-white">
         <img src="./images/face/5904c9ce3cfb08e4c032b5a473d5648d.png" alt="face"
         class="w-5 h-5 rounded-full">
         <p class="text-sm font-medium cursor-pointer">mariya</p>
