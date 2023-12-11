@@ -18,8 +18,15 @@
             dark mode tailwind switch 
           -->
             <!-- ------- links end -->
+            <script type="text/javascript">
+                if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                   document.documentElement.classList.add('dark')
+                } else {
+                   document.documentElement.classList.remove('dark')
+                      }
+                </script>
     </head>
-<body class="bg-white dark:bg-black w-full h-[100vh]  overflow-hidden">
+<body class="bg-white dark:bg-black w-full h-[100vh] overflow-hidden  relative">
    
     <!-- 
         svg project
@@ -59,9 +66,13 @@
 
 <!--  start code -->
 <!--  start  -->
-<div class="max-w-sm h-full mx-auto z-10 relative">
+<div class="max-w-sm h-full mx-auto z-0">
+    <!-- 
+    slid cover show acocount
+ -->
+ <div class="absolute left-0 top-0 right-0 w-full slid_show_dialog z-10" id="show_slid"></div>
     <!-- -------- section header -->
-  <section class="w-full h-10 text-black dark:text-white bg-white dark:bg-black">
+  <section class="w-full h-10 text-black dark:text-white bg-white dark:bg-black mb-3">
     <div class="h-full flex justify-center items-center gap-x-1 cursor-pointer" id="form_open_dialog">
         <span>
             <svg class="w-5 h-5 text-black dark:text-white">
@@ -118,16 +129,16 @@
 main account user
 
  -->
- <div class="bg-blue-600 p-2">
-    <div class="flex justify-center items-center gap-x-3 mb-3">
+ <div class="p-3 border-b border-zinc-300 dark:border-zinc-500">
+    <div class="flex justify-center items-center gap-x-8 mb-5">
         <!-- - -->
-        <div class="w-20 h-20 rounded-full border-2 border-zinc-500 
+        <div class="w-24 h-24 rounded-full border-2 border-zinc-500 
         p-[2px]">
             <img src="./images/face/65769a04f3b5bad56365e101c778a7c1.png" alt="" class="w-full rounded-full object-cover">
         </div>
         <!-- - -->
         <div class="child:dark:text-white">
-            <ul class="flex gap-x-4">
+            <ul class="flex gap-x-8 child:font-medium">
                 <li class="flex flex-col justify-center items-center">54
                     <span>post</span>
                 </li>
@@ -141,20 +152,42 @@ main account user
         </div>
     </div>
     <!-- ====== -->
-    <div class="mb-3 leading-5 child:dark:text-white">
+    <div class="leading-5 w-full child:dark:text-white">
         <h6 class="font-medium">Jacob West</h6>
-        <p>Digital goodies designer <a href="#" class="no-underline text-blue-400">@pixsellz</a> 
+        <p class="max-w-[70%]">Digital goodies designer <a href="#" class="no-underline text-blue-400">@pixsellz</a> 
             Everything is designed.</p>
     </div>
-    <div>
+    <div class="w-full text-center my-5 p-1 dark:text-white border border-zinc-400 rounded">
         <a href="#">Edit Profile</a>
     </div>
     <div>
-        <ul>
-            <li><div><img src="" alt="about_status"></div></li>
-            <li><div><img src="" alt="about_status"></div></li>
-            <li><div><img src="" alt="about_status"></div></li>
-            <li><div><svg><use href="#plass"></use></svg></div></li>
+        <ul class=" flex justify-center items-center flex-row-reverse gap-x-5 child:text-center child:text-sm child:font-medium child:dark:text-white">
+            <li>
+                <div class="w-16 h-16 rounded-full mb-2 border border-zinc-400 dark:border-zinc-500 p-1">
+                    <img src="./images/18583bf15a6bdc083bcee64acc58ed55.png" class="w-full h-full rounded-full object-cover" alt="about_status">
+                </div>
+                <span>my love</span>
+            </li>
+            <li>
+                <div class="w-16 h-16 rounded-full mb-2 border border-zinc-400 dark:border-zinc-500 p-1">
+                    <img src="./images/face/ce7e32c5013518aa6e932c543a55a3c9 - Copy.png" class="w-full h-full rounded-full object-cover" alt="about_status">
+                </div>
+                <span>me</span>
+            </li>
+            <li>
+                <div class="w-16 h-16 rounded-full mb-2 border border-zinc-400 dark:border-zinc-500 p-1">
+                    <img src="./images/2ccd27fc12336a7a8e13d5879814b13c.png" class="w-full h-full rounded-full object-cover" alt="about_status">
+                </div>
+                <span>about me</span>
+            </li>
+            <li>
+                <div class="w-14 h-14 rounded-full flex justify-center  border dark:border-zinc-500 cursor-pointer items-center mb-2">
+                    <svg class="w-6 h-6">
+                        <use href="#plass"></use>
+                    </svg>
+                </div>
+                <span>add</span>
+            </li>
         </ul>
     </div>
  </div>

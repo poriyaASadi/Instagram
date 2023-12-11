@@ -78,4 +78,8 @@
     /*Chrome10-25,Safari5.1-6*/background: linear-gradient(to top, #3f4c6b, #606c88);
     /*W3C,IE10+/Edge,Firefox16+,Chrome26+,Opera12+,Safari7+*/backface-visibility: 
 }
+
+.slid_show_dialog{
+  background-color: rgba(0, 0, 0, 0.459);
+}
 }
