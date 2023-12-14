@@ -82,4 +82,13 @@
 .slid_show_dialog{
   background-color: rgba(0, 0, 0, 0.459);
 }
+
+#active_icon_branch{
+    transition: all 1s ease-in;
+    -webkit-transition: all 1s ease-in;
+    -moz-transition: all 1s ease-in;
+    -ms-transition: all 1s ease-in;
+    -o-transition: all 1s ease-in;
+}
+
 }
