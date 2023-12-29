@@ -19,6 +19,15 @@ let save_post_icon = $.querySelector('#save_post_icon');
 let text_more_post = $.querySelectorAll('#text_more_post');
 // ----========== user acount location
 let user_acount = $.getElementById('user_acount');
+// ----------------- user likes
+let like_user = $.getElementById('like_user');
+// ----------------- Notification user alert show & hidden
+let active_icon_branch = document.querySelector('#active_icon_branch') 
+let stack = document.querySelectorAll('#stack_icon');
+// ---------------- openBlurAlert
+let openBlurAlert = $.getElementById('openBlurAlert');
+let prantIcon_ShowAlert = $.getElementById('prantIcon_ShowAlert');
+
 
 //  ----- icon comment open chat 
 comment_icon_user_main.forEach((item) => {
@@ -52,7 +61,7 @@ function creatPostComment (value_input) {
     <p>${value_input}</p>
     </div>
     </div>`);
-  console.log(mainComment);
+
 };
 // ------------------------------
 // =========== heart like post ;
@@ -93,3 +102,54 @@ text_more_post.forEach(text_post => {
 user_acount.addEventListener('click' , () => {
   this.window.location = 'acountUser.html';
 })
+// -------------------------------
+// ========like_user start 
+like_user.addEventListener('click' , () => {
+  
+})
+// -------------------------------
+// ---------- Notification user alert show & hidden
+stack.forEach((item) => {
+  item.addEventListener('click' , (e) => {
+   let dataValue = e.target.dataset.id
+    if (dataValue == 'user') {
+     active_icon_branch.classList.add('right-0');
+      hidden_elm('box-stack' , 'box-user') 
+    }else {
+       active_icon_branch.classList.remove('right-0');
+       hidden_elm('box-user' , 'box-stack')
+    }
+  })
+})
+
+function hidden_elm (stack,user) {
+ document.getElementById(stack).classList.add('hidden');
+ document.getElementById(user).classList.remove('hidden');
+}
+let falseValue = false
+
+window.addEventListener('load' ,  () => {
+ prantIcon_ShowAlert.firstElementChild.lastElementChild.firstElementChild.setAttribute('href' , '#bell-alert')
+ $.getElementById('animation_alert').classList.remove('hidden');
+ })
+ 
+prantIcon_ShowAlert.addEventListener('click' , () => {
+  if (!falseValue) {
+    openBlurAlert.classList.remove('invisible');
+    prantIcon_ShowAlert.parentElement.className = 'w-[85%] h-full absolute left-0 transition-all right-0 top-0 bottom-0 bg-white dark:bg-black z-30 p-1 dark:text-white';
+    $.getElementById('invis_alert_box').classList.remove('invisible');
+    falseValue = true;
+    prantIcon_ShowAlert.firstElementChild.lastElementChild.firstElementChild.setAttribute('href' , '#bell');
+    $.getElementById('animation_alert').classList.add('hidden');
+  
+  }else {
+    openBlurAlert.classList.add('invisible');
+    prantIcon_ShowAlert.parentElement.className = 'w-[85%] h-full absolute -left-[85%] transition-all right-0 top-0 bottom-0 bg-white dark:bg-black z-30 p-1 dark:text-white';
+    $.getElementById('invis_alert_box').classList.add('invisible');
+    falseValue = false;
+  }
+});
+
+
+// -----------------------------
+// =============================

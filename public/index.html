@@ -90,7 +90,16 @@
   </symbol>  
   <symbol id="back" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
     <path stroke-linecap="round" stroke-linejoin="round" d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3" />
-  </symbol>  
+  </symbol> 
+  <symbol id="snooze" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0M10.5 8.25h3l-3 4.5h3" />
+  </symbol>   
+  <symbol id="bell" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+  </symbol>
+  <symbol id="bell-alert" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0M3.124 7.5A8.969 8.969 0 0 1 5.292 3m13.416 0a8.969 8.969 0 0 1 2.168 4.5" />
+  </symbol>    
  </svg>
 <!-- svg end ======= -->
 <!-- 
@@ -130,13 +139,13 @@ start project
           <svg class="">
             <use href="#home"></use>
           </svg>
-          <svg class="">
+          <a href="./search.html"><svg class="w-full h-full">
             <use href="#search"></use>
-          </svg>
+          </svg></a>
           <svg class="">
             <use href="#newposts"></use>
           </svg>
-          <svg class="">
+          <svg class="" id="like_user">
             <use href="#activityfeed"></use>
           </svg>
           <div class="rounded-full w-8 h-8 overflow-hidden" id="user_acount">
@@ -844,7 +853,108 @@ start main project ====> for mobile
     <!-- ------- end -->
   </div>
   <!--    comment show box end -->
+  <!--  likes user show  -->
+   <div class="w-[85%] h-full absolute   -left-[85%] transition-all right-0 top-0 bottom-0 bg-white dark:bg-black z-30 p-1 dark:text-white">
+    <div id="invis_alert_box" class="invisible h-full w-full">
+      <div class="w-full h-10 flex justify-between items-center font-medium child:flex child:justify-center child:items-center relative mb-2  dark:text-white">
+        <div class="w-[50%]"  data-id="stack" id="stack_icon">
+          Following
+        </div>
+        <div class="w-[50%]"  data-id="user" id="stack_icon">
+          You
+        </div>
+        <span id="active_icon_branch" class="inline-flex w-[50%] h-[1px] bg-black dark:bg-white  absolute bottom-0"></span>
+      </div>
+      <!-- ------/-----  -->
+      <div id="box-stack">
+      <span class="mb-2 inline-block w-full font-medium">Follow Requests ✍️</span>
+      <span class="w-full mb-2 inline-block border-b border-zinc-300 pb-2 dark:border-none">New</span>
+      <div>
+        <!-- ------- -->
+      <div class="mb-3 flex justify-between items-center">
+        <div class="flex items-center gap-x-2">
+          <img class="w-9 h-9 rounded-full object-cover" src="./images/48f1801e657b098f5792c61365f65c75.png" alt="img-user-follow">
+          <p class="text-sm tracking-wide font-thin"><span class="inline-flex pr-1 font-medium text-zinc-600 dark:text-zinc-400">Ali</span>follow your post <span>...</span></p>
+        </div>
+        <img class="w-10 h-10 object-cover" src="./images/img_user_post/Rectangle (4).png" alt="your post ">
+      </div>
+        <!-- ------- -->
+         <!-- ------- -->
+      <div class="mb-3 flex justify-between items-center">
+        <div class="flex items-center gap-x-2">
+          <img class="w-9 h-9 rounded-full object-cover" src="./images/18583bf15a6bdc083bcee64acc58ed55.png" alt="img-user-follow">
+          <p class="text-sm tracking-wide font-thin"><span class="inline-flex pr-1 font-medium text-zinc-600 dark:text-zinc-400">mina</span>follow your post <span>...</span></p>
+        </div>
+        <img class="w-10 h-10 object-cover" src="./images/img_user_post/Rectangle (5).png" alt="your post ">
+      </div>
+        <!-- ------- -->
+      </div>
+      <span class="w-full mb-2 inline-block border-b border-zinc-300 pb-2 dark:border-none">Today</span>
+      <div>
+        <!-- ------- -->
+        <div class="flex items-center gap-x-2 justify-between mb-2">
+          <div class="flex items-center gap-x-2">
+            <img class="w-9 h-9 rounded-full object-cover" src="./images/18583bf15a6bdc083bcee64acc58ed55.png" alt="...img">
+            <p class="text-sm font-thin"><span class="font-medium text-zinc-600 dark:text-zinc-400">craig_lovd</span> mentioned you in a comment <a href="./acountUser.html" class="text-blue-600 dark:text-blue-500 px-1">@jacob_w</a>exactly <span>...</span></p>
+          </div>
+          <img class="w-10 h-10 object-cover" src="./images/img_user_post/Rectangle (8).png" alt="">
+        </div>
+        <!-- ------- -->
+      </div>
+      <span class="w-full mb-2 inline-block border-b border-zinc-300 pb-2 dark:border-none">This Week</span>
+      <div id="ContentYouAlertPost">
+        <!-- ........ -->
+         <div class="flex justify-between items-center mb-3">
+          <div class="flex items-center gap-x-2">
+            <img class="w-9 h-9 rounded-full object-cover" src="./images/027410390877dbe19c213b2e6ee60b75.png" alt="...img">
+            <p class="text-sm"><span class="text-zinc-600 dark:text-zinc-400 font-medium pr-1">martini_rond</span>started following you <span>...</span></p>
+          </div>
+           <a href="#">
+            <div class="w-[90px] h-8 leading-7 text-center border border-zinc-500 font-medium rounded-[4px]">message</div>
+           </a>
+         </div>
+         <!-- ..... -->
+          <!-- ........ -->
+          <div class="flex justify-between items-center mb-3">
+            <div class="flex items-center gap-x-2">
+              <img  class="w-9 h-9 rounded-full object-cover" src="./images/face/ce7e32c5013518aa6e932c543a55a3c9 - Copy.png" alt="...img">
+              <p class="text-sm"><span class="text-zinc-600 dark:text-zinc-400 font-medium pr-1">mis_potter</span>started following you <span>...</span></p>
+            </div>
+            <div class="">
+            <a href="#">
+              <div class="w-[90px] h-8 leading-8 text-center bg-blue-400 font-medium rounded-[4px]">Follow</div>
+            </a>
+            </div>
+           </div>
+           <!-- ..... -->
+      </div>
+      </div>
+      <div id="box-user" class="w-full h-full hidden ">
+        <div class="w-full h-full flex justify-center items-center  flex-col">
+          <svg class="w-16 h-16">
+            <use href="#snooze"></use>
+           </svg>
+         <h2 class="font-medium text-2xl text-center">Unfortunately, there is no news, my friend :(</h2>
+        </div>
+      </div>
+      <!-- ====== -->
+    </div>
+      <div id="prantIcon_ShowAlert" class="w-10 h-12 absolute flex justify-center items-center cursor-pointer -right-10 top-[50%] bg-white dark:bg-black rounded-r-lg">
+        <span class="relative h-full w-full flex justify-center items-center">
+          <span id="animation_alert" class="animate-ping absolute hidden h-6 w-6 rounded-full bg-black dark:bg-white  opacity-75"></span>
+          <svg class="w-7 h-7">
+            <use href="#bell"></use>
+          </svg>
+        </span>
+      </div>
+      <!-- ====== -->
+   </div>
+  <!-- ===== likes user show end -->
   <!-- ....................... -->
+  <!-- open bolur like user show -->
+  <div id="openBlurAlert" class="w-full h-full  invisible  backdrop-blur transition-opacity  absolute left-0 top-0 right-0 bottom-0 z-10"></div>
+  <!-- ------------------------- -->
+
  </main>
  </div>
 

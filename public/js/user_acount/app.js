@@ -29,10 +29,18 @@ stack.forEach((item) => {
     let dataValue = e.target.dataset.id
      if (dataValue == 'user') {
       active_icon_branch.classList.add('left-48');
+       hidden_elm('box-stack' , 'box-user')
      }else {
         active_icon_branch.classList.remove('left-48');
+        hidden_elm('box-user' , 'box-stack')
      }
    })
 })
+
+function hidden_elm (stack,user) {
+  document.getElementById(stack).classList.add('hidden');
+  document.getElementById(user).classList.remove('hidden');
+}
+
 // --------------> end 
 

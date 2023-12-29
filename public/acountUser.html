@@ -207,7 +207,7 @@ main account user
   -->
   <div>
     <!-- --------- icon cheng post user -->
-     <div class="w-full h-10 relative flex justify-between items-center transition-all">
+     <div class="w-full h-10 relative flex justify-between items-center transition-all child:cursor-pointer">
         <div class="w-[50%] h-full flex justify-center items-center">
             <svg class="w-6 h-6 dark:text-white" data-id="stack" id="stack_icon">
                 <use href="#stack"></use>
@@ -224,10 +224,10 @@ main account user
          <!-- 
             main post user start
           -->
-        <div class="container mt-1">
+        <div class="container mt-2 max-h-300">
             <!-- ========== box stack  ====-->
-               <div class="w-full max-h-[400px] overflow-auto">
-                  <div class=" grid grid-rows-2 grid-cols-3 child:max-w-32  child:h-32 child:border">
+               <div id="box-stack" class="w-full max-h-[300px] overflow-auto">
+                  <div class=" grid grid-rows-2 grid-cols-3 child:max-w-32  child:h-32 child:border child:cursor-pointer">
                       <div>
                         <img  class="w-full h-full object-cover" src="./images/img_user_post/Rectangle (1).png" alt="">
                       </div>
@@ -256,8 +256,11 @@ main account user
                </div>
             <!-- ------------------------- -->
             <!-- ========== box user  =====-->
-               <div>
-
+               <div id="box-user" class="dark:text-white w-full max-h-[400px] overflow-auto hidden">
+                   <div class="pt-20 flex justify-center  flex-col items-center">
+                       <h2 class="text-2xl font-semibold">Photos of you</h2>
+                       <p class="text-center text-sm font-extralight">When people tag you in photos, they'll appear here.</p>
+                   </div>
                </div>
             <!-- ------------------------- -->
         </div>

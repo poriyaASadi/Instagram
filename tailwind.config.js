@@ -6,6 +6,9 @@ module.exports = {
     extend: {
       fontFamily:{
         "Inter-Black":"Inter Black",
+      },
+      colors:{
+        "search-color":"rgba(118, 118, 128, 0.12)"
       }
     },
   },
