@@ -9,7 +9,10 @@ module.exports = {
       },
       colors:{
         "search-color":"rgba(118, 118, 128, 0.12)"
-      }
+      },
+      boxShadow:{
+        "soft-bg":"6px 6px 12px #b8b9be, -6px -6px 12px #ffffff"
+      },
     },
   },
   plugins: [
