@@ -25,6 +25,15 @@
                    document.documentElement.classList.remove('dark')
                       }
                 </script>
+                <!-- ----- -->
+                <style>
+                         #particles-js {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        z-index: -10;
+      }
+                </style>
     </head>
 <body class="bg-white dark:bg-black w-full h-[100vh] overflow-hidden  relative">
    
@@ -74,7 +83,8 @@
 
 <!--  start code -->
 <!--  start  -->
-<div class="max-w-sm h-full mx-auto z-0 sm:hidden">
+<div class="max-w-sm h-full mx-auto z-0 sm:hidden relative">
+    <div id="particles-js" class="bg-black "></div> 
     <!-- 
     slid cover show acocount
  -->
@@ -275,5 +285,7 @@ main account user
 
 
 <script src="./js/user_acount/app.js"></script>
+<script src="./js/All-js-libresz/particles.js"></script>
+<script src="./js/All-js-libresz/app.js"></script>
 </body>
 </html>

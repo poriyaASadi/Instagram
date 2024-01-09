@@ -1,13 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@layer base {
-   @font-face{
-    font-family: "Inter Black";
-    src: url("../fonts/Inter-Black.ttf") format("ttf");
-    font-display: swap;
-  }
-}
+
 @layer components {
   /* رنگ اسکرول بار */
   ::-webkit-scrollbar {
@@ -38,7 +32,7 @@
   }
 
   .font-staus-bar {
-    @apply text-black dark: text-white;
+    @apply text-black dark:text-white
   }
 
   .live-box::after {
@@ -73,12 +67,8 @@
 
   .bg-acount_dialog {
     background: #606c88;
-    /*fallbackforoldbrowsers*/
-    background: -webkit-linear-gradient(to top, #3f4c6b, #606c88);
-    /*Chrome10-25,Safari5.1-6*/
-    background: linear-gradient(to top, #3f4c6b, #606c88);
-    /*W3C,IE10+/Edge,Firefox16+,Chrome26+,Opera12+,Safari7+*/
-    backface-visibility:
+    /*fallbackforoldbrowsers*/background: -webkit-linear-gradient(to top, #3f4c6b, #606c88);
+    /*Chrome10-25,Safari5.1-6*/background: linear-gradient(to top, #3f4c6b, #606c88);
   }
 
   .slid_show_dialog {
@@ -95,11 +85,17 @@
 
 
   .input_form_user {
-    background-color: yellow;
+    background-color: transparent;
+    padding: 0 .5rem;
+    border-radius: .5rem;
     margin-left: 1rem;
     outline: none;
     font-family: Georgia, 'Times New Roman', Times, serif;
-  }
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
 
   .select_form {
     padding: .5rem 1rem;

@@ -104,9 +104,9 @@ user_acount.addEventListener('click' , () => {
 })
 // -------------------------------
 // ========like_user start 
-like_user.addEventListener('click' , () => {
+// like_user.addEventListener('click' , () => {
   
-})
+// })
 // -------------------------------
 // ---------- Notification user alert show & hidden
 stack.forEach((item) => {
