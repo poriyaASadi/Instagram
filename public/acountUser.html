@@ -84,7 +84,7 @@
 <!--  start code -->
 <!--  start  -->
 <div class="max-w-sm h-full mx-auto z-0 sm:hidden relative">
-    <div id="particles-js" class="bg-black "></div> 
+    <div id="particles-js" class="dark:bg-black "></div> 
     <!-- 
     slid cover show acocount
  -->
@@ -128,11 +128,11 @@
            </div>
            <span class="w-full h-0 border flex my-1"></span>
            <div class="w-full h-8 flex justify-start items-center">
-            <span class="flex font-medium">new account 
+            <a  href="./login.html" class="flex font-medium">new account 
                 <svg class="w-5 h-5">
                     <use href="#plass"></use>
                 </svg>
-            </span>
+            </a>
            </div>
         </div>
      </div>
@@ -150,7 +150,7 @@ main account user
  <div class="p-3 border-b border-zinc-300 dark:border-zinc-500">
     <div class="flex justify-center items-center gap-x-5  mb-5">
         <!-- - -->
-        <div class="min-w-20 min-h-20 rounded-full border-2 border-zinc-500 
+        <div class="w-32 h-32 rounded-full border-2 border-zinc-500 
         p-[2px]">
             <img src="./images/face/65769a04f3b5bad56365e101c778a7c1.png" alt="" class="w-full rounded-full object-cover">
         </div>
@@ -172,11 +172,11 @@ main account user
     <!-- ====== -->
     <div class="leading-5 w-full child:dark:text-white">
         <h6 class="font-medium">Jacob West</h6>
-        <p class="max-w-[70%]">Digital goodies designer <a href="#" class="no-underline text-blue-400">@pixsellz</a> 
+        <p class="max-w-[70%] relative">Digital goodies designer <a href="#" class="no-underline text-blue-400" id="userId">@pixsellz</a> <span class="absolute bottom-12 right-0 border px-3 py-1 rounded-md bg-zinc-300 text-center text-sm text-zinc-500 userIDCopy-box hidden">copy</span>
             Everything is designed.</p>
     </div>
-    <div class="w-full text-center my-5 p-1 dark:text-white border border-zinc-400 rounded">
-        <a href="./EditProfile.html">Edit Profile</a>
+    <div class="w-full text-center my-5 p-1 dark:text-white border-2 border-zinc-600 dark:border-zinc-400 rounded">
+        <a href="./EditProfile.html" class="font-medium">Edit Profile</a>
     </div>
     <div>
         <ul class=" flex justify-center items-center flex-row-reverse gap-x-5 child:text-center child:text-sm child:font-medium child:dark:text-white">
@@ -287,5 +287,6 @@ main account user
 <script src="./js/user_acount/app.js"></script>
 <script src="./js/All-js-libresz/particles.js"></script>
 <script src="./js/All-js-libresz/app.js"></script>
+
 </body>
 </html>

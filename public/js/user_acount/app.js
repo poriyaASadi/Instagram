@@ -6,7 +6,8 @@ const form_show_dialog = $.getElementById('form_show_dialog')
 // ----------------
 let active_icon_branch = document.getElementById('active_icon_branch');
 let stack = document.querySelectorAll('#stack_icon');
-
+// ----------------
+const userIdCopy = document.getElementById('userId');
 
 // ---------- open dialog acocount user 
 
@@ -43,4 +44,14 @@ function hidden_elm (stack,user) {
 }
 
 // --------------> end 
+
+let num = userIdCopy.addEventListener('click' , (event) => {
+   let userId = event.target.text;
+   navigator.clipboard.writeText(userId);
+   let copyBoxShow = document.querySelector('.userIDCopy-box');
+   copyBoxShow.classList.remove('hidden');
+   setInterval(() => {
+    copyBoxShow.classList.add('hidden');
+   },1000);
+})
 

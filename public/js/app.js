@@ -43,11 +43,10 @@ back_comment_icon.forEach((item) => {
 })
 
 
-button_creat_post_comment.addEventListener('click' , () => {
+button_creat_post_comment.addEventListener('click' , (e) => {
   let valueInputComment = input_comment_post.value;
    creatPostComment(valueInputComment);
-   input_comment_post.value = ''
-   
+   input_comment_post.value = '' 
 });
 function creatPostComment (value_input) {
     mainComment.insertAdjacentHTML('afterend',`
@@ -63,6 +62,12 @@ function creatPostComment (value_input) {
     </div>`);
 
 };
+input_comment_post.addEventListener('keydown' , (e) => {
+   if (e.keyCode === 13) {
+    creatPostComment(input_comment_post.value);
+    input_comment_post.value = '';
+   }
+})
 // ------------------------------
 // =========== heart like post ;
 like_heart_post.forEach(function heart_like (item) {
@@ -99,9 +104,9 @@ text_more_post.forEach(text_post => {
 });
 // =========== text more post end =======
 
-user_acount.addEventListener('click' , () => {
-  this.window.location = 'acountUser.html';
-})
+// user_acount.addEventListener('click' , () => {
+//   this.window.location = 'acountUser.html';
+// })
 // -------------------------------
 // ========like_user start 
 // like_user.addEventListener('click' , () => {

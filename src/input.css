@@ -1,8 +1,10 @@
+@import  '../public/style.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer components {
+
   /* رنگ اسکرول بار */
   ::-webkit-scrollbar {
     width: 0;
@@ -20,6 +22,29 @@
     /* background: linear-gradient(rgba(226, 3, 55, 1), rgba(198, 1, 136, 1), rgba(119, 0, 195, 1)); */
     background: radial-gradient(rgba(0,0,0,0.15) 60%,transparent 0 ), radial-gradient(white 63%,transparent 0), linear-gradient(to top right,rgba(119, 0, 195, 1),rgba(226, 3, 55, 1));
   }
+  .befor-status-user::after,
+  .befor-status-user::before{
+    content: '';
+    width: .90rem;
+    height: .1rem;
+    background-color:#fff;
+    position: absolute;
+    right:10%;
+    border-radius: .5rem;
+    bottom: 30%;
+    z-index: 10;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+  .befor-status-user::after{
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
 
   .clip-path {
     clip-path: circle(42%);

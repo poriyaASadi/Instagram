@@ -11,7 +11,8 @@ module.exports = {
         "search-color":"rgba(118, 118, 128, 0.12)"
       },
       boxShadow:{
-        "soft-bg":"6px 6px 12px #b8b9be, -6px -6px 12px #ffffff"
+        "soft-bg":"6px 6px 12px #b8b9be, -6px -6px 12px #ffffff",
+        "input-Sh":"0px 0px 15px -3px",
       },
     },
   },
