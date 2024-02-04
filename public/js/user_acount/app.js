@@ -49,9 +49,9 @@ let num = userIdCopy.addEventListener('click' , (event) => {
    let userId = event.target.text;
    navigator.clipboard.writeText(userId);
    let copyBoxShow = document.querySelector('.userIDCopy-box');
-   copyBoxShow.classList.remove('hidden');
+   copyBoxShow.classList.remove('-right-16');
    setInterval(() => {
-    copyBoxShow.classList.add('hidden');
-   },1000);
+    copyBoxShow.classList.add('-right-16');
+   },2500);
 })
 

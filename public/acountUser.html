@@ -83,8 +83,9 @@
 
 <!--  start code -->
 <!--  start  -->
-<div class="max-w-sm h-full mx-auto z-0 sm:hidden relative">
+<div class="max-w-sm h-[100vh] overflow-hidden overflow-y-scroll mx-auto z-0 sm:hidden relative">
     <div id="particles-js" class="dark:bg-black "></div> 
+    <span class="userIDCopy-box transition-transform -right-16">copy</span>
     <!-- 
     slid cover show acocount
  -->
@@ -150,30 +151,30 @@ main account user
  <div class="p-3 border-b border-zinc-300 dark:border-zinc-500">
     <div class="flex justify-center items-center gap-x-5  mb-5">
         <!-- - -->
-        <div class="w-32 h-32 rounded-full border-2 border-zinc-500 
-        p-[2px]">
+        <div class=" w-20 h-20 md2:w-24 md2:h-24 rounded-full border-2 border-zinc-300 
+        p-[5px]">
             <img src="./images/face/65769a04f3b5bad56365e101c778a7c1.png" alt="" class="w-full rounded-full object-cover">
         </div>
         <!-- - -->
         <div class="child:dark:text-white">
-            <ul class="flex gap-x-6 child:font-medium text-base">
-                <li class="flex flex-col justify-center items-center">54
+            <ul class="flex gap-x-5  md2:gap-x-6 child:font-medium text-base">
+                <li class="flex flex-col justify-center items-center sm2:text-sm md2:text-lg">54
                     <span class="text-sm">post</span>
                 </li>
-                <li class="flex flex-col justify-center items-center">834
+                <li class="flex flex-col justify-center items-center sm2:text-sm md2:text-lg">834
                     <span class="text-sm">followers</span>
                 </li>
-                <li class="flex flex-col justify-center items-center">165
+                <li class="flex flex-col justify-center items-center sm2:text-sm md2:text-lg">165
                     <span class="text-sm">following</span>
                 </li>
             </ul>
         </div>
     </div>
     <!-- ====== -->
-    <div class="leading-5 w-full child:dark:text-white">
-        <h6 class="font-medium">Jacob West</h6>
-        <p class="max-w-[70%] relative">Digital goodies designer <a href="#" class="no-underline text-blue-400" id="userId">@pixsellz</a> <span class="absolute bottom-12 right-0 border px-3 py-1 rounded-md bg-zinc-300 text-center text-sm text-zinc-500 userIDCopy-box hidden">copy</span>
-            Everything is designed.</p>
+    <div class="leading-5 w-full">
+        <h6 class="font-medium dark:text-zinc-200">Jacob West 🖥️</h6>
+        <p class="relative text-sm  dark:text-zinc-300">Digital goodies designer <a href="#" class="no-underline text-blue-400 font-medium" id="userId">@pixsellz</a>
+            Everything is designed. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, explicabo!</p>
     </div>
     <div class="w-full text-center my-5 p-1 dark:text-white border-2 border-zinc-600 dark:border-zinc-400 rounded">
         <a href="./EditProfile.html" class="font-medium">Edit Profile</a>
@@ -199,7 +200,7 @@ main account user
                 <span>about me</span>
             </li>
             <li>
-                <div class="w-14 h-14 rounded-full flex justify-center  border dark:border-zinc-500 cursor-pointer items-center mb-2">
+                <div class="w-14 h-14 rounded-full flex justify-center  border-2 dark:border-zinc-500 cursor-pointer items-center mb-2">
                     <svg class="w-6 h-6">
                         <use href="#plass"></use>
                     </svg>
@@ -215,7 +216,7 @@ main account user
   ======> post account user
 
   -->
-  <div>
+  <div class="overflow-hidden">
     <!-- --------- icon cheng post user -->
      <div class="w-full h-10 relative flex justify-between items-center transition-all child:cursor-pointer">
         <div class="w-[50%] h-full flex justify-center items-center">
@@ -234,34 +235,26 @@ main account user
          <!-- 
             main post user start
           -->
-        <div class="container mt-2 max-h-300">
+        <div class="mt-2 max-h-300 ">
             <!-- ========== box stack  ====-->
-               <div id="box-stack" class="w-full max-h-[300px] overflow-auto">
-                  <div class=" grid grid-rows-2 grid-cols-3 child:max-w-32  child:h-32 child:border child:cursor-pointer">
-                      <div>
-                        <img  class="w-full h-full object-cover" src="./images/img_user_post/Rectangle (1).png" alt="">
-                      </div>
-                      <div>
-                        <img  class="w-full h-full object-cover" src="./images/img_user_post/Rectangle (2).png" alt="">
-                      </div>
-                      <div>
-                        <img  class="w-full h-full object-cover" src="./images/img_user_post/Rectangle (3).png" alt="">
-                      </div>
-                      <div>
-                        <img  class="w-full h-full object-cover" src="./images/img_user_post/Rectangle (4).png" alt="">
-                      </div>
-                      <div>
-                        <img  class="w-full h-full object-cover" src="./images/img_user_post/Rectangle (5).png" alt="">
-                      </div>
-                      <div>
-                        <img class="w-full h-full object-cover"  src="./images/img_user_post/Rectangle (6).png" alt="">
-                      </div>
-                      <div>
-                        <img  class="w-full h-full object-cover" src="./images/img_user_post/Rectangle (7).png" alt="">
-                      </div>
-                      <div>
-                        <img  class="w-full h-full object-cover" src="./images/img_user_post/Rectangle (8).png" alt="">
-                      </div>
+               <div id="box-stack" class="">
+                  <div class=" acountUserSlider-Post w-full h-auto">
+                         <!-- 
+
+                          -->
+                          <div><img src="./images/img_user_post/1.jpeg" alt="" class="w-full object-cover h-full"></div>
+                          <div><img src="./images/img_user_post/2.jpg" alt="" class="w-full object-cover h-full"></div>
+                          <div><img src="./images/img_user_post/3.jpg" alt="" class="w-full object-cover h-full"></div>
+                          <div><img src="./images/img_user_post/4.jpg" alt="" class="w-full object-cover h-full"></div>
+                          <div><img src="./images/img_user_post/5.jpg" alt="" class="w-full object-cover h-full"></div>
+                          <div><img src="./images/img_user_post/6.png" alt="" class="w-full object-cover h-full"></div>
+                          <div><img src="./images/img_user_post/7.jpg" alt="" class="w-full object-cover h-full"></div>
+                          <div><img src="./images/img_user_post/8.jpg" alt="" class="w-full object-cover h-full"></div>
+                          <div><img src="./images/img_user_post/9.jpg" alt="" class="w-full object-cover h-full"></div>
+                          <div><img src="./images/img_user_post/10.jpg" alt="" class="w-full object-cover h-full"></div>
+                          <!-- 
+
+                           -->
                   </div>
                </div>
             <!-- ------------------------- -->

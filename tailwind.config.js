@@ -3,6 +3,10 @@ module.exports = {
   content: ["./public/**/*.{html,js}"],
   darkMode: "class",
   theme: {
+    screens:{
+     'sm2': '300px',
+     'md2':'400px'
+    },
     extend: {
       fontFamily:{
         "Inter-Black":"Inter Black",

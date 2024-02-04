@@ -1,4 +1,4 @@
-@import  '../public/style.css';
+@import  '../public/css/style.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -27,7 +27,6 @@
     content: '';
     width: .90rem;
     height: .1rem;
-    background-color:#fff;
     position: absolute;
     right:10%;
     border-radius: .5rem;
@@ -63,25 +62,26 @@
   .live-box::after {
     content: 'live';
     position: absolute;
-    left: 0;
+    left: -5px;
     top: 60%;
     right: 0;
     width: 26px;
     height: 16px;
-    background: linear-gradient(rgba(201, 0, 131, 1), rgba(210, 36, 99, 1), rgba(225, 0, 56, 1));
-    font-size: smaller;
+    background-color:rgba(201, 0, 131, 1) ;
+    /*background: linear-gradient(rgba(201, 0, 131, 1), rgba(210, 36, 99, 1), rgba(225, 0, 56, 1));
+    */font-size:10px;
     display: flex;
     padding: .2rem .5rem;
     justify-content: center;
     align-items: center;
-    border: 2px solid #fff;
-    border-radius: .3rem;
-    -webkit-border-radius: .3rem;
-    -moz-border-radius: .3rem;
-    -ms-border-radius: .3rem;
-    -o-border-radius: .3rem;
+    border: 1px solid #0e0e0e6c;
+    border-radius: .2rem;
+    -webkit-border-radius: .2rem;
+    -moz-border-radius: .2rem;
+    -ms-border-radius: .2rem;
+    -o-border-radius: .2rem;
     color: #fff;
-  }
+}
 
   /* ---------- active image */
   .active_image {

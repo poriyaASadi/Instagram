@@ -1,33 +1,10 @@
 // all let && const 
 const $ = document;
-/*
-   === ---$--- ===
-*/
-// comment main post user / html icon comment
-let comment_icon_user_main = $.querySelectorAll('#comment_icon');
-let back_comment_icon = $.querySelectorAll('#back_icon_comment');
-// --- input comment post 
-let input_comment_post = $.getElementById('input_comment_post');
-let button_creat_post_comment = $.getElementById('button_creat_post_comment');
-let mainComment = $.getElementById('main_comment');
-// -------------------------------------------
-//  -------- heart like 
-let like_heart_post = $.querySelectorAll('#like');
-// ----- icon save post 
-let save_post_icon = $.querySelector('#save_post_icon');
-// ----- text more post ---> p 
-let text_more_post = $.querySelectorAll('#text_more_post');
-// ----========== user acount location
-let user_acount = $.getElementById('user_acount');
-// ----------------- user likes
-let like_user = $.getElementById('like_user');
-// ----------------- Notification user alert show & hidden
-let active_icon_branch = document.querySelector('#active_icon_branch') 
-let stack = document.querySelectorAll('#stack_icon');
-// ---------------- openBlurAlert
-let openBlurAlert = $.getElementById('openBlurAlert');
-let prantIcon_ShowAlert = $.getElementById('prantIcon_ShowAlert');
 
+import * as name from './Var-all.js';
+
+import { mainComment , comment_icon_user_main , back_comment_icon , input_comment_post , button_creat_post_comment  , likePostValue 
+, like_heart_post , save_post_icon , text_more_post , active_icon_branch , stack , openBlurAlert , prantIcon_ShowAlert } from './Var-all.js';
 
 //  ----- icon comment open chat 
 comment_icon_user_main.forEach((item) => {
@@ -70,14 +47,42 @@ input_comment_post.addEventListener('keydown' , (e) => {
 })
 // ------------------------------
 // =========== heart like post ;
+
+let likePost = Math.floor(Math.random() * 1000);
+function LikeUserPost () {
+
+
+  this.LikeAdder = function () {
+    likePost += 1  
+    this.pushValue();
+ }
+
+ this.LikeRemover = function () {
+  likePost -= 1  
+   this.pushValue();
+ }
+ 
+ this.pushValue = function () {
+  likePostValue.forEach(item => {
+    item.innerHTML = likePost;
+   })
+ }
+
+ 
+}
+
+let likeUserGenariat = new LikeUserPost();
+
 like_heart_post.forEach(function heart_like (item) {
     let changValue = false
     item.addEventListener('click' ,() => {  
     if (!changValue) {
       item.style.color = 'red';
-      changValue = true;
+      changValue = true; 
+      likeUserGenariat.LikeAdder();
     }
     else{
+        likeUserGenariat.LikeRemover();
         changValue = false;
         if (document.documentElement.classList == 'dark') {
           item.style.color = '#fff'
@@ -87,6 +92,7 @@ like_heart_post.forEach(function heart_like (item) {
     }
   })
 })
+
 // =========== end ====
 // icon save post <=========
 save_post_icon.addEventListener('click' , function () {
@@ -134,6 +140,7 @@ function hidden_elm (stack,user) {
 let falseValue = false
 
 window.addEventListener('load' ,  () => {
+  likeUserGenariat.pushValue();
  prantIcon_ShowAlert.firstElementChild.lastElementChild.firstElementChild.setAttribute('href' , '#bell-alert')
  $.getElementById('animation_alert').classList.remove('hidden');
  })
@@ -158,3 +165,4 @@ prantIcon_ShowAlert.addEventListener('click' , () => {
 
 // -----------------------------
 // =============================
+

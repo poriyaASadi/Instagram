@@ -116,7 +116,7 @@
         id="activityfeed"
         fill="none"
         viewBox="0 0 24 24"
-        stroke-width="1.5"
+        stroke-width="2.5"
         stroke="currentColor"
       >
         <path
@@ -125,6 +125,7 @@
           d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
         />
       </symbol>
+      <!-- <symbol id="activityfeed" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M923 283.6a260.04 260.04 0 0 0-56.9-82.8a264.4 264.4 0 0 0-84-55.5A265.34 265.34 0 0 0 679.7 125c-49.3 0-97.4 13.5-139.2 39c-10 6.1-19.5 12.8-28.5 20.1c-9-7.3-18.5-14-28.5-20.1c-41.8-25.5-89.9-39-139.2-39c-35.5 0-69.9 6.8-102.4 20.3c-31.4 13-59.7 31.7-84 55.5a258.44 258.44 0 0 0-56.9 82.8c-13.9 32.3-21 66.6-21 101.9c0 33.3 6.8 68 20.3 103.3c11.3 29.5 27.5 60.1 48.2 91c32.8 48.9 77.9 99.9 133.9 151.6c92.8 85.7 184.7 144.9 188.6 147.3l23.7 15.2c10.5 6.7 24 6.7 34.5 0l23.7-15.2c3.9-2.5 95.7-61.6 188.6-147.3c56-51.7 101.1-102.7 133.9-151.6c20.7-30.9 37-61.5 48.2-91c13.5-35.3 20.3-70 20.3-103.3c.1-35.3-7-69.6-20.9-101.9"></path></symbol> -->
       <symbol
         id="massege"
         xmlns="http://www.w3.org/2000/svg"
@@ -171,7 +172,7 @@
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
-        stroke-width="1.5"
+        stroke-width="2.5"
         stroke="currentColor"
       >
         <path
@@ -185,7 +186,7 @@
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
-        stroke-width="1.5"
+        stroke-width="2.5"
         stroke="currentColor"
       >
         <path
@@ -199,7 +200,7 @@
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
-        stroke-width="1.5"
+        stroke-width="2.5"
         stroke="currentColor"
       >
         <path
@@ -373,9 +374,7 @@ start project
 start main project ====> for mobile 
 
  -->
-      <main
-        class="w-full h-full bg-white dark:bg-transparent overscroll-y-auto overflow-y-scroll"
-      >
+      <main class="w-full h-full bg-white dark:bg-transparent overscroll-y-auto overflow-y-scroll">
         <!-- slider status ===== start -->
         <section
           class="overflow-x-hidden overscroll-x-contain border-b dark:border-none p-4 w-full auto-cols-max"
@@ -384,7 +383,7 @@ start main project ====> for mobile
           <div class="grid grid-flow-col gap-4 child:cursor-pointer">
               <!-- content -->
               <div class="grid m-0 text-center relative hover:scale-110">
-                <div class="w-14 h-14 rounded-full befor-status-user">
+                <div class="w-14 h-14 rounded-full befor-status-user after:bg-zinc-600 before:bg-zinc-600 after:dark:bg-zinc-300 before:dark:bg-zinc-300">
                   <img
                     src="./images/027410390877dbe19c213b2e6ee60b75.png"
                     alt="statusUser"
@@ -561,11 +560,7 @@ start main project ====> for mobile
                   <div class="swiper-wrapper">
                     <!-- Slides -->
                     <div class="swiper-slide">
-                      <img
-                        src="./images/face/65769a04f3b5bad56365e101c778a7c1.png"
-                        class="active_image"
-                        alt=""
-                      />
+                     <video src=""></video>
                     </div>
                     <div class="swiper-slide">
                       <img
@@ -593,7 +588,7 @@ start main project ====> for mobile
                     class="flex justify-center items-center child:dark:text-white child:w-6 child:h-6 gap-x-2"
                   >
                     <!-- ------ icon comment -->
-                    <svg id="like">
+                    <svg id="like" class="">
                       <use href="#activityfeed"></use>
                     </svg>
                     <svg id="comment_icon">
@@ -620,9 +615,10 @@ start main project ====> for mobile
             about post user
             -->
                 <div
-                  class="w-full px-[15px] tracking-[0.07px] my-2 child:dark:text-white"
+                  class="w-full px-[10px] tracking-[0.07px] my-1"
                 >
-                  <div class="flex justify-start items-center gap-x-2">
+                <p class="text-zinc-500 dark:text-zinc-200 text-base pb-1 font-medium "><span id="likePostValue" class="text-sm mr-1">100</span>likes</p>
+                  <div class="flex justify-start items-center gap-x-2 child:dark:text-white">
                     <img
                       src="./images/48f1801e657b098f5792c61365f65c75.png"
                       class="w-5 h-5 rounded-full"
@@ -632,7 +628,7 @@ start main project ====> for mobile
                       >Liked by craig_love and 44,686 others</span
                     >
                   </div>
-                  <div class="text-sm mt-1 flex justify-end">
+                  <div class="text-sm mt-1 flex justify-end child:dark:text-white">
                     <p class="line-clamp-2" id="text_more_post">
                       <span class="font-medium">joshua_I </span>The game in
                       Japan was amazing and I want to share some photos Lorem
@@ -646,268 +642,139 @@ start main project ====> for mobile
                 <!-- ----- slider main end -->
               </div>
             </div>
-            <!-- -------------- -->
-            <!-- ====post==== -->
-            <div class="border-b border-zinc-200 dark:border-zinc-600 mb-2">
-              <!-- -------===> box - user optshpion -->
-              <div class="w-full h-full px-1">
-                <!-- ------ box titile -->
-                <div
-                  class="h-full overflow-hidden flex justify-between items-center"
-                >
-                  <!-- --- img user -->
-                  <div class="flex items-center">
-                    <div class="w-8 h-8 rounded-full">
-                      <img
-                        src="./images/2ccd27fc12336a7a8e13d5879814b13c.png"
-                        class="w-full h-full object-cover rounded-full"
-                        alt="img-user"
-                      />
+            <!-- -------------- -->  
+              <!-- ====post==== -->
+              <div class="border-b border-zinc-200 dark:border-zinc-600 mb-2">
+                <!-- -------===> box - user optshpion -->
+                <div class="w-full h-full px-1">
+                  <!-- ------ box titile -->
+                  <div
+                    class="h-full overflow-hidden flex justify-between items-center"
+                  >
+                    <!-- --- img user -->
+                    <div class="flex items-center">
+                      <div class="w-8 h-8 rounded-full">
+                        <img
+                          src="./images/2ccd27fc12336a7a8e13d5879814b13c.png"
+                          class="w-full h-full object-cover rounded-full"
+                          alt="img-user"
+                        />
+                      </div>
+                      <div
+                        class="pl-[10px] child:text-sm leading-none tracking-tighter dark:text-white"
+                      >
+                        <p class="font-medium cursor-pointer">joshua_I</p>
+                        <p class="font-normal">tokyo, Japan</p>
+                      </div>
                     </div>
+                    <!-- --- img user end -->
+                    <!-- ----- ... -->
                     <div
-                      class="pl-[10px] child:text-sm leading-none tracking-tighter dark:text-white"
+                      class="flex justify-center items-center p-2 cursor-pointer"
                     >
-                      <p class="font-medium cursor-pointer">joshua_I</p>
-                      <p class="font-normal">tokyo, Japan</p>
+                      <svg class="w-6 h-6 dark:text-white cursor-default">
+                        <use href="#more-icon"></use>
+                      </svg>
                     </div>
+                    <!-- ----- ... -->
                   </div>
-                  <!-- --- img user end -->
-                  <!-- ----- ... -->
+                </div>
+                <!-- ------===> box - user optshpion end  -->
+                <div class="my-2">
+                  <!-- Slider main container -->
+                  <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide">
+                        <img
+                          src="./images/face/65769a04f3b5bad56365e101c778a7c1.png"
+                          class="active_image"
+                          alt=""
+                        />
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="./images/face/65769a04f3b5bad56365e101c778a7c1.png"
+                          class="active_image"
+                          alt=""
+                        />
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="./images/face/ce7e32c5013518aa6e932c543a55a3c9 - Copy.png"
+                          class="active_image"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <!-- ------------------ -->
+                    <div class="swiper-pagination"></div>
+                  </div>
+                  <!-- nav bar main option -->
                   <div
-                    class="flex justify-center items-center p-2 cursor-pointer"
+                    class="w-full h-8 relative flex justify-between mt-3 items-center px-1"
                   >
-                    <svg class="w-6 h-6 dark:text-white cursor-default">
-                      <use href="#more-icon"></use>
-                    </svg>
-                  </div>
-                  <!-- ----- ... -->
-                </div>
-              </div>
-              <!-- ------===> box - user optshpion end  -->
-              <div class="my-2">
-                <!-- Slider main container -->
-                <div class="swiper">
-                  <!-- Additional required wrapper -->
-                  <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                      <img
-                        src="./images/face/5904c9ce3cfb08e4c032b5a473d5648d.png"
-                        class="active_image"
-                        alt=""
-                      />
-                    </div>
-                    <div class="swiper-slide">
-                      <img
-                        src="./images/face/65769a04f3b5bad56365e101c778a7c1.png"
-                        class="active_image"
-                        alt=""
-                      />
-                    </div>
-                    <div class="swiper-slide">
-                      <img
-                        src="./images/face/ce7e32c5013518aa6e932c543a55a3c9 - Copy.png"
-                        class="active_image"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                  <!-- ------------------ -->
-                  <div class="swiper-pagination"></div>
-                </div>
-                <!-- nav bar main option -->
-                <div
-                  class="w-full h-8 relative flex justify-between mt-3 items-center px-1"
-                >
-                  <div
-                    class="flex justify-center items-center child:dark:text-white child:w-6 child:h-6 gap-x-2"
-                  >
-                    <!-- ------ icon comment -->
-                    <svg id="like">
-                      <use href="#activityfeed"></use>
-                    </svg>
-                    <svg id="comment_icon">
-                      <use href="#comment"></use>
-                    </svg>
-                    <svg>
-                      <use href="#massege"></use>
-                    </svg>
-                  </div>
-                  <!-- ------- icon comment end -->
-                  <!-- -----------swiper pagination -->
-                  <!-- ------------- swiper pagination end -->
-                  <!-- ---------- save comment -->
-                  <div
-                    class="child:w-6 child:h-6 flex text-black justify-center items-center"
-                  >
-                    <svg class="text-black dark:text-white" id="save_post_icon">
-                      <use href="#save"></use>
-                    </svg>
-                  </div>
-                </div>
-                <!-- ---------- comment for post main user -->
-                <!-- 
-        about post user
-        -->
-                <div
-                  class="w-full px-[15px] tracking-[0.07px] my-2 child:dark:text-white"
-                >
-                  <div class="flex justify-start items-center gap-x-2">
-                    <img
-                      src="./images/48f1801e657b098f5792c61365f65c75.png"
-                      class="w-5 h-5 rounded-full"
-                      alt="post-user"
-                    />
-                    <span class="inline-block text-sm"
-                      >Liked by craig_love and 44,686 others</span
-                    >
-                  </div>
-                  <div class="text-sm mt-1 flex justify-end">
-                    <p class="line-clamp-2" id="text_more_post">
-                      <span class="font-medium">joshua_I </span>The game in
-                      Japan was amazing and I want to share some photos Lorem
-                      ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                      ab quae nostrum non, voluptatibus adipisci nobis sunt
-                      possimus? Nulla, fugiat!
-                    </p>
-                  </div>
-                  <!-- ------------------------------ commnet end -->
-                </div>
-                <!-- ----- slider main end -->
-              </div>
-            </div>
-            <!-- -------------- -->
-            <!-- ====post==== -->
-            <div class="border-b border-zinc-200 dark:border-zinc-600 mb-2">
-              <!-- -------===> box - user optshpion -->
-              <div class="w-full h-full px-1">
-                <!-- ------ box titile -->
-                <div
-                  class="h-full overflow-hidden flex justify-between items-center"
-                >
-                  <!-- --- img user -->
-                  <div class="flex items-center">
-                    <div class="w-8 h-8 rounded-full">
-                      <img
-                        src="./images/2ccd27fc12336a7a8e13d5879814b13c.png"
-                        class="w-full h-full object-cover rounded-full"
-                        alt="img-user"
-                      />
-                    </div>
                     <div
-                      class="pl-[10px] child:text-sm leading-none tracking-tighter dark:text-white"
+                      class="flex justify-center items-center child:dark:text-white child:w-6 child:h-6 gap-x-2"
                     >
-                      <p class="font-medium cursor-pointer">joshua_I</p>
-                      <p class="font-normal">tokyo, Japan</p>
+                      <!-- ------ icon comment -->
+                      <svg id="like" class="">
+                        <use href="#activityfeed"></use>
+                      </svg>
+                      <svg id="comment_icon">
+                        <use href="#comment"></use>
+                      </svg>
+                      <svg>
+                        <use href="#massege"></use>
+                      </svg>
+                    </div>
+                    <!-- ------- icon comment end -->
+                    <!-- -----------swiper pagination -->
+                    <!-- ------------- swiper pagination end -->
+                    <!-- ---------- save comment -->
+                    <div
+                      class="child:w-6 child:h-6 flex text-black justify-center items-center"
+                    >
+                      <svg class="text-black dark:text-white" id="save_post_icon">
+                        <use href="#save"></use>
+                      </svg>
                     </div>
                   </div>
-                  <!-- --- img user end -->
-                  <!-- ----- ... -->
+                  <!-- ---------- comment for post main user -->
+                  <!-- 
+              about post user
+              -->
                   <div
-                    class="flex justify-center items-center p-2 cursor-pointer"
+                    class="w-full px-[10px] tracking-[0.07px] my-1"
                   >
-                    <svg class="w-6 h-6 dark:text-white cursor-default">
-                      <use href="#more-icon"></use>
-                    </svg>
+                  <p class="text-zinc-500 dark:text-zinc-200 text-base pb-1 font-medium "><span id="likePostValue" class="text-sm mr-1">100</span>likes</p>
+                    <div class="flex justify-start items-center gap-x-2 child:dark:text-white">
+                      <img
+                        src="./images/48f1801e657b098f5792c61365f65c75.png"
+                        class="w-5 h-5 rounded-full"
+                        alt="post-user"
+                      />
+                      <span class="inline-block text-sm"
+                        >Liked by craig_love and 44,686 others</span
+                      >
+                    </div>
+                    <div class="text-sm mt-1 flex justify-end child:dark:text-white">
+                      <p class="line-clamp-2" id="text_more_post">
+                        <span class="font-medium">joshua_I </span>The game in
+                        Japan was amazing and I want to share some photos Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                        ab quae nostrum non, voluptatibus adipisci nobis sunt
+                        possimus? Nulla, fugiat!
+                      </p>
+                    </div>
+                    <!-- ------------------------------ commnet end -->
                   </div>
-                  <!-- ----- ... -->
+                  <!-- ----- slider main end -->
                 </div>
               </div>
-              <!-- ------===> box - user optshpion end  -->
-              <div class="my-2">
-                <!-- Slider main container -->
-                <div class="swiper">
-                  <!-- Additional required wrapper -->
-                  <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                      <img
-                        src="./images/face/ce7e32c5013518aa6e932c543a55a3c9 - Copy.png"
-                        class="active_image"
-                        alt=""
-                      />
-                    </div>
-                    <div class="swiper-slide">
-                      <img
-                        src="./images/face/65769a04f3b5bad56365e101c778a7c1.png"
-                        class="active_image"
-                        alt=""
-                      />
-                    </div>
-                    <div class="swiper-slide">
-                      <img
-                        src="./images/face/ce7e32c5013518aa6e932c543a55a3c9 - Copy.png"
-                        class="active_image"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                  <!-- ------------------ -->
-                  <div class="swiper-pagination"></div>
-                </div>
-                <!-- nav bar main option -->
-                <div
-                  class="w-full h-8 relative flex justify-between mt-3 items-center px-1"
-                >
-                  <div
-                    class="flex justify-center items-center child:dark:text-white child:w-6 child:h-6 gap-x-2"
-                  >
-                    <!-- ------ icon comment -->
-                    <svg id="like">
-                      <use href="#activityfeed"></use>
-                    </svg>
-                    <svg id="comment_icon">
-                      <use href="#comment"></use>
-                    </svg>
-                    <svg>
-                      <use href="#massege"></use>
-                    </svg>
-                  </div>
-                  <!-- ------- icon comment end -->
-                  <!-- -----------swiper pagination -->
-                  <!-- ------------- swiper pagination end -->
-                  <!-- ---------- save comment -->
-                  <div
-                    class="child:w-6 child:h-6 flex text-black justify-center items-center"
-                  >
-                    <svg class="text-black dark:text-white" id="save_post_icon">
-                      <use href="#save"></use>
-                    </svg>
-                  </div>
-                </div>
-                <!-- ---------- comment for post main user -->
-                <!-- 
-        about post user
-        -->
-                <div
-                  class="w-full px-[15px] tracking-[0.07px] my-2 child:dark:text-white"
-                >
-                  <div class="flex justify-start items-center gap-x-2">
-                    <img
-                      src="./images/48f1801e657b098f5792c61365f65c75.png"
-                      class="w-5 h-5 rounded-full"
-                      alt="post-user"
-                    />
-                    <span class="inline-block text-sm"
-                      >Liked by craig_love and 44,686 others</span
-                    >
-                  </div>
-                  <div class="text-sm mt-1 flex justify-end">
-                    <p class="line-clamp-2" id="text_more_post">
-                      <span class="font-medium">joshua_I </span>The game in
-                      Japan was amazing and I want to share some photos Lorem
-                      ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                      ab quae nostrum non, voluptatibus adipisci nobis sunt
-                      possimus? Nulla, fugiat!
-                    </p>
-                  </div>
-                  <!-- ------------------------------ commnet end -->
-                </div>
-                <!-- ----- slider main end -->
-              </div>
-            </div>
-            <!-- -------------- -->
-            <!-- ====post==== -->
+              <!-- -------------- --> 
+                <!-- ====post==== -->
             <div class="border-b border-zinc-200 dark:border-zinc-600 mb-2">
               <!-- -------===> box - user optshpion -->
               <div class="w-full h-full px-1">
@@ -983,7 +850,7 @@ start main project ====> for mobile
                     class="flex justify-center items-center child:dark:text-white child:w-6 child:h-6 gap-x-2"
                   >
                     <!-- ------ icon comment -->
-                    <svg id="like">
+                    <svg id="like" class="">
                       <use href="#activityfeed"></use>
                     </svg>
                     <svg id="comment_icon">
@@ -1007,12 +874,13 @@ start main project ====> for mobile
                 </div>
                 <!-- ---------- comment for post main user -->
                 <!-- 
-        about post user
-        -->
+            about post user
+            -->
                 <div
-                  class="w-full px-[15px] tracking-[0.07px] my-2 child:dark:text-white"
+                  class="w-full px-[10px] tracking-[0.07px] my-1"
                 >
-                  <div class="flex justify-start items-center gap-x-2">
+                <p class="text-zinc-500 dark:text-zinc-200 text-base pb-1 font-medium "><span id="likePostValue" class="text-sm mr-1">100</span>likes</p>
+                  <div class="flex justify-start items-center gap-x-2 child:dark:text-white">
                     <img
                       src="./images/48f1801e657b098f5792c61365f65c75.png"
                       class="w-5 h-5 rounded-full"
@@ -1022,7 +890,7 @@ start main project ====> for mobile
                       >Liked by craig_love and 44,686 others</span
                     >
                   </div>
-                  <div class="text-sm mt-1 flex justify-end">
+                  <div class="text-sm mt-1 flex justify-end child:dark:text-white">
                     <p class="line-clamp-2" id="text_more_post">
                       <span class="font-medium">joshua_I </span>The game in
                       Japan was amazing and I want to share some photos Lorem
@@ -1036,8 +904,139 @@ start main project ====> for mobile
                 <!-- ----- slider main end -->
               </div>
             </div>
-            <!-- -------------- -->
-            <!-- ====post==== -->
+            <!-- -------------- --> 
+              <!-- ====post==== -->
+              <div class="border-b border-zinc-200 dark:border-zinc-600 mb-2">
+                <!-- -------===> box - user optshpion -->
+                <div class="w-full h-full px-1">
+                  <!-- ------ box titile -->
+                  <div
+                    class="h-full overflow-hidden flex justify-between items-center"
+                  >
+                    <!-- --- img user -->
+                    <div class="flex items-center">
+                      <div class="w-8 h-8 rounded-full">
+                        <img
+                          src="./images/2ccd27fc12336a7a8e13d5879814b13c.png"
+                          class="w-full h-full object-cover rounded-full"
+                          alt="img-user"
+                        />
+                      </div>
+                      <div
+                        class="pl-[10px] child:text-sm leading-none tracking-tighter dark:text-white"
+                      >
+                        <p class="font-medium cursor-pointer">joshua_I</p>
+                        <p class="font-normal">tokyo, Japan</p>
+                      </div>
+                    </div>
+                    <!-- --- img user end -->
+                    <!-- ----- ... -->
+                    <div
+                      class="flex justify-center items-center p-2 cursor-pointer"
+                    >
+                      <svg class="w-6 h-6 dark:text-white cursor-default">
+                        <use href="#more-icon"></use>
+                      </svg>
+                    </div>
+                    <!-- ----- ... -->
+                  </div>
+                </div>
+                <!-- ------===> box - user optshpion end  -->
+                <div class="my-2">
+                  <!-- Slider main container -->
+                  <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide">
+                        <img
+                          src="./images/face/65769a04f3b5bad56365e101c778a7c1.png"
+                          class="active_image"
+                          alt=""
+                        />
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="./images/face/65769a04f3b5bad56365e101c778a7c1.png"
+                          class="active_image"
+                          alt=""
+                        />
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="./images/face/ce7e32c5013518aa6e932c543a55a3c9 - Copy.png"
+                          class="active_image"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <!-- ------------------ -->
+                    <div class="swiper-pagination"></div>
+                  </div>
+                  <!-- nav bar main option -->
+                  <div
+                    class="w-full h-8 relative flex justify-between mt-3 items-center px-1"
+                  >
+                    <div
+                      class="flex justify-center items-center child:dark:text-white child:w-6 child:h-6 gap-x-2"
+                    >
+                      <!-- ------ icon comment -->
+                      <svg id="like" class="">
+                        <use href="#activityfeed"></use>
+                      </svg>
+                      <svg id="comment_icon">
+                        <use href="#comment"></use>
+                      </svg>
+                      <svg>
+                        <use href="#massege"></use>
+                      </svg>
+                    </div>
+                    <!-- ------- icon comment end -->
+                    <!-- -----------swiper pagination -->
+                    <!-- ------------- swiper pagination end -->
+                    <!-- ---------- save comment -->
+                    <div
+                      class="child:w-6 child:h-6 flex text-black justify-center items-center"
+                    >
+                      <svg class="text-black dark:text-white" id="save_post_icon">
+                        <use href="#save"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <!-- ---------- comment for post main user -->
+                  <!-- 
+              about post user
+              -->
+                  <div
+                    class="w-full px-[10px] tracking-[0.07px] my-1"
+                  >
+                  <p class="text-zinc-500 dark:text-zinc-200 text-base pb-1 font-medium "><span id="likePostValue" class="text-sm mr-1">100</span>likes</p>
+                    <div class="flex justify-start items-center gap-x-2 child:dark:text-white">
+                      <img
+                        src="./images/48f1801e657b098f5792c61365f65c75.png"
+                        class="w-5 h-5 rounded-full"
+                        alt="post-user"
+                      />
+                      <span class="inline-block text-sm"
+                        >Liked by craig_love and 44,686 others</span
+                      >
+                    </div>
+                    <div class="text-sm mt-1 flex justify-end child:dark:text-white">
+                      <p class="line-clamp-2" id="text_more_post">
+                        <span class="font-medium">joshua_I </span>The game in
+                        Japan was amazing and I want to share some photos Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                        ab quae nostrum non, voluptatibus adipisci nobis sunt
+                        possimus? Nulla, fugiat!
+                      </p>
+                    </div>
+                    <!-- ------------------------------ commnet end -->
+                  </div>
+                  <!-- ----- slider main end -->
+                </div>
+              </div>
+              <!-- -------------- --> 
+                <!-- ====post==== -->
             <div class="border-b border-zinc-200 dark:border-zinc-600 mb-2">
               <!-- -------===> box - user optshpion -->
               <div class="w-full h-full px-1">
@@ -1082,7 +1081,7 @@ start main project ====> for mobile
                     <!-- Slides -->
                     <div class="swiper-slide">
                       <img
-                        src="./images/face/ce7e32c5013518aa6e932c543a55a3c9 - Copy.png"
+                        src="./images/face/65769a04f3b5bad56365e101c778a7c1.png"
                         class="active_image"
                         alt=""
                       />
@@ -1113,7 +1112,7 @@ start main project ====> for mobile
                     class="flex justify-center items-center child:dark:text-white child:w-6 child:h-6 gap-x-2"
                   >
                     <!-- ------ icon comment -->
-                    <svg id="like">
+                    <svg id="like" class="">
                       <use href="#activityfeed"></use>
                     </svg>
                     <svg id="comment_icon">
@@ -1137,12 +1136,13 @@ start main project ====> for mobile
                 </div>
                 <!-- ---------- comment for post main user -->
                 <!-- 
-        about post user
-        -->
+            about post user
+            -->
                 <div
-                  class="w-full px-[15px] tracking-[0.07px] my-2 child:dark:text-white"
+                  class="w-full px-[10px] tracking-[0.07px] my-1"
                 >
-                  <div class="flex justify-start items-center gap-x-2">
+                <p class="text-zinc-500 dark:text-zinc-200 text-base pb-1 font-medium "><span id="likePostValue" class="text-sm mr-1">100</span>likes</p>
+                  <div class="flex justify-start items-center gap-x-2 child:dark:text-white">
                     <img
                       src="./images/48f1801e657b098f5792c61365f65c75.png"
                       class="w-5 h-5 rounded-full"
@@ -1152,7 +1152,7 @@ start main project ====> for mobile
                       >Liked by craig_love and 44,686 others</span
                     >
                   </div>
-                  <div class="text-sm mt-1 flex justify-end">
+                  <div class="text-sm mt-1 flex justify-end child:dark:text-white">
                     <p class="line-clamp-2" id="text_more_post">
                       <span class="font-medium">joshua_I </span>The game in
                       Japan was amazing and I want to share some photos Lorem
@@ -1166,8 +1166,139 @@ start main project ====> for mobile
                 <!-- ----- slider main end -->
               </div>
             </div>
-            <!-- -------------- -->
-            <!-- ====post==== -->
+            <!-- -------------- --> 
+              <!-- ====post==== -->
+              <div class="border-b border-zinc-200 dark:border-zinc-600 mb-2">
+                <!-- -------===> box - user optshpion -->
+                <div class="w-full h-full px-1">
+                  <!-- ------ box titile -->
+                  <div
+                    class="h-full overflow-hidden flex justify-between items-center"
+                  >
+                    <!-- --- img user -->
+                    <div class="flex items-center">
+                      <div class="w-8 h-8 rounded-full">
+                        <img
+                          src="./images/2ccd27fc12336a7a8e13d5879814b13c.png"
+                          class="w-full h-full object-cover rounded-full"
+                          alt="img-user"
+                        />
+                      </div>
+                      <div
+                        class="pl-[10px] child:text-sm leading-none tracking-tighter dark:text-white"
+                      >
+                        <p class="font-medium cursor-pointer">joshua_I</p>
+                        <p class="font-normal">tokyo, Japan</p>
+                      </div>
+                    </div>
+                    <!-- --- img user end -->
+                    <!-- ----- ... -->
+                    <div
+                      class="flex justify-center items-center p-2 cursor-pointer"
+                    >
+                      <svg class="w-6 h-6 dark:text-white cursor-default">
+                        <use href="#more-icon"></use>
+                      </svg>
+                    </div>
+                    <!-- ----- ... -->
+                  </div>
+                </div>
+                <!-- ------===> box - user optshpion end  -->
+                <div class="my-2">
+                  <!-- Slider main container -->
+                  <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide">
+                        <img
+                          src="./images/face/65769a04f3b5bad56365e101c778a7c1.png"
+                          class="active_image"
+                          alt=""
+                        />
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="./images/face/65769a04f3b5bad56365e101c778a7c1.png"
+                          class="active_image"
+                          alt=""
+                        />
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="./images/face/ce7e32c5013518aa6e932c543a55a3c9 - Copy.png"
+                          class="active_image"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <!-- ------------------ -->
+                    <div class="swiper-pagination"></div>
+                  </div>
+                  <!-- nav bar main option -->
+                  <div
+                    class="w-full h-8 relative flex justify-between mt-3 items-center px-1"
+                  >
+                    <div
+                      class="flex justify-center items-center child:dark:text-white child:w-6 child:h-6 gap-x-2"
+                    >
+                      <!-- ------ icon comment -->
+                      <svg id="like" class="">
+                        <use href="#activityfeed"></use>
+                      </svg>
+                      <svg id="comment_icon">
+                        <use href="#comment"></use>
+                      </svg>
+                      <svg>
+                        <use href="#massege"></use>
+                      </svg>
+                    </div>
+                    <!-- ------- icon comment end -->
+                    <!-- -----------swiper pagination -->
+                    <!-- ------------- swiper pagination end -->
+                    <!-- ---------- save comment -->
+                    <div
+                      class="child:w-6 child:h-6 flex text-black justify-center items-center"
+                    >
+                      <svg class="text-black dark:text-white" id="save_post_icon">
+                        <use href="#save"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <!-- ---------- comment for post main user -->
+                  <!-- 
+              about post user
+              -->
+                  <div
+                    class="w-full px-[10px] tracking-[0.07px] my-1"
+                  >
+                  <p class="text-zinc-500 dark:text-zinc-200 text-base pb-1 font-medium "><span id="likePostValue" class="text-sm mr-1">100</span>likes</p>
+                    <div class="flex justify-start items-center gap-x-2 child:dark:text-white">
+                      <img
+                        src="./images/48f1801e657b098f5792c61365f65c75.png"
+                        class="w-5 h-5 rounded-full"
+                        alt="post-user"
+                      />
+                      <span class="inline-block text-sm"
+                        >Liked by craig_love and 44,686 others</span
+                      >
+                    </div>
+                    <div class="text-sm mt-1 flex justify-end child:dark:text-white">
+                      <p class="line-clamp-2" id="text_more_post">
+                        <span class="font-medium">joshua_I </span>The game in
+                        Japan was amazing and I want to share some photos Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                        ab quae nostrum non, voluptatibus adipisci nobis sunt
+                        possimus? Nulla, fugiat!
+                      </p>
+                    </div>
+                    <!-- ------------------------------ commnet end -->
+                  </div>
+                  <!-- ----- slider main end -->
+                </div>
+              </div>
+              <!-- -------------- --> 
+                <!-- ====post==== -->
             <div class="border-b border-zinc-200 dark:border-zinc-600 mb-2">
               <!-- -------===> box - user optshpion -->
               <div class="w-full h-full px-1">
@@ -1212,7 +1343,7 @@ start main project ====> for mobile
                     <!-- Slides -->
                     <div class="swiper-slide">
                       <img
-                        src="./images/face/5904c9ce3cfb08e4c032b5a473d5648d.png"
+                        src="./images/face/65769a04f3b5bad56365e101c778a7c1.png"
                         class="active_image"
                         alt=""
                       />
@@ -1243,7 +1374,7 @@ start main project ====> for mobile
                     class="flex justify-center items-center child:dark:text-white child:w-6 child:h-6 gap-x-2"
                   >
                     <!-- ------ icon comment -->
-                    <svg id="like">
+                    <svg id="like" class="">
                       <use href="#activityfeed"></use>
                     </svg>
                     <svg id="comment_icon">
@@ -1267,12 +1398,13 @@ start main project ====> for mobile
                 </div>
                 <!-- ---------- comment for post main user -->
                 <!-- 
-        about post user
-        -->
+            about post user
+            -->
                 <div
-                  class="w-full px-[15px] tracking-[0.07px] my-2 child:dark:text-white"
+                  class="w-full px-[10px] tracking-[0.07px] my-1"
                 >
-                  <div class="flex justify-start items-center gap-x-2">
+                <p class="text-zinc-500 dark:text-zinc-200 text-base pb-1 font-medium "><span id="likePostValue" class="text-sm mr-1">100</span>likes</p>
+                  <div class="flex justify-start items-center gap-x-2 child:dark:text-white">
                     <img
                       src="./images/48f1801e657b098f5792c61365f65c75.png"
                       class="w-5 h-5 rounded-full"
@@ -1282,7 +1414,7 @@ start main project ====> for mobile
                       >Liked by craig_love and 44,686 others</span
                     >
                   </div>
-                  <div class="text-sm mt-1 flex justify-end">
+                  <div class="text-sm mt-1 flex justify-end child:dark:text-white">
                     <p class="line-clamp-2" id="text_more_post">
                       <span class="font-medium">joshua_I </span>The game in
                       Japan was amazing and I want to share some photos Lorem
@@ -1296,7 +1428,138 @@ start main project ====> for mobile
                 <!-- ----- slider main end -->
               </div>
             </div>
-            <!-- -------------- -->
+            <!-- -------------- --> 
+              <!-- ====post==== -->
+              <div class="border-b border-zinc-200 dark:border-zinc-600 mb-2">
+                <!-- -------===> box - user optshpion -->
+                <div class="w-full h-full px-1">
+                  <!-- ------ box titile -->
+                  <div
+                    class="h-full overflow-hidden flex justify-between items-center"
+                  >
+                    <!-- --- img user -->
+                    <div class="flex items-center">
+                      <div class="w-8 h-8 rounded-full">
+                        <img
+                          src="./images/2ccd27fc12336a7a8e13d5879814b13c.png"
+                          class="w-full h-full object-cover rounded-full"
+                          alt="img-user"
+                        />
+                      </div>
+                      <div
+                        class="pl-[10px] child:text-sm leading-none tracking-tighter dark:text-white"
+                      >
+                        <p class="font-medium cursor-pointer">joshua_I</p>
+                        <p class="font-normal">tokyo, Japan</p>
+                      </div>
+                    </div>
+                    <!-- --- img user end -->
+                    <!-- ----- ... -->
+                    <div
+                      class="flex justify-center items-center p-2 cursor-pointer"
+                    >
+                      <svg class="w-6 h-6 dark:text-white cursor-default">
+                        <use href="#more-icon"></use>
+                      </svg>
+                    </div>
+                    <!-- ----- ... -->
+                  </div>
+                </div>
+                <!-- ------===> box - user optshpion end  -->
+                <div class="my-2">
+                  <!-- Slider main container -->
+                  <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide">
+                        <img
+                          src="./images/face/65769a04f3b5bad56365e101c778a7c1.png"
+                          class="active_image"
+                          alt=""
+                        />
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="./images/face/65769a04f3b5bad56365e101c778a7c1.png"
+                          class="active_image"
+                          alt=""
+                        />
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="./images/face/ce7e32c5013518aa6e932c543a55a3c9 - Copy.png"
+                          class="active_image"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <!-- ------------------ -->
+                    <div class="swiper-pagination"></div>
+                  </div>
+                  <!-- nav bar main option -->
+                  <div
+                    class="w-full h-8 relative flex justify-between mt-3 items-center px-1"
+                  >
+                    <div
+                      class="flex justify-center items-center child:dark:text-white child:w-6 child:h-6 gap-x-2"
+                    >
+                      <!-- ------ icon comment -->
+                      <svg id="like" class="">
+                        <use href="#activityfeed"></use>
+                      </svg>
+                      <svg id="comment_icon">
+                        <use href="#comment"></use>
+                      </svg>
+                      <svg>
+                        <use href="#massege"></use>
+                      </svg>
+                    </div>
+                    <!-- ------- icon comment end -->
+                    <!-- -----------swiper pagination -->
+                    <!-- ------------- swiper pagination end -->
+                    <!-- ---------- save comment -->
+                    <div
+                      class="child:w-6 child:h-6 flex text-black justify-center items-center"
+                    >
+                      <svg class="text-black dark:text-white" id="save_post_icon">
+                        <use href="#save"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <!-- ---------- comment for post main user -->
+                  <!-- 
+              about post user
+              -->
+                  <div
+                    class="w-full px-[10px] tracking-[0.07px] my-1"
+                  >
+                  <p class="text-zinc-500 dark:text-zinc-200 text-base pb-1 font-medium "><span id="likePostValue" class="text-sm mr-1">100</span>likes</p>
+                    <div class="flex justify-start items-center gap-x-2 child:dark:text-white">
+                      <img
+                        src="./images/48f1801e657b098f5792c61365f65c75.png"
+                        class="w-5 h-5 rounded-full"
+                        alt="post-user"
+                      />
+                      <span class="inline-block text-sm"
+                        >Liked by craig_love and 44,686 others</span
+                      >
+                    </div>
+                    <div class="text-sm mt-1 flex justify-end child:dark:text-white">
+                      <p class="line-clamp-2" id="text_more_post">
+                        <span class="font-medium">joshua_I </span>The game in
+                        Japan was amazing and I want to share some photos Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                        ab quae nostrum non, voluptatibus adipisci nobis sunt
+                        possimus? Nulla, fugiat!
+                      </p>
+                    </div>
+                    <!-- ------------------------------ commnet end -->
+                  </div>
+                  <!-- ----- slider main end -->
+                </div>
+              </div>
+              <!-- -------------- -->   
             <!------------ all post end  -->
           </div>
         </section>
@@ -1327,21 +1590,21 @@ start main project ====> for mobile
       about post user
       -->
           <div
-            class="w-full tracking-[0.07px] my-2 child:dark:text-white border-b dark:border-none pb-2"
+            class="w-full tracking-[0.07px] my-2"
           >
             <div class="flex justify-start items-center gap-x-2">
               <img
                 src="./images/48f1801e657b098f5792c61365f65c75.png"
-                class="w-5 h-5 rounded-full"
+                class="w-7 h-7 rounded-full border p-[2px] border-zinc-600 dark:border-zinc-300 "
                 alt="post-user"
               />
-              <span class="inline-block text-sm"
-                >Liked by craig_love and 44,686 others</span
+              <span class="inline-block text-sm text-zinc-600 dark:text-zinc-400"
+                >Liked by craig_love and <u class="font-medium text-zinc-700 dark:text-zinc-300"> 44,686 </u>  others</span
               >
             </div>
-            <div class="text-sm mt-1 flex justify-end">
-              <p>
-                <span class="font-medium">joshua_I : </span>The game in Japan
+            <div class="text-sm mt-1 flex justify-end border-b border-zinc-200 dark:border-zinc-400 pb-3">
+              <p class="text-zinc-600 dark:text-zinc-400">
+                <span class="font-medium text-zinc-700 dark:text-zinc-300">joshua_I : </span>The game in Japan
                 was amazing and I want to share some photos
               </p>
             </div>
@@ -1393,8 +1656,8 @@ start main project ====> for mobile
                 class="bg-transparent outline-none text-sm dark:text-white placeholder:text-sm w-full px-2 font-medium"
               />
               <button
-                type="button"
-                class="text-sm cursor-pointer text-zinc-500 font-medium border-l pl-2 border-zinc-400"
+                type="button" 
+                class="text-base cursor-pointer text-zinc-300 font-medium "
                 id="button_creat_post_comment"
               >
                 send
@@ -1448,8 +1711,8 @@ start main project ====> for mobile
                   </div>
                   <img
                     class="w-10 h-10 object-cover"
-                    src="./images/img_user_post/Rectangle (4).png"
-                    alt="your post "
+                    src="./images/img_user_post/2.jpg"
+                    alt="your post"
                   />
                 </div>
                 <!-- ------- -->
@@ -1470,8 +1733,8 @@ start main project ====> for mobile
                   </div>
                   <img
                     class="w-10 h-10 object-cover"
-                    src="./images/img_user_post/Rectangle (5).png"
-                    alt="your post "
+                    src="./images/img_user_post/1.jpeg"
+                    alt="your post"
                   />
                 </div>
                 <!-- ------- -->
@@ -1503,7 +1766,7 @@ start main project ====> for mobile
                   </div>
                   <img
                     class="w-10 h-10 object-cover"
-                    src="./images/img_user_post/Rectangle (8).png"
+                    src="./images/img_user_post/3.jpg"
                     alt=""
                   />
                 </div>
@@ -1556,7 +1819,7 @@ start main project ====> for mobile
                   <div class="">
                     <a href="#">
                       <div
-                        class="w-[90px] h-8 leading-8 text-center bg-blue-400 font-medium rounded-[4px]"
+                        class="w-[90px] h-8 leading-8 text-center bg-blue-500 font-medium rounded-[4px]"
                       >
                         Follow
                       </div>
@@ -1606,7 +1869,7 @@ start main project ====> for mobile
                   <div class="">
                     <a href="#">
                       <div
-                        class="w-[90px] h-8 leading-8 text-center bg-blue-400 font-medium rounded-[4px]"
+                        class="w-[90px] h-8 leading-8 text-center bg-blue-500 font-medium rounded-[4px]"
                       >
                         Follow
                       </div>
@@ -1661,7 +1924,7 @@ start main project ====> for mobile
 
     <script src="./js/switch_them.js"></script>
     <script src="./js/scrolls-status.js"></script>
-    <script src="./js/app.js"></script>
+    <script type="module" src="./js/app.js"></script>  <!-- type="module" -->
     <script src="./js/All-js-libresz/particles.js"></script>
     <script src="./js/All-js-libresz/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
