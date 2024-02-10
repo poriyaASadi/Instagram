@@ -181,13 +181,12 @@ const swiper = new Swiper(".swiper", {
   },
   on: { 
     slideChange: function (items) {
-      let indexSwiperSlide = items.slides[items.activeIndex]
-      console.log(indexSwiperSlide);
-       
-      let  num = document.querySelectorAll('swiper-slide');
-      num.forEach(item => {
-        console.log(item);
-      })
+      let indexSwiperSlide = items.slides[items.activeIndex].children[0]
+      if (indexSwiperSlide.tagName === 'VIDEO'){
+        console.log('vvvv');
+      }else {
+        console.log('mmmm');
+      }
     }
   }
   });
