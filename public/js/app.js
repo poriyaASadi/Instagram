@@ -4,7 +4,8 @@ const $ = document;
 import * as name from './Var-all.js';
 
 import { mainComment , comment_icon_user_main , back_comment_icon , input_comment_post , button_creat_post_comment  , likePostValue 
-, like_heart_post , save_post_icon , text_more_post , active_icon_branch , stack , openBlurAlert , prantIcon_ShowAlert } from './Var-all.js';
+, like_heart_post , save_post_icon , text_more_post , active_icon_branch , stack , openBlurAlert , prantIcon_ShowAlert ,
+videoPostUser } from './Var-all.js';
 
 //  ----- icon comment open chat 
 comment_icon_user_main.forEach((item) => {
@@ -18,7 +19,6 @@ back_comment_icon.forEach((item) => {
   $.getElementById('comment_main').classList.add('-top-[100vh]');
  })
 })
-
 
 button_creat_post_comment.addEventListener('click' , (e) => {
   let valueInputComment = input_comment_post.value;
@@ -161,8 +161,35 @@ prantIcon_ShowAlert.addEventListener('click' , () => {
     falseValue = false;
   }
 });
+// =========================
 
 
-// -----------------------------
-// =============================
+// problem code :( ....
+ 
+   
+const swiper = new Swiper(".swiper", {
+  loop: true,
+  //direction:'vertical',   // عمودی
+  navigation: {
+    nexrEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+   // dynamicBullets: true,
+  },
+  on: { 
+    slideChange: function (items) {
+      let indexSwiperSlide = items.slides[items.activeIndex]
+      console.log(indexSwiperSlide);
+       
+      let  num = document.querySelectorAll('swiper-slide');
+      num.forEach(item => {
+        console.log(item);
+      })
+    }
+  }
+  });
 
+//  problem end :( ....

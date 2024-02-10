@@ -28,7 +28,7 @@ let stack = document.querySelectorAll('#stack_icon');
 // ---------------- openBlurAlert
 let openBlurAlert = $.getElementById('openBlurAlert');
 let prantIcon_ShowAlert = $.getElementById('prantIcon_ShowAlert');
-
+let videoPostUser = $.querySelectorAll('.videoPostUser')
 
 
 export {
@@ -46,5 +46,6 @@ export {
     active_icon_branch,
     stack,
     openBlurAlert,
-    prantIcon_ShowAlert
+    prantIcon_ShowAlert,
+    videoPostUser
 }
