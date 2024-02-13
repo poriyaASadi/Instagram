@@ -164,8 +164,7 @@ prantIcon_ShowAlert.addEventListener('click' , () => {
 // =========================
 
 
-// problem code :( ....
- 
+// swiper slide post user code start
    
 const swiper = new Swiper(".swiper", {
   loop: true,
@@ -181,14 +180,23 @@ const swiper = new Swiper(".swiper", {
   },
   on: { 
     slideChange: function (items) {
+      let swiperSlide = document.querySelectorAll('.swiper-slide');
       let indexSwiperSlide = items.slides[items.activeIndex].children[0]
-      if (indexSwiperSlide.tagName === 'VIDEO'){
-        console.log('vvvv');
-      }else {
-        console.log('mmmm');
-      }
+      let windowUser =  window.innerHeight / 2 + window.scrollY;
+         
+      swiperSlide.forEach(slide => {
+        let slideAbout = slide.getBoundingClientRect();
+        if (slideAbout.top <= windowUser && slideAbout.bottom >= windowUser){
+          if (indexSwiperSlide.tagName === 'VIDEO'){ 
+            indexSwiperSlide.play();
+          }else if  (indexSwiperSlide.paused){
+            indexSwiperSlide.play();
+          }
+        } 
+      })     
     }
   }
   });
 
-//  problem end :( ....
+//  swiper post style user end
+

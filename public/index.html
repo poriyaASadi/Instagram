@@ -308,7 +308,7 @@ start project
  -->
 
     <div class="max-w-sm h-full mx-auto z-10 relative">
-      <div id="particles-js" class="bg-black dark:bg-black"></div>
+      <div id="particles-js" class="bg-black dark:bg-black hidden"></div>
       <!-- ---------- header -->
       <header
         class="h-10 w-full border-b border-zinc-200 bg-white dark:bg-transparent dark:border-none"
@@ -374,27 +374,31 @@ start project
 start main project ====> for mobile 
 
  -->
-      <main class="w-full h-full bg-white dark:bg-transparent overscroll-y-auto overflow-y-scroll">
+      <main
+        class="w-full h-full bg-white dark:bg-transparent overscroll-y-auto overflow-y-scroll"
+      >
         <!-- slider status ===== start -->
         <section
           class="overflow-x-hidden overscroll-x-contain border-b dark:border-none p-4 w-full auto-cols-max"
           id="scroll-users-status"
         >
           <div class="grid grid-flow-col gap-4 child:cursor-pointer">
-              <!-- content -->
-              <div class="grid m-0 text-center relative hover:scale-110">
-                <div class="w-14 h-14 rounded-full befor-status-user after:bg-zinc-600 before:bg-zinc-600 after:dark:bg-zinc-300 before:dark:bg-zinc-300">
-                  <img
-                    src="./images/027410390877dbe19c213b2e6ee60b75.png"
-                    alt="statusUser"
-                    class="rounded-full w-full h-full object-cover clip-path"
-                  />
-                </div>
-                <div>
-                  <p class="font-staus-bar text-zinc-500">status</p>
-                </div>
+            <!-- content -->
+            <div class="grid m-0 text-center relative hover:scale-110">
+              <div
+                class="w-14 h-14 rounded-full befor-status-user after:bg-zinc-600 before:bg-zinc-600 after:dark:bg-zinc-300 before:dark:bg-zinc-300"
+              >
+                <img
+                  src="./images/027410390877dbe19c213b2e6ee60b75.png"
+                  alt="statusUser"
+                  class="rounded-full w-full h-full object-cover clip-path"
+                />
               </div>
-              <!-- content end -->
+              <div>
+                <p class="font-staus-bar text-zinc-500">status</p>
+              </div>
+            </div>
+            <!-- content end -->
             <!-- content -->
             <div class="grid m-0 text-center relative hover:scale-110">
               <div class="w-14 h-14 rounded-full background_color">
@@ -516,6 +520,8 @@ start main project ====> for mobile
         <section class="w-ful h-full mt-[11px]">
           <div class="pb-[100px]">
             <!-- ----------- all post main  -->
+
+
             <!-- ====post==== -->
             <div class="border-b border-zinc-200 dark:border-zinc-600 mb-2">
               <!-- -------===> box - user optshpion -->
@@ -559,10 +565,13 @@ start main project ====> for mobile
                   <!-- Additional required wrapper -->
                   <div class="swiper-wrapper">
                     <!-- Slides -->
-                    <div class="swiper-slide bg-slate-400">
-                      <video class="videoPostUser  w-full h-full">
-                        <source src="./video/Designed for Mac. Accessories for your Mac.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
+                    <div class="swiper-slide">
+                      <video src="./video/Designed for Mac. Accessories for your Mac.mp4"
+                      class="videoPostUser w-full h-full"
+                      webkit-playsinline="true"
+                      playsinline="true"
+                    
+                      >
                       </video>
                     </div>
                     <div class="swiper-slide">
@@ -573,8 +582,11 @@ start main project ====> for mobile
                       />
                     </div>
                     <div class="swiper-slide">
-                      <video class="videoPostUser">
-                        <source src="./video/Designed for Mac. Accessories for your Mac_2.mp4" type="video/mp4">
+                      <video class="videoPostUser w-full h-full">
+                        <source
+                          src="./video/Designed for Mac. Accessories for your Mac_2.mp4"
+                          type="video/mp4"
+                        />
                         Your browser does not support the video tag.
                       </video>
                     </div>
@@ -616,11 +628,16 @@ start main project ====> for mobile
                 <!-- 
             about post user
             -->
-                <div
-                  class="w-full px-[10px] tracking-[0.07px] my-1"
-                >
-                <p class="text-zinc-500 dark:text-zinc-200 text-base pb-1 font-medium "><span id="likePostValue" class="text-sm mr-1">100</span>likes</p>
-                  <div class="flex justify-start items-center gap-x-2 child:dark:text-white">
+                <div class="w-full px-[10px] tracking-[0.07px] my-1">
+                  <p
+                    class="text-zinc-500 dark:text-zinc-200 text-base pb-1 font-medium"
+                  >
+                    <span id="likePostValue" class="text-sm mr-1">100</span
+                    >likes
+                  </p>
+                  <div
+                    class="flex justify-start items-center gap-x-2 child:dark:text-white"
+                  >
                     <img
                       src="./images/48f1801e657b098f5792c61365f65c75.png"
                       class="w-5 h-5 rounded-full"
@@ -630,7 +647,9 @@ start main project ====> for mobile
                       >Liked by craig_love and 44,686 others</span
                     >
                   </div>
-                  <div class="text-sm mt-1 flex justify-end child:dark:text-white">
+                  <div
+                    class="text-sm mt-1 flex justify-end child:dark:text-white"
+                  >
                     <p class="line-clamp-2" id="text_more_post">
                       <span class="font-medium">joshua_I </span>The game in
                       Japan was amazing and I want to share some photos Lorem
@@ -644,19 +663,435 @@ start main project ====> for mobile
                 <!-- ----- slider main end -->
               </div>
             </div>
-            <!-- -------------- -->  
+            <!-- -------------- -->
             
+                <!-- ====post==== -->
+                <div class="border-b border-zinc-200 dark:border-zinc-600 mb-2">
+                  <!-- -------===> box - user optshpion -->
+                  <div class="w-full h-full px-1">
+                    <!-- ------ box titile -->
+                    <div
+                      class="h-full overflow-hidden flex justify-between items-center"
+                    >
+                      <!-- --- img user -->
+                      <div class="flex items-center">
+                        <div class="w-8 h-8 rounded-full">
+                          <img
+                            src="./images/2ccd27fc12336a7a8e13d5879814b13c.png"
+                            class="w-full h-full object-cover rounded-full"
+                            alt="img-user"
+                          />
+                        </div>
+                        <div
+                          class="pl-[10px] child:text-sm leading-none tracking-tighter dark:text-white"
+                        >
+                          <p class="font-medium cursor-pointer">joshua_I</p>
+                          <p class="font-normal">tokyo, Japan</p>
+                        </div>
+                      </div>
+                      <!-- --- img user end -->
+                      <!-- ----- ... -->
+                      <div
+                        class="flex justify-center items-center p-2 cursor-pointer"
+                      >
+                        <svg class="w-6 h-6 dark:text-white cursor-default">
+                          <use href="#more-icon"></use>
+                        </svg>
+                      </div>
+                      <!-- ----- ... -->
+                    </div>
+                  </div>
+                  <!-- ------===> box - user optshpion end  -->
+                  <div class="my-2">
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                      <!-- Additional required wrapper -->
+                      <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                          <video src="./video/Designed for Mac. Accessories for your Mac.mp4"
+                          class="videoPostUser w-full h-full"
+                          webkit-playsinline="true"
+                          playsinline="true"
+                        
+                          >
+                          </video>
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            src="./images/face/65769a04f3b5bad56365e101c778a7c1.png"
+                            class="active_image"
+                            alt=""
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <video class="videoPostUser w-full h-full">
+                            <source
+                              src="./video/Designed for Mac. Accessories for your Mac_2.mp4"
+                              type="video/mp4"
+                            />
+                            Your browser does not support the video tag.
+                          </video>
+                        </div>
+                      </div>
+                      <!-- ------------------ -->
+                      <div class="swiper-pagination"></div>
+                    </div>
+                    <!-- nav bar main option -->
+                    <div
+                      class="w-full h-8 relative flex justify-between mt-3 items-center px-1"
+                    >
+                      <div
+                        class="flex justify-center items-center child:dark:text-white child:w-6 child:h-6 gap-x-2"
+                      >
+                        <!-- ------ icon comment -->
+                        <svg id="like" class="">
+                          <use href="#activityfeed"></use>
+                        </svg>
+                        <svg id="comment_icon">
+                          <use href="#comment"></use>
+                        </svg>
+                        <svg>
+                          <use href="#massege"></use>
+                        </svg>
+                      </div>
+                      <!-- ------- icon comment end -->
+                      <!-- -----------swiper pagination -->
+                      <!-- ------------- swiper pagination end -->
+                      <!-- ---------- save comment -->
+                      <div
+                        class="child:w-6 child:h-6 flex text-black justify-center items-center"
+                      >
+                        <svg class="text-black dark:text-white" id="save_post_icon">
+                          <use href="#save"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <!-- ---------- comment for post main user -->
+                    <!-- 
+                about post user
+                -->
+                    <div class="w-full px-[10px] tracking-[0.07px] my-1">
+                      <p
+                        class="text-zinc-500 dark:text-zinc-200 text-base pb-1 font-medium"
+                      >
+                        <span id="likePostValue" class="text-sm mr-1">100</span
+                        >likes
+                      </p>
+                      <div
+                        class="flex justify-start items-center gap-x-2 child:dark:text-white"
+                      >
+                        <img
+                          src="./images/48f1801e657b098f5792c61365f65c75.png"
+                          class="w-5 h-5 rounded-full"
+                          alt="post-user"
+                        />
+                        <span class="inline-block text-sm"
+                          >Liked by craig_love and 44,686 others</span
+                        >
+                      </div>
+                      <div
+                        class="text-sm mt-1 flex justify-end child:dark:text-white"
+                      >
+                        <p class="line-clamp-2" id="text_more_post">
+                          <span class="font-medium">joshua_I </span>The game in
+                          Japan was amazing and I want to share some photos Lorem
+                          ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                          ab quae nostrum non, voluptatibus adipisci nobis sunt
+                          possimus? Nulla, fugiat!
+                        </p>
+                      </div>
+                      <!-- ------------------------------ commnet end -->
+                    </div>
+                    <!-- ----- slider main end -->
+                  </div>
+                </div>
+                <!-- -------------- -->
 
+                    <!-- ====post==== -->
+               <div class="border-b border-zinc-200 dark:border-zinc-600 mb-2">
+              <!-- -------===> box - user optshpion -->
+              <div class="w-full h-full px-1">
+                <!-- ------ box titile -->
+                <div
+                  class="h-full overflow-hidden flex justify-between items-center"
+                >
+                  <!-- --- img user -->
+                  <div class="flex items-center">
+                    <div class="w-8 h-8 rounded-full">
+                      <img
+                        src="./images/2ccd27fc12336a7a8e13d5879814b13c.png"
+                        class="w-full h-full object-cover rounded-full"
+                        alt="img-user"
+                      />
+                    </div>
+                    <div
+                      class="pl-[10px] child:text-sm leading-none tracking-tighter dark:text-white"
+                    >
+                      <p class="font-medium cursor-pointer">joshua_I</p>
+                      <p class="font-normal">tokyo, Japan</p>
+                    </div>
+                  </div>
+                  <!-- --- img user end -->
+                  <!-- ----- ... -->
+                  <div
+                    class="flex justify-center items-center p-2 cursor-pointer"
+                  >
+                    <svg class="w-6 h-6 dark:text-white cursor-default">
+                      <use href="#more-icon"></use>
+                    </svg>
+                  </div>
+                  <!-- ----- ... -->
+                </div>
+              </div>
+              <!-- ------===> box - user optshpion end  -->
+              <div class="my-2">
+                <!-- Slider main container -->
+                <div class="swiper">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                      <video src="./video/Designed for Mac. Accessories for your Mac.mp4"
+                      class="videoPostUser w-full h-full"
+                      webkit-playsinline="true"
+                      playsinline="true"
+                      >
+                      </video>
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="./images/face/65769a04f3b5bad56365e101c778a7c1.png"
+                        class="active_image"
+                        alt=""
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <video class="videoPostUser w-full h-full">
+                        <source
+                          src="./video/Designed for Mac. Accessories for your Mac_2.mp4"
+                          type="video/mp4"
+                        />
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                  </div>
+                  <!-- ------------------ -->
+                  <div class="swiper-pagination"></div>
+                </div>
+                <!-- nav bar main option -->
+                <div
+                  class="w-full h-8 relative flex justify-between mt-3 items-center px-1"
+                >
+                  <div
+                    class="flex justify-center items-center child:dark:text-white child:w-6 child:h-6 gap-x-2"
+                  >
+                    <!-- ------ icon comment -->
+                    <svg id="like" class="">
+                      <use href="#activityfeed"></use>
+                    </svg>
+                    <svg id="comment_icon">
+                      <use href="#comment"></use>
+                    </svg>
+                    <svg>
+                      <use href="#massege"></use>
+                    </svg>
+                  </div>
+                  <!-- ------- icon comment end -->
+                  <!-- -----------swiper pagination -->
+                  <!-- ------------- swiper pagination end -->
+                  <!-- ---------- save comment -->
+                  <div
+                    class="child:w-6 child:h-6 flex text-black justify-center items-center"
+                  >
+                    <svg class="text-black dark:text-white" id="save_post_icon">
+                      <use href="#save"></use>
+                    </svg>
+                  </div>
+                </div>
+                <!-- ---------- comment for post main user -->
+                <!-- 
+            about post user
+            -->
+                <div class="w-full px-[10px] tracking-[0.07px] my-1">
+                  <p
+                    class="text-zinc-500 dark:text-zinc-200 text-base pb-1 font-medium"
+                  >
+                    <span id="likePostValue" class="text-sm mr-1">100</span
+                    >likes
+                  </p>
+                  <div
+                    class="flex justify-start items-center gap-x-2 child:dark:text-white"
+                  >
+                    <img
+                      src="./images/48f1801e657b098f5792c61365f65c75.png"
+                      class="w-5 h-5 rounded-full"
+                      alt="post-user"
+                    />
+                    <span class="inline-block text-sm"
+                      >Liked by craig_love and 44,686 others</span
+                    >
+                  </div>
+                  <div
+                    class="text-sm mt-1 flex justify-end child:dark:text-white"
+                  >
+                    <p class="line-clamp-2" id="text_more_post">
+                      <span class="font-medium">joshua_I </span>The game in
+                      Japan was amazing and I want to share some photos Lorem
+                      ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                      ab quae nostrum non, voluptatibus adipisci nobis sunt
+                      possimus? Nulla, fugiat!
+                    </p>
+                  </div>
+                  <!-- ------------------------------ commnet end -->
+                </div>
+                <!-- ----- slider main end -->
+              </div>
+               </div>
+               <!-- ---------------->
 
-
-
-
-
-
-
-
-
-
+                <!-- ====post==== -->
+                <div class="border-b border-zinc-200 dark:border-zinc-600 mb-2">
+                  <!-- -------===> box - user optshpion -->
+                  <div class="w-full h-full px-1">
+                    <!-- ------ box titile -->
+                    <div
+                      class="h-full overflow-hidden flex justify-between items-center"
+                    >
+                      <!-- --- img user -->
+                      <div class="flex items-center">
+                        <div class="w-8 h-8 rounded-full">
+                          <img
+                            src="./images/2ccd27fc12336a7a8e13d5879814b13c.png"
+                            class="w-full h-full object-cover rounded-full"
+                            alt="img-user"
+                          />
+                        </div>
+                        <div
+                          class="pl-[10px] child:text-sm leading-none tracking-tighter dark:text-white"
+                        >
+                          <p class="font-medium cursor-pointer">joshua_I</p>
+                          <p class="font-normal">tokyo, Japan</p>
+                        </div>
+                      </div>
+                      <!-- --- img user end -->
+                      <!-- ----- ... -->
+                      <div
+                        class="flex justify-center items-center p-2 cursor-pointer"
+                      >
+                        <svg class="w-6 h-6 dark:text-white cursor-default">
+                          <use href="#more-icon"></use>
+                        </svg>
+                      </div>
+                      <!-- ----- ... -->
+                    </div>
+                  </div>
+                  <!-- ------===> box - user optshpion end  -->
+                  <div class="my-2">
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                      <!-- Additional required wrapper -->
+                      <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                          <video src="./video/Designed for Mac. Accessories for your Mac.mp4"
+                          class="videoPostUser w-full h-full"
+                          webkit-playsinline="true"
+                          playsinline="true"
+                        
+                          >
+                          </video>
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            src="./images/face/65769a04f3b5bad56365e101c778a7c1.png"
+                            class="active_image"
+                            alt=""
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <video class="videoPostUser w-full h-full">
+                            <source
+                              src="./video/Designed for Mac. Accessories for your Mac_2.mp4"
+                              type="video/mp4"
+                            />
+                            Your browser does not support the video tag.
+                          </video>
+                        </div>
+                      </div>
+                      <!-- ------------------ -->
+                      <div class="swiper-pagination"></div>
+                    </div>
+                    <!-- nav bar main option -->
+                    <div
+                      class="w-full h-8 relative flex justify-between mt-3 items-center px-1"
+                    >
+                      <div
+                        class="flex justify-center items-center child:dark:text-white child:w-6 child:h-6 gap-x-2"
+                      >
+                        <!-- ------ icon comment -->
+                        <svg id="like" class="">
+                          <use href="#activityfeed"></use>
+                        </svg>
+                        <svg id="comment_icon">
+                          <use href="#comment"></use>
+                        </svg>
+                        <svg>
+                          <use href="#massege"></use>
+                        </svg>
+                      </div>
+                      <!-- ------- icon comment end -->
+                      <!-- -----------swiper pagination -->
+                      <!-- ------------- swiper pagination end -->
+                      <!-- ---------- save comment -->
+                      <div
+                        class="child:w-6 child:h-6 flex text-black justify-center items-center"
+                      >
+                        <svg class="text-black dark:text-white" id="save_post_icon">
+                          <use href="#save"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <!-- ---------- comment for post main user -->
+                    <!-- 
+                about post user
+                -->
+                    <div class="w-full px-[10px] tracking-[0.07px] my-1">
+                      <p
+                        class="text-zinc-500 dark:text-zinc-200 text-base pb-1 font-medium"
+                      >
+                        <span id="likePostValue" class="text-sm mr-1">100</span
+                        >likes
+                      </p>
+                      <div
+                        class="flex justify-start items-center gap-x-2 child:dark:text-white"
+                      >
+                        <img
+                          src="./images/48f1801e657b098f5792c61365f65c75.png"
+                          class="w-5 h-5 rounded-full"
+                          alt="post-user"
+                        />
+                        <span class="inline-block text-sm"
+                          >Liked by craig_love and 44,686 others</span
+                        >
+                      </div>
+                      <div
+                        class="text-sm mt-1 flex justify-end child:dark:text-white"
+                      >
+                        <p class="line-clamp-2" id="text_more_post">
+                          <span class="font-medium">joshua_I </span>The game in
+                          Japan was amazing and I want to share some photos Lorem
+                          ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                          ab quae nostrum non, voluptatibus adipisci nobis sunt
+                          possimus? Nulla, fugiat!
+                        </p>
+                      </div>
+                      <!-- ------------------------------ commnet end -->
+                    </div>
+                    <!-- ----- slider main end -->
+                  </div>
+                </div>
+                <!-- -------------- -->
 
 
 
@@ -691,23 +1126,29 @@ start main project ====> for mobile
           <!-- 
       about post user
       -->
-          <div
-            class="w-full tracking-[0.07px] my-2"
-          >
+          <div class="w-full tracking-[0.07px] my-2">
             <div class="flex justify-start items-center gap-x-2">
               <img
                 src="./images/48f1801e657b098f5792c61365f65c75.png"
-                class="w-7 h-7 rounded-full border p-[2px] border-zinc-600 dark:border-zinc-300 "
+                class="w-7 h-7 rounded-full border p-[2px] border-zinc-600 dark:border-zinc-300"
                 alt="post-user"
               />
-              <span class="inline-block text-sm text-zinc-600 dark:text-zinc-400"
-                >Liked by craig_love and <u class="font-medium text-zinc-700 dark:text-zinc-300"> 44,686 </u>  others</span
+              <span
+                class="inline-block text-sm text-zinc-600 dark:text-zinc-400"
+                >Liked by craig_love and
+                <u class="font-medium text-zinc-700 dark:text-zinc-300">
+                  44,686
+                </u>
+                others</span
               >
             </div>
-            <div class="text-sm mt-1 flex justify-end border-b border-zinc-200 dark:border-zinc-400 pb-3">
+            <div
+              class="text-sm mt-1 flex justify-end border-b border-zinc-200 dark:border-zinc-400 pb-3"
+            >
               <p class="text-zinc-600 dark:text-zinc-400">
-                <span class="font-medium text-zinc-700 dark:text-zinc-300">joshua_I : </span>The game in Japan
-                was amazing and I want to share some photos
+                <span class="font-medium text-zinc-700 dark:text-zinc-300"
+                  >joshua_I : </span
+                >The game in Japan was amazing and I want to share some photos
               </p>
             </div>
           </div>
@@ -758,8 +1199,8 @@ start main project ====> for mobile
                 class="bg-transparent outline-none text-sm dark:text-white placeholder:text-sm w-full px-2 font-medium"
               />
               <button
-                type="button" 
-                class="text-base cursor-pointer text-zinc-300 font-medium "
+                type="button"
+                class="text-base cursor-pointer text-zinc-300 font-medium"
                 id="button_creat_post_comment"
               >
                 send
@@ -1026,19 +1467,19 @@ start main project ====> for mobile
 
     <script src="./js/switch_them.js"></script>
     <script src="./js/scrolls-status.js"></script>
-    <script type="module" src="./js/app.js"></script>  <!-- type="module" -->
+    <script  src="./js/main.js" type="module"></script>
+    <!-- type="module" -->
     <script src="./js/All-js-libresz/particles.js"></script>
     <script src="./js/All-js-libresz/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-
       // const swiperValed = new Swiper(".swiper_2", {
       //   direction: "vertical",
       //   mousewheel: true,
       //   speed: 500,
       //   enabled: true,
       //   touch: {
-      //     threshold: 1, 
+      //     threshold: 1,
       //   },
       //   navigation: {
       //     nexrEl: ".swiper-button-next",
