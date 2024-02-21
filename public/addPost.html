@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>instagram</title>
+    <!-- --------- links -->
+    <!-- 
+        app.css
+     -->
+    <link rel="stylesheet" href="./styles/app.css"/>
+    <!-- 
+      
+        icon title
+     -->
+    <!-- 
+      swiper
+      -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- --------- -->
+    <link rel="icon" href="./images/Instagram.png" type="images/png" />
+    <!-- 
+        dark mode tailwind switch 
+      -->
+    <script type="text/javascript">
+      if (
+        localStorage.theme === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
+    <!-- ------- links end -->
+    <style>
+      #particles-js {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        z-index: -10;
+      }
+      .swiper {
+        width: 100%; 
+        height: 350px;
+      }
+    </style>
+  </head>
+  <body class="bg-slate-50 dark:bg-black w-full h-[100vh] overflow-hidden">
+  <!-- 
+
+   svg
+
+   -->
+  <svg class="hidden">
+    <symbol id="calendar" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
+      </symbol>
+      <symbol id="plus" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+      </symbol>
+      <symbol id="puzzle" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 6.087c0-.355.186-.676.401-.959.221-.29.349-.634.349-1.003 0-1.036-1.007-1.875-2.25-1.875s-2.25.84-2.25 1.875c0 .369.128.713.349 1.003.215.283.401.604.401.959v0a.64.64 0 0 1-.657.643 48.39 48.39 0 0 1-4.163-.3c.186 1.613.293 3.25.315 4.907a.656.656 0 0 1-.658.663v0c-.355 0-.676-.186-.959-.401a1.647 1.647 0 0 0-1.003-.349c-1.036 0-1.875 1.007-1.875 2.25s.84 2.25 1.875 2.25c.369 0 .713-.128 1.003-.349.283-.215.604-.401.959-.401v0c.31 0 .555.26.532.57a48.039 48.039 0 0 1-.642 5.056c1.518.19 3.058.309 4.616.354a.64.64 0 0 0 .657-.643v0c0-.355-.186-.676-.401-.959a1.647 1.647 0 0 1-.349-1.003c0-1.035 1.008-1.875 2.25-1.875 1.243 0 2.25.84 2.25 1.875 0 .369-.128.713-.349 1.003-.215.283-.4.604-.4.959v0c0 .333.277.599.61.58a48.1 48.1 0 0 0 5.427-.63 48.05 48.05 0 0 0 .582-4.717.532.532 0 0 0-.533-.57v0c-.355 0-.676.186-.959.401-.29.221-.634.349-1.003.349-1.035 0-1.875-1.007-1.875-2.25s.84-2.25 1.875-2.25c.37 0 .713.128 1.003.349.283.215.604.401.96.401v0a.656.656 0 0 0 .658-.663 48.422 48.422 0 0 0-.37-5.36c-1.886.342-3.81.574-5.766.689a.578.578 0 0 1-.61-.58v0Z" />
+      </symbol>    
+      <symbol id="send" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
+      </symbol>      
+      <symbol id="dont-like-post" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+      </symbol>              
+      <symbol  id="dont-send-coment" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
+      </symbol>      
+  </svg>
+
+    <div class="max-w-sm h-full mx-auto z-10 relative px-1">
+      <div id="particles-js" class=" dark:bg-black hidden dark:flex"></div> 
+     <div class="w-full h-full flex justify-center ">
+      <div class="w-full h-auto rounded-lg p-4 ">
+        <h1 class="text-center pb-6 pt-2 font-medium text-2xl flex justify-center items-center dark:text-white">Add your new post
+          <svg class="w-6 h-6 text-pink-500">
+            <use href="#puzzle"></use>
+          </svg>
+        </h1>
+        <div class="relative">
+            <div class="w-9 h-9 cursor-pointer bg-zinc-200   dark:bg-zinc-300 rounded-full z-10 flex justify-center items-center absolute -top-4 left-0">
+                <svg class="w-5 h-5 absolute  cursor-pointer text-pink-500">
+                    <use href="#plus"></use>
+                </svg>
+                <input type="file" id="fileInput" class="w-full cursor-pointer h-full rounded-full opacity-0">
+            </div>
+            <img src="./images/2ccd27fc12336a7a8e13d5879814b13c.png" id="imageElm"  class="rounded-lg w-full h-48 object-cover mx-auto bg-repeat-none border-2 dark:border-zinc-300 dark:border-[3px]">
+            <div class="border-t dark:border-t-2 border-pink-500 w-full h-auto rounded-sm mt-4 pt-2 flex justify-start gap-2 flex-wrap-reverse" id="content-box-item">
+              <div class="w-24 h-24  rounded-md border-2 flex justify-center items-center dark:border-[3px] dark:border-zinc-300" id="defult-box-item-post">
+                <svg class="w-9 h-9 text-pink-500">
+                  <use href="#plus"></use>
+                </svg>
+               </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="flex justify-between items-c enter mt-4">
+                <div class="flex justify-center items-center gap-x-2">
+                    <img src="./images/18583bf15a6bdc083bcee64acc58ed55.png" alt="" class="w-8 h-8 rounded-full">
+                    <span class="dark:text-white">poriya</span>
+                </div>
+                <div class="flex justify-center items-center gap-x-2">
+                <svg class="w-5 h-5 text-pink-500">
+                    <use href="#calendar"></use>
+                </svg> 
+                <span id="data-line" class="font-medium text-sm text-pink-500"></span>
+                </div>
+            </div>
+            <h3 class="font-medium text-lg my-3 dark:text-white">Add a description of your post</h3>
+            <input type="text" placeholder="Description..." id="DescriptionInput"
+            class="outline-none w-full p-3 rounded-lg placeholder:text-zinc-500 text-zinc-400 text-sm placeholder:text-sm font-medium bg-zinc-200">
+            <p class="font-medium text-sm my-3 dark:text-white" id="p_valueInput" value="..."></p>
+            <div class="w-full flex  justify-start flex-col  gap-y-2">
+              <div class="flex items-center gap-x-2 border dark:border-2 rounded-md p-2 dark:text-white dark:border-zinc-400" id="License">
+                not like your post
+                <svg class="w-6 h-6">
+                  <use href="#dont-like-post"></use>
+                </svg>
+              </div>
+              <div class="flex  items-center gap-x-2 border dark:border-2 rounded-md p-2 dark:text-white dark:border-zinc-400" id="License">
+                dont your coment
+                <svg class="w-6 h-6">
+                  <use href="#dont-send-coment"></use>
+                </svg>
+              </div>
+            </div>
+            <a href="#" class="rounded-lg py-2 px-10 font-normal mt-5  text-pink-500 border flex items-center justify-center text-lg">send
+              <svg class="w-5 h-5 text-pink-500">
+                <use href="#send"></use>
+              </svg>
+            </a>
+        </div>
+    </div>
+     </div>
+    </div>
+    
+    <script src="./js/addPost/main.js"></script>
+    <script src="./js/All-js-libresz/particles.js"></script>
+    <script src="./js/All-js-libresz/app.js"></script> 
+</body>
+</html>
+

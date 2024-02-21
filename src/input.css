@@ -4,20 +4,23 @@
 @tailwind utilities;
 
 @layer components {
-
+  @font-face {
+    font-family: 'ProtestRiot';
+    src: url(../fonts/ProtestRiot-Regular.ttf);
+  }
+  body{
+    font-family:  'ProtestRiot';
+  }
   /* رنگ اسکرول بار */
   ::-webkit-scrollbar {
     width: 0;
   }
-
   ::-webkit-scrollbar-thumb {
     background-color: #474747;
   }
-
   ::-webkit-scrollbar-track {
     background-color: transparent;
   }
-
   .background_color {
     /* background: linear-gradient(rgba(226, 3, 55, 1), rgba(198, 1, 136, 1), rgba(119, 0, 195, 1)); */
     background: radial-gradient(rgba(0,0,0,0.15) 60%,transparent 0 ), radial-gradient(white 63%,transparent 0), linear-gradient(to top right,rgba(119, 0, 195, 1),rgba(226, 3, 55, 1));
@@ -107,8 +110,6 @@
     -ms-transition: all 1s ease-in;
     -o-transition: all 1s ease-in;
   }
-
-
   .input_form_user {
     background-color: transparent;
     padding: 0 .5rem;
@@ -121,9 +122,13 @@
     -ms-border-radius: .5rem;
     -o-border-radius: .5rem;
 }
-
   .select_form {
     padding: .5rem 1rem;
   }
 
+
+
+  /* style add Post user for tag video and image */
+  
+  /* finish style add Post user for tag video and image   */
 }

@@ -1,0 +1,72 @@
+
+@font-face {
+	font-family: "instagram";
+	src: url("../fonts/instagrom-logo-font/Instagram.ttf");
+}
+
+.pl {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.pl__ring, .pl__ball {
+	animation: ring 2s ease-out infinite;
+}
+.pl__ball {
+	animation-name: ball;
+}
+
+/* Dark theme  */
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg: hsl(var(--hue),10%,10%);
+		--fg: hsl(var(--hue),10%,90%);
+	}
+}
+
+/* Animation */
+@keyframes ring {
+	from {
+		stroke-dasharray: 0 257 0 0 1 0 0 258;
+	}
+	25% {
+		stroke-dasharray: 0 0 0 0 257 0 258 0;
+	}
+	50%, to {
+		stroke-dasharray: 0 0 0 0 0 515 0 0;
+	}
+}
+@keyframes ball {
+	from, 50% {
+		animation-timing-function: ease-in;
+		stroke-dashoffset: 1;
+	}
+	64% {
+		animation-timing-function: ease-in;
+		stroke-dashoffset: -109;
+	}
+	78% {
+		animation-timing-function: ease-in;
+		stroke-dashoffset: -145;
+	}
+	92% {
+		animation-timing-function: ease-in;
+		stroke-dashoffset: -157;
+	}
+	57%, 71%, 85%, 99%, to {
+		animation-timing-function: ease-out;
+		stroke-dashoffset: -163;
+	}
+}
+
+.background_welcome{
+background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+}
+.backround-dark{
+    z-index: -50;
+ background: linear-gradient(rgba(0,0,0,0.2) , rgba(0,0,0,0.6));
+}
+.fontCustom{
+	font-family:"instagram";
+	font-size: 2.5rem;	
+}
