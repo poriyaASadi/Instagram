@@ -73,7 +73,7 @@
     start code 
 
       -->
-    <div class="max-w-sm h-full mx-auto z-10 relative overflow-y-auto ">
+    <div class="max-w-md h-full mx-auto z-10 relative overflow-y-auto ">
        <div id="particles-js" class="darkbg-black "></div> 
       <!-- 
 
@@ -92,78 +92,83 @@
             </a
           >
         </div>
-        <div class="font-semibold text-lg dark:text-white">Edit Profile</div>
+        <div class="font-medium text-xl dark:text-white">Edit Profile</div>
         <div class="font-medium dark:text-white cursor-pointer">Done</div>
       </div>
       <!-- ----- image user edit  -->
       <div
-        class="w-full h-40 gap-y-2 my-4 mb-3 flex justify-center items-center flex-col"
+        class="w-full h-40 my-4 mb-3 flex justify-center items-center gap-x-2 "
       >
         <div
-          class="w-32 h-32 rounded-full relative">
+          class="w-32 h-32 rounded-full relative border-[5px] border-zinc-600  dark:border-zinc-300">
           <img
             class="w-full h-full rounded-full object-cover"
             src="./images/face/65769a04f3b5bad56365e101c778a7c1.png"
             alt="faceUser"
           />
-          <span class="absolute bottom-0 right-0 dark:bg-white bg-black p-1 rounded-full">
+          <span class="absolute bottom-0 right-0 dark:bg-zinc-300 bg-zinc-600 p-1 rounded-full">
             <svg class="w-6 h-6 text-white dark:text-black">
               <use href="#camera"></use>
             </svg>
           </span>
         </div>
-        <a href="#" class="text-blue-600 text-sm tracking-tighter font-semibold">Change Profile Photo</a>
+        <a href="#" class="text-zinc-600 dark:text-zinc-300  text-lg tracking-tighter font-medium">Change Profile Photo</a>
       </div>
+
      <!-- ------ input user about -->
-    <div class="child:dark:text-white w-full  relative overflow-hidden">
-     <div class="flex flex-col">
-       <span class="font-semibold text-[1rem] flex gap-x-1 items-center tracking-tight dark:text-white ">
+    <div class="child:dark:text-white w-full  relative overflow-hidden flex flex-col gap-y-1">
+      <div class="w-full h-24 flex justify-center items-center mb-1 gap-x-1">
+     <div class="w-[50%] h-full border-2 rounded-md">
+       <span class="text-[1rem] flex gap-x-1 items-center tracking-tight dark:text-white">
         <svg class="w-4 h-4 dark:text-white text-black">
           <use href="#user"></use>
         </svg>
-        Name</span>
-       <input type="text" name="nameUser" class="p-4 border-none outline-none placeholder:text-zinc-500 placeholder:font-medium placeholder:italic bg-transparent cursor-pointer" placeholder="Poriya">
+        Name 
+      </span>
+       <input type="text" name="nameUser" class="p-2 border-none outline-none  placeholder:text-zinc-500 placeholder:font-medium bg-transparent cursor-pointer" placeholder="Poriya">
      </div>
-     <div class="flex flex-col">
-      <span class="font-semibold text-[1rem] tracking-tight dark:text-white ">User Name</span>
-      <input type="text" name="Username" class="p-4 border-none outline-none placeholder:text-zinc-500 placeholder:font-medium placeholder:italic bg-transparent cursor-pointer" placeholder="log(poriya)">
+     <div class=" w-[50%] h-full border-2 rounded-md">
+      <span class=" text-[1rem] tracking-tight dark:text-white ">User Name</span>
+      <input type="text" name="Username" class="p-4 border-none outline-none placeholder:text-zinc-500 placeholder:font-medium bg-transparent cursor-pointer" placeholder="log(poriya)">
      </div>
-     <div class="flex flex-col">
-      <span class="font-semibold text-[1rem] flex gap-x-1 items-center tracking-tight dark:text-white ">
+      </div>
+     <div class="flex flex-col border-b-[3px] rounded-sm   >
+      <span class=" text-[1rem] flex gap-x-1 items-center tracking-tight dark:text-white ">
         <svg class="w-4 h-4 dark:text-white text-black">
           <use href="#email"></use>
+
         </svg>
         Email 
       </span>
-      <input type="email" class="p-4 border-none outline-none placeholder:text-zinc-500 placeholder:font-medium placeholder:italic bg-transparent cursor-pointer" placeholder="pooruiasadi85@gmail.com">
+      <input type="email" class="p-4 border-none outline-none placeholder:text-zinc-500 placeholder:font-medium bg-transparent cursor-pointer" placeholder="pooruiasadi85@gmail.com">
      </div>
-     <div class="flex flex-col">
-      <span class="font-semibold text-[1rem] tracking-tight dark:text-white ">Phone Number</span>
-      <input type="text" class="p-4 border-none outline-none placeholder:text-zinc-500 placeholder:font-medium placeholder:italic bg-transparent cursor-pointer" name="phoneNumber" id="" placeholder="09391521440">
+     <div class="flex flex-col border-b-[3px] rounded-sm   >
+      <span class=" text-[1rem] tracking-tight dark:text-white ">Phone Number</span>
+      <input type="text" class="p-4 border-none outline-none placeholder:text-zinc-500 placeholder:font-medium bg-transparent cursor-pointer" name="phoneNumber" id="" placeholder="09391521440">
      </div>
-     <div class="flex flex-col">
-      <span class="font-semibold text-[1rem] tracking-tighter dark:text-white ">Password</span>
+     <div class="flex flex-col border-b-[3px] rounded-sm   >
+      <span class=" text-[1rem] tracking-tighter dark:text-white ">Password</span>
       <div class="flex">
-        <input type="password" class="p-4 border-none outline-none placeholder:text-zinc-500 placeholder:font-medium placeholder:italic bg-transparent cursor-pointer w-full" placeholder="13850000" id="passwordInput" name="password" class=" outline-none border-none pl-1 text-sm font-medium text-zinc-600 dark:text-zinc-300">
+        <input type="password" class="p-4 border-none outline-none placeholder:text-zinc-500 placeholder:font-medium bg-transparent cursor-pointer w-full" placeholder="13850000" id="passwordInput" name="password" class=" outline-none border-none pl-1 text-sm font-medium text-zinc-600 dark:text-zinc-300">
         <svg class="w-6 h-6 text-black dark:text-white cursor-pointer" id="swicth-icon"><use href="#show"></use></svg>
       </div>
      </div>
-     <div class="flex flex-col">
-      <span class="font-semibold text-[1rem] tracking-tighter dark:text-white ">Mayle</span>
-      <input type="text" class="p-4 border-none outline-none placeholder:text-zinc-500 placeholder:font-medium placeholder:italic bg-transparent cursor-pointer" placeholder="mayle" name="Mayleuser">
+     <div class="flex flex-col border-b-[3px] rounded-sm   >
+      <span class=" text-[1rem] tracking-tighter dark:text-white ">Mayle</span>
+      <input type="text" class="p-4 border-none outline-none placeholder:text-zinc-500 placeholder:font-medium bg-transparent cursor-pointer" placeholder="mayle" name="Mayleuser">
      </div>
-     <div class="flex flex-col">
-      <span class="font-semibold text-[1rem] flex items-center gap-x-1 tracking-tighter dark:text-white ">
+     <div class="flex flex-col border-b-[3px] rounded-sm   >
+      <span class=" text-[1rem] flex items-center gap-x-1 tracking-tighter dark:text-white ">
         <svg class="w-4 h-4 dark:text-white text-black">
           <use href="#website"></use>
         </svg>
         https://</span>
-      <input type="text" value="" class="p-4 border-none outline-none placeholder:text-zinc-500 placeholder:font-medium placeholder:italic bg-transparent cursor-pointer" placeholder="https://heroicons.com/">
+      <input type="text" value="" class="p-4 border-none outline-none placeholder:text-zinc-500 placeholder:font-medium bg-transparent cursor-pointer" placeholder="https://heroicons.com/">
      </div>
-     <div class="flex flex-col">
-      <span class="font-semibold text-[1rem] tracking-tighter dark:text-white ">Bio</span>
+     <div class="flex flex-col border-b-[3px] rounded-sm   >
+      <span class=" text-[1rem] tracking-tighter dark:text-white ">Bio</span>
       <textarea name="bioUser" id="" cols="30" rows="3"
-      class="bg-transparent text-zinc-700 dark:text-zinc-300 resize-y placeholder:italic p-2" placeholder="hello word"></textarea>
+      class="bg-transparent text-zinc-700 dark:text-zinc-300 resize-y p-2 border-none outline-none" placeholder="hello word"></textarea>
      </div>
     </div>
 

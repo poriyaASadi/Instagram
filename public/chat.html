@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+      <!-- --------- links -->
+    <!-- 
+        app.css
+     -->
+     <link rel="stylesheet" href="./styles/app.css"/>
+     <!-- 
+       
+         icon title
+      -->
+     <!-- 
+       swiper
+       -->
+     <link
+       rel="stylesheet"
+       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+     />
+     <!-- --------- -->
+     <link rel="icon" href="./images/Instagram.png" type="images/png" />
+     <!-- 
+         dark mode tailwind switch 
+       -->
+     <script type="text/javascript">
+       if (
+         localStorage.theme === "dark" ||
+         (!("theme" in localStorage) &&
+           window.matchMedia("(prefers-color-scheme: dark)").matches)
+       ) {
+         document.documentElement.classList.add("dark");
+       } else {
+         document.documentElement.classList.remove("dark");
+       }
+     </script>
+     <!-- ------- links end -->
+</head>
+<body class="dark:bg-black">
+
+<!-- all svg icon -->
+<svg class="hidden">
+    <symbol id="send" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
+      </symbol>      
+</svg>
+<!-- svg end icon :) -->
+
+    <div class="max-w-md h-full mx-auto z-10 relative border">
+        <div class="relative w-full h-[100vh] overflow-y-auto overflow-x-hidden bg-primeryColor-Chat ">
+            <div class="p-3 w-full flex justify-start items-center gap-x-2">
+                <div>
+                    <div class="w-12 h-12 rounded-full">
+                        <img src="./images/face/ce7e32c5013518aa6e932c543a55a3c9 - Copy.png"
+                         alt="image-profileUser"
+                          class="w-full h-full object-cover rounded-full">
+                    </div>
+                </div>
+                <div>
+                    <h1 class="dark:text-white">poriya</h1>
+                </div>
+            </div>
+
+            <div class="fixed bottom-0 left-0 right-0  w-full  py-4  ">
+                <div class=" flex justify-between items-center gap-x-2 px-4 bg-primeryColor-2
+                w-[90%]  mx-auto rounded-3xl">
+                    <input type="text" placeholder="Masseage"
+                    class="w-full h-full py-2 px-3 rounded-3xl outline-none border-none  bg-transparent dark:text-zinc-400">
+                    <svg class="w-8 h-8 dark:text-zinc-400 cursor-pointer">
+                       <use href="#send"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

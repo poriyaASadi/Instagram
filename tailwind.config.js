@@ -12,7 +12,9 @@ module.exports = {
         "Inter-Black":"Inter Black",
       },
       colors:{
-        "search-color":"rgba(118, 118, 128, 0.12)"
+        "search-color":"rgba(118, 118, 128, 0.12)",
+        "primeryColor-Chat" : "#06080C",
+        "primeryColor-2":"#32384A"
       },
       boxShadow:{
         "soft-bg":"6px 6px 12px #b8b9be, -6px -6px 12px #ffffff",

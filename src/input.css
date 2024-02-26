@@ -126,6 +126,12 @@
     padding: .5rem 1rem;
   }
 
+  .swiper-pagination  .swiper-pagination-bullet{
+    width: .6rem !important;
+    height: .6rem !important;
+    background-color: #ff68a5;
+    
+  }
 
 
   /* style add Post user for tag video and image */

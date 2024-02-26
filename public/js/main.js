@@ -165,7 +165,8 @@ prantIcon_ShowAlert.addEventListener('click' , () => {
 
 
 // swiper slide post user code start
-   
+
+
 const swiper = new Swiper(".swiper", {
   loop: true,
   //direction:'vertical',   // عمودی
@@ -179,23 +180,57 @@ const swiper = new Swiper(".swiper", {
    // dynamicBullets: true,
   },
   on: { 
-    slideChange: function (items) {
-      let swiperSlide = document.querySelectorAll('.swiper-slide');
-      let indexSwiperSlide = items.slides[items.activeIndex].children[0]
-      let windowUser =  window.innerHeight / 2 + window.scrollY;
-         
-      swiperSlide.forEach(slide => {
-        let slideAbout = slide.getBoundingClientRect();
-        if (slideAbout.top <= windowUser && slideAbout.bottom >= windowUser){
-          if (indexSwiperSlide.tagName === 'VIDEO'){ 
-            indexSwiperSlide.play();
-          }else if  (indexSwiperSlide.paused){
-            indexSwiperSlide.play();
-          }
-        } 
-      })     
-    }
+     slideChange: function (items) {
+        
+     }
   }
   });
 
 //  swiper post style user end
+
+    //   let swiperSlide = document.querySelectorAll('.swiper-slide');
+    //   let indexSwiperSlide = items.slides[items.activeIndex].children[0]
+    //   let windowUser =  window.innerHeight / 2 + window.scrollY;
+         
+    //   swiperSlide.forEach(slide => {
+    //     let slideAbout = slide.getBoundingClientRect();
+    //     if (slideAbout.top <= windowUser && slideAbout.bottom >= windowUser){
+    //       if (indexSwiperSlide.tagName === 'VIDEO'){ 
+    //         indexSwiperSlide.play()
+    //       }else if  (indexSwiperSlide.pause){
+    //         indexSwiperSlide.play();
+    //       }
+    //     } 
+    //   })     
+
+    
+window.addEventListener('click' , (e) => {
+  if (e.target.tagName  === 'VIDEO') {
+    let videos =  document.querySelectorAll('video')
+    videos.forEach(item => {
+     let windowUser =  window.innerHeight / 2 + window.scrollY;
+     let slideAbout = item.getBoundingClientRect();
+     if (slideAbout.top <= windowUser && slideAbout.bottom >= windowUser){
+      if (item.parentElement.className == 'swiper-slide swiper-slide-active'){
+        item.play();
+        item.setAttribute('loop' , 'true');
+      }else {
+        item.pause()
+        item.removeAttribute('loop');
+      }
+} else{
+  item.pause();
+}
+ item.ondblclick = () => {
+ item.pause()
+ item.removeAttribute('loop');
+}
+  })
+ 
+  }
+})
+
+// function stop (item) {
+//   item.pause();
+//   item.removeAttribute('loop');   
+// } 
