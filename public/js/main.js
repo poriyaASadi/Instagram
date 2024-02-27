@@ -5,7 +5,7 @@ import * as name from './Var-all.js';
 
 import { mainComment , comment_icon_user_main , back_comment_icon , input_comment_post , button_creat_post_comment  , likePostValue 
 , like_heart_post , save_post_icon , text_more_post , active_icon_branch , stack , openBlurAlert , prantIcon_ShowAlert ,
-videoPostUser } from './Var-all.js';
+videoPostUser,timeSendUser_comment  } from './Var-all.js';
 
 //  ----- icon comment open chat 
 comment_icon_user_main.forEach((item) => {
@@ -26,23 +26,41 @@ button_creat_post_comment.addEventListener('click' , (e) => {
    input_comment_post.value = '' 
 });
 function creatPostComment (value_input) {
-    mainComment.insertAdjacentHTML('afterend',`
-    <div class="mb-2">
-    <div class="w-full flex justify-start items-center gap-x-1 mb-[.5rem] child:dark:text-white">
-    <img src="./images/face/5904c9ce3cfb08e4c032b5a473d5648d.png" alt="face"
-    class="w-5 h-5 rounded-full">
-    <p class="text-sm font-medium cursor-pointer">mariya</p>
+  let data = new Date();
+  const fulllData = `${data.getHours()}m`;
+    mainComment.insertAdjacentHTML('beforebegin',`
+    <div class="mb-2 ">
+    <div class="flex justify-between items-center mb-2">
+   <div class="flex justify-center items-center gap-x-2">
+    <div class="w-9 h-9 rounded-full border-2 border-red-400 cursor-pointer ">
+      <img src="./images/face/5904c9ce3cfb08e4c032b5a473d5648d.png"
+       class="w-full h-full object-cover rounded-full" alt="">
     </div>
-    <div class="text-sm tracking-tight leading-5 font-normal dark:text-white">
-    <p>${value_input}</p>
+    <h6 class="dark:text-zinc-300">mariya</h6>
+   </div>
+   <div class="ml-2 w-full">
+    <p
+    class="text-zinc-500 dark:text-zinc-400" id="text_more_post"
+    >${value_input} </p>
+   </div>
     </div>
-    </div>`);
-
+   <div>
+    <div class="flex justify-start items-center gap-x-2">
+      <span id="timeSendUser-comment" class="text-zinc-400 ">${fulllData}</span>
+      <svg class="w-4 h-4 text-white">|
+        <use href="#activityfeed"></use>
+      </svg>
+      <span class="text-sm text-zinc-500  dark:text-zinc-400">Replay</span>
+    </div>
+   </div>
+  </div>
+    `);
 };
 input_comment_post.addEventListener('keydown' , (e) => {
    if (e.keyCode === 13) {
     creatPostComment(input_comment_post.value);
     input_comment_post.value = '';
+
    }
 })
 // ------------------------------
@@ -95,13 +113,16 @@ like_heart_post.forEach(function heart_like (item) {
 
 // =========== end ====
 // icon save post <=========
+let cheangCode = false
 save_post_icon.addEventListener('click' , function () {
-  if (document.documentElement.classList == 'dark'){
-    this.classList.toggle('dark:text-red-500');
-    this.classList.remove('dark:text-white');
-  }else {
-    this.classList.toggle('text-red-500');
-  }
+ // save_post_icon.children.href = '#onsave'
+ if (!cheangCode){
+  save_post_icon.firstElementChild.setAttribute('href' , '#onsave');
+  cheangCode = true
+ }else{
+  save_post_icon.firstElementChild.setAttribute('href' , '#save')
+  cheangCode = false
+ }
 });
 // ========== end ----
 //  text_more_post =====> 

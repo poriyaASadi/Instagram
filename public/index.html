@@ -182,20 +182,12 @@
           d="M6.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM18.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
         />
       </symbol>
-      <symbol
-        id="save"
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="2.5"
-        stroke="currentColor"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"
-        />
-      </symbol>
+      <symbol id="save" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z" />
+      </symbol>      
+      <symbol id="onsave" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m3 3 1.664 1.664M21 21l-1.5-1.5m-5.485-1.242L12 17.25 4.5 21V8.742m.164-4.078a2.15 2.15 0 0 1 1.743-1.342 48.507 48.507 0 0 1 11.186 0c1.1.128 1.907 1.077 1.907 2.185V19.5M4.664 4.664 19.5 19.5" />
+      </symbol>      
       <symbol
         id="comment"
         xmlns="http://www.w3.org/2000/svg"
@@ -334,7 +326,7 @@ start project
       <div id="particles-js" class="bg-black dark:bg-black hidden"></div>
       <!-- ---------- header -->
       <header
-        class="h-10 w-full border-b border-zinc-200 bg-white dark:bg-transparent dark:border-none"
+        class="h-11 w-full border-b border-zinc-200 bg-white dark:bg-transparent dark:border-none"
       >
         <div class="h-full flex justify-between gap-1 items-center px-4">
           <div>
@@ -555,7 +547,7 @@ start main project ====> for mobile
                 >
                   <!-- --- img user -->
                   <div class="flex items-center">
-                    <div class="w-8 h-8 rounded-full">
+                    <div class="w-10 h-10 rounded-full border-[3px] border-red-400 ">
                       <img
                         src="./images/2ccd27fc12336a7a8e13d5879814b13c.png"
                         class="w-full h-full object-cover rounded-full"
@@ -618,10 +610,10 @@ start main project ====> for mobile
                   <div class="swiper-pagination mb-1 flex gap-x-1 justify-center w-full "></div> 
                 </div>
                 <!-- nav bar main option -->
-                <div class="w-full h-8 relative flex justify-between mt-3 items-center px-1">
+                <div class="w-full h-8 relative flex justify-between mt-4 child:cursor-pointer items-center px-1">
              
                   <div
-                    class="flex justify-center items-center child:dark:text-white child:w-6 child:h-6 gap-x-2"
+                    class="flex justify-center items-center child:dark:text-white child:w-7 child:h-7 gap-x-2"
                   >
                     <!-- ------ icon comment -->
                     <svg id="like" class="">
@@ -639,7 +631,7 @@ start main project ====> for mobile
                   <!-- ------------- swiper pagination end -->
                   <!-- ---------- save comment -->
                   <div
-                    class="child:w-6 child:h-6 flex text-black justify-center items-center"
+                    class="child:w-7 child:h-7 flex text-black justify-center items-center"
                   >
                     <svg class="text-black dark:text-white" id="save_post_icon">
                       <use href="#save"></use>
@@ -665,8 +657,8 @@ start main project ====> for mobile
                       class="w-5 h-5 rounded-full"
                       alt="post-user"
                     />
-                    <span class="inline-block text-sm"
-                      >Liked by craig_love and 44,686 others</span
+                    <span class="inline-block text-sm text-zinc-500 dark:text-zinc-400"
+                      >Liked by craig_love and <span class="text-zinc-600 dark:text-zinc-100 font-medium text-[1rem]">44,686</span> others</span
                     >
                   </div>
                   <div
@@ -720,7 +712,7 @@ start main project ====> for mobile
             <div class="flex justify-start items-center gap-x-2">
               <img
                 src="./images/48f1801e657b098f5792c61365f65c75.png"
-                class="w-7 h-7 rounded-full border p-[2px] border-zinc-600 dark:border-zinc-300"
+                class="w-10 h-10 rounded-full border-2 p-[2px] border-zinc-600 dark:border-zinc-300"
                 alt="post-user"
               />
               <span
@@ -733,7 +725,7 @@ start main project ====> for mobile
               >
             </div>
             <div
-              class="text-sm mt-1 flex justify-end border-b border-zinc-200 dark:border-zinc-400 pb-3"
+              class="text-sm mt-1 flex justify-end border-b border-zinc-200 dark:border-zinc-600 pb-3"
             >
               <p class="text-zinc-600 dark:text-zinc-400">
                 <span class="font-medium text-zinc-700 dark:text-zinc-300"
@@ -749,26 +741,31 @@ start main project ====> for mobile
             id="main_comment"
           >
             <!-- --------box 1 -->
-            <div class="mb-2">
-              <div
-                class="w-full flex justify-start items-center gap-x-1 mb-[.5rem] child:dark:text-white"
-              >
-                <img
-                  src="./images/face/5904c9ce3cfb08e4c032b5a473d5648d.png"
-                  alt="face"
-                  class="w-5 h-5 rounded-full"
-                />
-                <p class="text-sm font-medium cursor-pointer">mariya</p>
+            <!-- <div class="mb-2 ">
+              <div class="flex justify-between items-center mb-2">
+             <div class="flex justify-center items-center gap-x-2">
+              <div class="w-9 h-9 rounded-full border-2 border-red-400 cursor-pointer ">
+                <img src="./images/face/5904c9ce3cfb08e4c032b5a473d5648d.png"
+                 class="w-full h-full object-cover rounded-full" alt="">
               </div>
-              <div
-                class="text-sm tracking-tight leading-5 font-normal dark:text-white"
-              >
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatibus, dolorem.
-                </p>
+              <h6 class="dark:text-zinc-300">mariya</h6>
+             </div>
+             <div class="ml-2 w-full">
+              <p
+              class="text-zinc-500 dark:text-zinc-400" id="text_more_post"
+              >Lorem ipsum dolor sit amet consectetur </p>
+             </div>
               </div>
-            </div>
+             <div>
+              <div class="flex justify-start items-center gap-x-2">
+                <span id="timeSendUser-comment"></span>
+                <svg class="w-5 h-5 text-white">|
+                  <use href="#activityfeed"></use>
+                </svg>
+                <span class="text-sm text-zinc-500  dark:text-zinc-400">Replay</span>
+              </div>
+             </div>
+            </div> -->
             <!-- ----------- box 2 -->
           </div>
           <!-- ------------------end -->
@@ -776,17 +773,17 @@ start main project ====> for mobile
     --------- > input box comment users  
     -->
           <div
-            class="w-full h-12 absolute left-0 right-0 bottom-0 bg-white dark:bg-black"
+            class="w-full h-12 absolute left-0 right-0 bottom-0 mb-3  bg-white dark:bg-black"
           >
             <div
-              class="w-full h-full flex justify-center items-center gap-x-1 px-[15px]"
+              class="w-[90%] h-full flex justify-center items-center gap-x-1 px-[15px] border-2 dark:border-zinc-500 mx-auto rounded-3xl "
             >
               <input
                 type="text"
-                placeholder="type"
+                placeholder="type..."
                 name="comment_user"
                 id="input_comment_post"
-                class="bg-transparent outline-none text-sm dark:text-white placeholder:text-sm w-full px-2 font-medium"
+                class="bg-transparent outline-none text-sm dark:text-white placeholder:text-base w-full px-2 font-medium"
               />
               <button
                 type="button"

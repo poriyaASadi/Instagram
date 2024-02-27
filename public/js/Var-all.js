@@ -18,6 +18,7 @@ let likePostValue = $.querySelectorAll('#likePostValue');
 let save_post_icon = $.querySelector('#save_post_icon');
 // ----- text more post ---> p 
 let text_more_post = $.querySelectorAll('#text_more_post');
+let timeSendUser_comment = $.querySelector('#timeSendUser-comment');
 // ----========== user acount location
 let user_acount = $.getElementById('user_acount');
 // ----------------- user likes
@@ -29,7 +30,7 @@ let stack = document.querySelectorAll('#stack_icon');
 let openBlurAlert = $.getElementById('openBlurAlert');
 let prantIcon_ShowAlert = $.getElementById('prantIcon_ShowAlert');
 let videoPostUser = $.querySelectorAll('.videoPostUser')
-
+// ---------------------------------
 
 export {
     comment_icon_user_main,
@@ -41,6 +42,7 @@ export {
     likePostValue,
     save_post_icon,
     text_more_post,
+    timeSendUser_comment,
     user_acount,
     like_user,
     active_icon_branch,
