@@ -14,7 +14,9 @@ module.exports = {
       colors:{
         "search-color":"rgba(118, 118, 128, 0.12)",
         "primeryColor-Chat" : "#06080C",
-        "primeryColor-2":"#32384A"    
+        "primeryColor-2":"#32384A",
+        "primary-with":"#F6F6F6",
+        "colorSvgDark":"#4D5151"
         },
       backgroundColor:{
         "colorLine" : "radial-gradient(rgba(0,0,0,0.15) 60%,transparent 0 ), radial-gradient(white 63%,transparent 0), linear-gradient(to top right,rgba(119, 0, 195, 1),rgba(226, 3, 55, 1))"

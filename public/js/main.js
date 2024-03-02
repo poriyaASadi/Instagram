@@ -47,7 +47,7 @@ function creatPostComment (value_input) {
    <div>
     <div class="flex justify-start items-center gap-x-2">
       <span id="timeSendUser-comment" class="text-zinc-400 ">${fulllData}</span>
-      <svg class="w-4 h-4 text-white">|
+      <svg class="w-4 h-4 dark:text-white">|
         <use href="#activityfeed"></use>
       </svg>
       <span class="text-sm text-zinc-500  dark:text-zinc-400">Replay</span>

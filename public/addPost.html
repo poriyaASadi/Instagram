@@ -38,12 +38,6 @@
     </script>
     <!-- ------- links end -->
     <style>
-      #particles-js {
-        position: absolute;
-        width: 100%;
-        height: 100vh;
-        z-index: -10;
-      }
       .swiper {
         width: 100%; 
         height: 350px;
@@ -78,7 +72,6 @@
   </svg>
 
     <div class="max-w-md h-full mx-auto z-10 relative px-1">
-      <div id="particles-js" class=" dark:bg-black hidden dark:flex"></div> 
      <div class="w-full h-full flex justify-center ">
       <div class="w-full h-auto rounded-lg p-4 ">
         <h1 class="text-center pb-6 pt-2 font-medium text-2xl flex justify-center items-center dark:text-white">Add your new post
@@ -87,15 +80,15 @@
           </svg>
         </h1>
         <div class="relative">
-            <div class="w-9 h-9 cursor-pointer bg-zinc-200   dark:bg-zinc-200 rounded-full z-10 flex justify-center items-center absolute -top-4 left-0">
+            <div class="w-9 h-9 cursor-pointer bg-zinc-200   dark:bg-zinc-200 rounded-full z-10 flex justify-center items-center absolute -top-4 -left-3">
                 <svg class="w-5 h-5 absolute  cursor-pointer text-pink-500">
                     <use href="#plus"></use>
                 </svg>
                 <input type="file" id="fileInput" class="w-full cursor-pointer h-full rounded-full opacity-0">
             </div>
-            <img src="./images/2ccd27fc12336a7a8e13d5879814b13c.png" id="imageElm"  class="rounded-lg w-full h-48 object-cover mx-auto bg-repeat-none border-2 dark:border-zinc-500 dark:border-[3px]">
+            <img src="./images/2ccd27fc12336a7a8e13d5879814b13c.png" id="imageElm"  class="rounded-lg w-full h-48 object-cover mx-auto bg-repeat-none border-2 dark:border-zinc-200 dark:border-[3px]">
             <div class="border-t dark:border-t-2 border-pink-500 w-full h-auto rounded-sm mt-4 pt-2 flex justify-start gap-2 flex-wrap-reverse" id="content-box-item">
-              <div class="w-24 h-24  rounded-md border-2 flex justify-center items-center dark:border-[3px] dark:border-zinc-300" id="defult-box-item-post">
+              <div class="w-20 h-20  rounded-lg  flex justify-center items-center  dark:bg-zinc-100" id="defult-box-item-post">
                 <svg class="w-9 h-9 text-pink-500">
                   <use href="#plus"></use>
                 </svg>
@@ -133,8 +126,8 @@
                 </svg>
               </div>
             </div>
-            <a href="#" class="rounded-lg py-2 px-10 font-normal mt-5  text-pink-500 border dark:border-2 dark:border-zinc-300 flex items-center justify-center text-lg">send
-              <svg class="w-5 h-5 text-pink-500">
+            <a href="#" class="rounded-full mx-auto py-2 px-5 font-normal mt-5 w-[80%]  text-white bg-pink-500 flex items-center justify-center text-lg">send
+              <svg class="w-5 h-5 text-white">
                 <use href="#send"></use>
               </svg>
             </a>
@@ -144,8 +137,6 @@
     </div>
     
     <script src="./js/addPost/main.js"></script>
-    <script src="./js/All-js-libresz/particles.js"></script>
-    <script src="./js/All-js-libresz/app.js"></script> 
 </body>
 </html>
 
