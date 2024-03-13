@@ -3,6 +3,8 @@ const $ = document;
 /*
    === ---$--- ===
 */
+// -------- post box user 
+let post_user = $.getElementById('post-user');
 // comment main post user / html icon comment
 let comment_icon_user_main = $.querySelectorAll('#comment_icon');
 let back_comment_icon = $.querySelectorAll('#back_icon_comment');
@@ -16,6 +18,8 @@ let like_heart_post = $.querySelectorAll('#like');
 let likePostValue = $.querySelectorAll('#likePostValue');
 // ----- icon save post 
 let save_post_icon = $.querySelector('#save_post_icon');
+// ------- icon more post info 
+let moreIcon_post = $.getElementById('moreIcon-post');
 // ----- text more post ---> p 
 let text_more_post = $.querySelectorAll('#text_more_post');
 let timeSendUser_comment = $.querySelector('#timeSendUser-comment');
@@ -33,6 +37,7 @@ let videoPostUser = $.querySelectorAll('.videoPostUser')
 // ---------------------------------
 
 export {
+    post_user,
     comment_icon_user_main,
     back_comment_icon,
     input_comment_post,
@@ -41,6 +46,7 @@ export {
     like_heart_post,
     likePostValue,
     save_post_icon,
+    moreIcon_post,
     text_more_post,
     timeSendUser_comment,
     user_acount,

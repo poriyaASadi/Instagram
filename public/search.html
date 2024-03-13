@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>search</title>
+    <title>Explore</title>
     <!-- --------- links -->
     <!-- 
         app.css
@@ -136,18 +136,18 @@
          -->
       <div>
         <div
-          class="flex items-center py-2 border-b border-zinc-300 pb-2 dark:border-none"
+          class="flex items-center p-2 border-2 mx-1 mt-3 rounded-md border-zinc-100 pb-2 dark:border-none"
         >
           <div
-            class="flex justify-center items-center gap-x-2 w-full rounded-[10px] bg-search-color p-1"
+            class="flex justify-center items-center gap-x-2 w-full rounded-[10px]  p-1"
           >
             <label for="search">
-              <svg class="w-5 h-5 text-zinc-300">
+              <svg class="w-5 h-5 text-zinc-500">
                 <use href="#search"></use>
               </svg>
             </label>
             <input
-              class="w-full text-black dark:text-white cursor-pointer outline-none bg-transparent text-sm"
+              class="w-full text-black placeholder:text-zinc-500 dark:text-white cursor-pointer outline-none bg-transparent text-sm"
               type="text"
               name="search"
               id="search"
@@ -155,7 +155,7 @@
             />
           </div>
           <div>
-            <svg class="w-7 h-7 dark:text-zinc-300">
+            <svg class="w-7 h-7 text-zinc-500 dark:text-zinc-300">
               <use href="#top-nor"></use>
             </svg>
           </div>
@@ -166,7 +166,7 @@
             id="scroll-users-status"
           >
             <div
-              class="grid grid-flow-col gap-2 child:dark:text-white child:flex child:dark:border-none child:cursor-pointer child:justify-center child:items-center child:rounded-lg"
+              class="grid grid-flow-col gap-2 child:dark:text-white child:transition-colors  duration-300 child-hover:text-blue-500 child:flex child:dark:border-none child:cursor-pointer child:justify-center child:items-center child:rounded-lg"
             >
               <div
                 class="w-[75px] h-8 bg-transparent border font-medium border-zinc-300">

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>content</title>
+     <!-- --------- links -->
+    <!-- 
+        app.css
+     -->
+     <link rel="stylesheet" href="./styles/app.css"/>
+     <!-- 
+       
+         icon title
+      -->
+     <!-- 
+       swiper
+       -->
+     <link
+       rel="stylesheet"
+       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+     />
+     <!-- --------- -->
+     <link rel="icon" href="./images/Instagram.png" type="images/png" />
+     <!-- 
+         dark mode tailwind switch 
+       -->
+     <script type="text/javascript">
+       if (
+         localStorage.theme === "dark" ||
+         (!("theme" in localStorage) &&
+           window.matchMedia("(prefers-color-scheme: dark)").matches)
+       ) {
+         document.documentElement.classList.add("dark");
+       } else {
+         document.documentElement.classList.remove("dark");
+       }
+     </script>
+     <!-- ------- links end -->
+</head>
+<body class="dark:bg-black">
+
+  <!-- svg -->
+<svg class="hidden">
+  <symbol
+  id="search"
+  xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  viewBox="0 0 24 24"
+  stroke-width="2.5"
+  stroke="currentColor"
+  class="w-6 h-6"
+>
+  <path
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+  />
+</symbol>
+<symbol id="content" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" />
+</symbol>
+</svg>
+
+  <!-- svg end  -->
+
+
+
+    <div class="max-w-lg h-[100vh] mx-auto z-10 relative overflow-y-hidden">
+      <div class="w-full h-36  bg-blue-500 flex flex-col items-center shadow-xl" style="border-radius: 0 0 90% 90%;">
+        <h1 class="text-primary-with text-center text-2xl pt-3 flex items-center gap-x-1">Your contents
+          <svg class="w-6 h-6">
+            <use href="#content"></use>
+          </svg>
+        </h1>
+        <div class="w-[70%] p-3 flex justify-between items-center mt-3 gap-x-1 shadow-md  rounded-full">
+          <input type="text" placeholder="search..." class="w-full
+          bg-transparent  placeholder:text-zinc-300
+           outline-none border-none text-white placeholder:text-white ">
+           <svg class="w-5 h-5 text-primary-with"><use href="#search"></use></svg>
+        </div>
+      </div>
+
+      <div class=" mt-1 relative h-auto w-full  overflow-y-auto px-2 " style="border-radius: 5% 5% 0% 0%;">
+         
+        <div class="w-full relative flex justify-between items-center gap-x-3 my-2  shadow-md  rounded-full px-3 py-2 ">
+          <div class="flex justify-center items-center child:dark:text-primary-with gap-x-3">
+            <div class="w-14 h-14 rounded-full border-[3px] p-[2px] border-blue-500"> 
+              <img src="./images/face/5904c9ce3cfb08e4c032b5a473d5648d.png" 
+              alt=""
+              class="w-full h-full rounded-full">
+            </div>
+            <h3 class="text-lg ">mariya</h3>
+          </div>
+            <div class="child:dark:text-primary-with mr-2">
+              <p class="cursor-pointer hover:text-blue-500 dark:hover:text-blue-500  transition-colors duration-300"> masseag</p>
+            </div>          
+         </div>
+  
+         <div class="w-full relative flex justify-between items-center gap-x-3 my-2 mb-2 shadow-md  rounded-full px-3 py-2  ">
+          <div class="flex justify-center items-center child:dark:text-primary-with gap-x-3">
+            <div class="w-14 h-14 rounded-full border-[3px] p-[2px] border-pink-500"> 
+              <img src="./images/face/65769a04f3b5bad56365e101c778a7c1.png" 
+              alt=""
+              class="w-full h-full rounded-full">
+            </div>
+            <h3 class="text-lg">ali</h3>
+          </div>
+            <div class="child:dark:text-primary-with mr-2"> 
+              <a href="./chat.html" class="cursor-pointer hover:text-blue-500 dark:hover:text-blue-500 transition-colors duration-300"> masseag</a>
+            </div>          
+         </div>
+   
+
+
+      </div>
+    </div>
+</body>
+</html>

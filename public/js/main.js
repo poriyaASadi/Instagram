@@ -3,9 +3,36 @@ const $ = document;
 
 import * as name from './Var-all.js';
 
-import { mainComment , comment_icon_user_main , back_comment_icon , input_comment_post , button_creat_post_comment  , likePostValue 
+import {post_user , mainComment , comment_icon_user_main , back_comment_icon , input_comment_post , button_creat_post_comment  , likePostValue 
 , like_heart_post , save_post_icon , text_more_post , active_icon_branch , stack , openBlurAlert , prantIcon_ShowAlert ,
-videoPostUser,timeSendUser_comment  } from './Var-all.js';
+videoPostUser,timeSendUser_comment, moreIcon_post   } from './Var-all.js';
+
+// ------------- post user 
+post_user.addEventListener('click' , (event) => {
+  //console.log(event.currentTarget);
+  let parentEkm = event.currentTarget;
+if (event.target.className.includes('Delet')){
+  parentEkm.remove();
+  close_box_infoPost()
+}
+if (event.target.className.includes('report')) {
+  document.querySelector('.box-report').classList.remove('hidden');
+  close_box_infoPost()
+  setInterval(() => {
+    document.querySelector('.box-report').classList.add('hidden');
+  }, 3000);
+}
+});
+
+
+// --------- btn click icon info post user
+moreIcon_post.addEventListener('click' , () => {
+  close_box_infoPost()
+});
+
+function close_box_infoPost () {
+  $.querySelector('#box-infos-postUser').classList.toggle('hidden');
+}
 
 //  ----- icon comment open chat 
 comment_icon_user_main.forEach((item) => {

@@ -6,8 +6,6 @@
 
 .pl {
 	display: block;
-	width: 100%;
-	height: 100%;
 }
 .pl__ring, .pl__ball {
 	animation: ring 2s ease-out infinite;
@@ -64,7 +62,7 @@ background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transpar
 }
 .backround-dark{
     z-index: -50;
- background: linear-gradient(rgba(0,0,0,0.2) , rgba(0,0,0,0.6));
+  background: linear-gradient(rgba(0,0,0,0.3) , rgba(0,0,0,0.7)); 
 }
 .fontCustom{
 	font-family:"instagram";
