@@ -47,15 +47,18 @@
       }
       .swiper {
         width: 100%;
-        height: 350px;
       }
+      ::-webkit-scrollbar {
+    display: none;
+}
     </style>
   </head>
-  <body class="bg-slate-50 dark:bg-black w-full h-[100vh] overflow-hidden">
+  <body class="bg-slate-50 dark:bg-black w-full h-[100vh] overflow-hidden content">
     <!-- 
    all svg 
  -->
     <svg class="hidden">
+
       <symbol
         id="instagramlogo"
         xmlns="http://www.w3.org/2000/svg"
@@ -117,7 +120,7 @@
         id="activityfeed"
         fill="none"
         viewBox="0 0 24 24"
-        stroke-width="2.5"
+        stroke-width="1.5"
         stroke="currentColor"
       >
         <path
@@ -173,7 +176,7 @@
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
-        stroke-width="2.5"
+        stroke-width="1.5"
         stroke="currentColor"
       >
         <path
@@ -182,10 +185,10 @@
           d="M6.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM18.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
         />
       </symbol>
-      <symbol id="save" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+      <symbol id="save" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
         <path stroke-linecap="round" stroke-linejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z" />
       </symbol>      
-      <symbol id="onsave" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+      <symbol id="onsave" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
         <path stroke-linecap="round" stroke-linejoin="round" d="m3 3 1.664 1.664M21 21l-1.5-1.5m-5.485-1.242L12 17.25 4.5 21V8.742m.164-4.078a2.15 2.15 0 0 1 1.743-1.342 48.507 48.507 0 0 1 11.186 0c1.1.128 1.907 1.077 1.907 2.185V19.5M4.664 4.664 19.5 19.5" />
       </symbol>      
       <symbol
@@ -193,7 +196,7 @@
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
-        stroke-width="2.5"
+        stroke-width="1.5"
         stroke="currentColor"
       >
         <path
@@ -213,7 +216,7 @@
         <path
           d="M44.5686 2.4704H1.92157L17.1177 17.1763M44.5686 2.4704L17.1177 17.1763M44.5686 2.4704L22.5098 39.2351L17.1177 17.1763"
           stroke="white"
-          stroke-width="3"
+          stroke-width="2"
           stroke-linejoin="round"
         />
       </symbol>
@@ -294,8 +297,24 @@
       </symbol>
       <symbol id="eart" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
         <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 3.03v.568c0 .334.148.65.405.864l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 0 1-1.161.886l-.143.048a1.107 1.107 0 0 0-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 0 1-1.652.928l-.679-.906a1.125 1.125 0 0 0-1.906.172L4.5 15.75l-.612.153M12.75 3.031a9 9 0 0 0-8.862 12.872M12.75 3.031a9 9 0 0 1 6.69 14.036m0 0-.177-.529A2.25 2.25 0 0 0 17.128 15H16.5l-.324-.324a1.453 1.453 0 0 0-2.328.377l-.036.073a1.586 1.586 0 0 1-.982.816l-.99.282c-.55.157-.894.702-.8 1.267l.073.438c.08.474.49.821.97.821.846 0 1.598.542 1.865 1.345l.215.643m5.276-3.67a9.012 9.012 0 0 1-5.276 3.67m0 0a9 9 0 0 1-10.275-4.835M15.75 9c0 .896-.393 1.7-1.016 2.25" />
-      </symbol>      
-    </svg>
+      </symbol>     
+  
+      <!-- icons desktop   -->
+      <symbol id="consInstagram_desktop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor">
+        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+        <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></symbol>
+        <symbol id="user" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+        </symbol>        
+        <symbol id="setting" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M10.343 3.94c.09-.542.56-.94 1.11-.94h1.093c.55 0 1.02.398 1.11.94l.149.894c.07.424.384.764.78.93.398.164.855.142 1.205-.108l.737-.527a1.125 1.125 0 0 1 1.45.12l.773.774c.39.389.44 1.002.12 1.45l-.527.737c-.25.35-.272.806-.107 1.204.165.397.505.71.93.78l.893.15c.543.09.94.559.94 1.109v1.094c0 .55-.397 1.02-.94 1.11l-.894.149c-.424.07-.764.383-.929.78-.165.398-.143.854.107 1.204l.527.738c.32.447.269 1.06-.12 1.45l-.774.773a1.125 1.125 0 0 1-1.449.12l-.738-.527c-.35-.25-.806-.272-1.203-.107-.398.165-.71.505-.781.929l-.149.894c-.09.542-.56.94-1.11.94h-1.094c-.55 0-1.019-.398-1.11-.94l-.148-.894c-.071-.424-.384-.764-.781-.93-.398-.164-.854-.142-1.204.108l-.738.527c-.447.32-1.06.269-1.45-.12l-.773-.774a1.125 1.125 0 0 1-.12-1.45l.527-.737c.25-.35.272-.806.108-1.204-.165-.397-.506-.71-.93-.78l-.894-.15c-.542-.09-.94-.56-.94-1.109v-1.094c0-.55.398-1.02.94-1.11l.894-.149c.424-.07.765-.383.93-.78.165-.398.143-.854-.108-1.204l-.526-.738a1.125 1.125 0 0 1 .12-1.45l.773-.773a1.125 1.125 0 0 1 1.45-.12l.737.527c.35.25.807.272 1.204.107.397-.165.71-.505.78-.929l.15-.894Z" />
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+        </symbol> 
+        <symbol id="iconChange" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M10.343 3.94c.09-.542.56-.94 1.11-.94h1.093c.55 0 1.02.398 1.11.94l.149.894c.07.424.384.764.78.93.398.164.855.142 1.205-.108l.737-.527a1.125 1.125 0 0 1 1.45.12l.773.774c.39.389.44 1.002.12 1.45l-.527.737c-.25.35-.272.806-.107 1.204.165.397.505.71.93.78l.893.15c.543.09.94.559.94 1.109v1.094c0 .55-.397 1.02-.94 1.11l-.894.149c-.424.07-.764.383-.929.78-.165.398-.143.854.107 1.204l.527.738c.32.447.269 1.06-.12 1.45l-.774.773a1.125 1.125 0 0 1-1.449.12l-.738-.527c-.35-.25-.806-.272-1.203-.107-.398.165-.71.505-.781.929l-.149.894c-.09.542-.56.94-1.11.94h-1.094c-.55 0-1.019-.398-1.11-.94l-.148-.894c-.071-.424-.384-.764-.781-.93-.398-.164-.854-.142-1.204.108l-.738.527c-.447.32-1.06.269-1.45-.12l-.773-.774a1.125 1.125 0 0 1-.12-1.45l.527-.737c.25-.35.272-.806.108-1.204-.165-.397-.506-.71-.93-.78l-.894-.15c-.542-.09-.94-.56-.94-1.109v-1.094c0-.55.398-1.02.94-1.11l.894-.149c.424-.07.765-.383.93-.78.165-.398.143-.854-.108-1.204l-.526-.738a1.125 1.125 0 0 1 .12-1.45l.773-.773a1.125 1.125 0 0 1 1.45-.12l.737.527c.35.25.807.272 1.204.107.397-.165.71-.505.78-.929l.15-.894Z" />
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+        </symbol>               
+      </svg>
     <!-- svg end ======= -->
     <!-- 
 
@@ -303,240 +322,20 @@ start project
 
  -->
   <div id="loaded-welcome" class="flex w-full h-full relative   z-50  bg-primary-with dark:bg-primeryColor-2   justify-center items-center flex-col">
-  <div class="w-full h-full absolute top-0 left-0 right-0 backround-dark"></div>
-  <h1 class=" text-white fontCustom">Instagram</h1>
-   <div class="max-w-24 max-h-24 mt-3 mb-6 flex justify-center items-center" id="boxLogo">
-    <svg id="logoinstagrom-icon" class="w-full h-full" width="80" height="80" viewBox="0 0 340 340" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <g clip-path="url(#clip0_2_13)" filter="url(#filter0_d_2_13)">
-      <g filter="url(#filter1_ii_2_13)">
-      <rect x="4" width="332" height="332" rx="88" fill="#494947"/>
-      </g>
-      <g style="mix-blend-mode:lighten">
-      <rect x="4" width="332" height="332" rx="88" fill="url(#paint0_linear_2_13)" fill-opacity="0.2"/>
-      <rect x="4.25" y="0.25" width="331.5" height="331.5" rx="87.75" stroke="white" stroke-opacity="0.1" stroke-width="0.5"/>
-      </g>
-      <g style="mix-blend-mode:darken" filter="url(#filter2_if_2_13)">
-      <rect x="17" y="13" width="306" height="306" rx="80" fill="url(#paint1_linear_2_13)"/>
-      </g>
-      <circle cx="170" cy="166" r="74" fill="#333333"/>
-      <g filter="url(#filter3_f_2_13)">
-      <path d="M115.001 166.296C115.167 196.67 139.922 221.159 170.302 220.999C200.682 220.839 225.165 196.078 224.999 165.698C224.833 135.324 200.078 110.835 169.698 111.001C139.324 111.161 114.835 135.922 115.001 166.296ZM205.65 165.805C205.756 185.498 189.882 201.543 170.189 201.65C150.497 201.756 134.451 185.882 134.344 166.189C134.238 146.497 150.112 130.451 169.805 130.344C189.497 130.238 205.543 146.112 205.65 165.805Z" fill="url(#paint2_linear_2_13)" fill-opacity="0.7"/>
-      </g>
-      <g filter="url(#filter4_f_2_13)">
-      <path d="M333 114L264 90V43.5H329L333 114Z" fill="url(#paint3_linear_2_13)" fill-opacity="0.2"/>
-      </g>
-      <g filter="url(#filter5_f_2_13)">
-      <path d="M333.5 245.5L172 261L204 237.5L244 191.5L252 133L212 83L333.5 149V245.5Z" fill="url(#paint4_linear_2_13)" fill-opacity="0.1"/>
-      </g>
-      <path d="M269.5 90C282.479 90 293 79.4787 293 66.5C293 53.5213 282.479 43 269.5 43C256.521 43 246 53.5213 246 66.5C246 79.4787 256.521 90 269.5 90Z" fill="url(#paint5_linear_2_13)"/>
-      <g style="mix-blend-mode:luminosity" filter="url(#filter6_f_2_13)">
-      <path d="M285.491 69.5C285.491 72.5376 284.371 75 282.991 75C281.61 75 282.076 72.5376 282.076 69.5C282.076 66.4624 281.61 64 282.991 64C284.371 64 285.491 66.4624 285.491 69.5Z" fill="white"/>
-      </g>
-      <g style="mix-blend-mode:luminosity" opacity="0.5" filter="url(#filter7_f_2_13)">
-      <path d="M254 64.5C254 67.5376 255.283 70 256.865 70C258.447 70 257.913 67.5376 257.913 64.5C257.913 61.4624 258.447 59 256.865 59C255.283 59 254 61.4624 254 64.5Z" fill="white"/>
-      </g>
-      <g filter="url(#filter8_dii_2_13)">
-      <path d="M169.483 70.0015C116.466 70.2908 73.7223 113.5 74.0014 166.527C74.2804 219.554 117.5 262.288 170.527 261.999C223.544 261.709 266.288 218.5 265.999 165.473C265.719 112.456 222.5 69.7121 169.483 70.0015ZM170.341 228.225C135.968 228.411 107.961 200.704 107.775 166.331C107.589 131.958 135.296 103.951 169.669 103.765C204.042 103.579 232.049 131.286 232.235 165.659C232.421 200.032 204.714 228.039 170.341 228.225Z" fill="url(#paint6_linear_2_13)"/>
-      <path d="M74.5014 166.524C74.2238 113.773 116.745 70.7893 169.486 70.5015C222.227 70.2136 265.221 112.735 265.499 165.476C265.786 218.227 223.265 261.211 170.524 261.499C117.773 261.786 74.7789 219.275 74.5014 166.524ZM107.275 166.333C107.463 200.983 135.694 228.912 170.344 228.725C204.993 228.537 232.923 200.305 232.735 165.656C232.548 131.007 204.316 103.077 169.667 103.265C135.017 103.452 107.088 131.684 107.275 166.333Z" stroke="white" stroke-opacity="0.1"/>
-      </g>
-      <g filter="url(#filter9_f_2_13)">
-      <path d="M169.483 70.0015C116.466 70.2908 73.7223 113.5 74.0014 166.527C74.2804 219.554 117.5 262.288 170.527 261.999C223.544 261.709 266.288 218.5 265.999 165.473C265.719 112.456 222.5 69.7121 169.483 70.0015ZM170.341 228.225C135.968 228.411 107.961 200.704 107.775 166.331C107.589 131.958 135.296 103.951 169.669 103.765C204.042 103.579 232.049 131.286 232.235 165.659C232.421 200.032 204.714 228.039 170.341 228.225Z" fill="url(#paint7_linear_2_13)"/>
-      </g>
-      <g filter="url(#filter10_f_2_13)">
-      <circle cx="170" cy="166" r="70" stroke="url(#paint8_linear_2_13)" stroke-opacity="0.5" stroke-width="4"/>
-      </g>
-      <g filter="url(#filter11_f_2_13)">
-      <circle cx="170" cy="166" r="86" transform="rotate(-30 170 166)" stroke="url(#paint9_linear_2_13)" stroke-opacity="0.6" stroke-width="4"/>
-      </g>
-      </g>
-      <defs>
-      <filter id="filter0_d_2_13" x="0" y="0" width="340" height="340" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-      <feOffset dy="4"/>
-      <feGaussianBlur stdDeviation="2"/>
-      <feComposite in2="hardAlpha" operator="out"/>
-      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_13"/>
-      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_13" result="shape"/>
-      </filter>
-      <filter id="filter1_ii_2_13" x="4" y="0" width="332" height="332" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-      <feOffset/>
-      <feGaussianBlur stdDeviation="2"/>
-      <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
-      <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.1 0"/>
-      <feBlend mode="normal" in2="shape" result="effect1_innerShadow_2_13"/>
-      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-      <feOffset/>
-      <feGaussianBlur stdDeviation="2"/>
-      <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
-      <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.1 0"/>
-      <feBlend mode="normal" in2="effect1_innerShadow_2_13" result="effect2_innerShadow_2_13"/>
-      </filter>
-      <filter id="filter2_if_2_13" x="-3" y="-7" width="346" height="346" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-      <feMorphology radius="8" operator="erode" in="SourceAlpha" result="effect1_innerShadow_2_13"/>
-      <feOffset/>
-      <feGaussianBlur stdDeviation="4"/>
-      <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
-      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
-      <feBlend mode="normal" in2="shape" result="effect1_innerShadow_2_13"/>
-      <feGaussianBlur stdDeviation="10" result="effect2_foregroundBlur_2_13"/>
-      </filter>
-      <filter id="filter3_f_2_13" x="55" y="51" width="230" height="230" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-      <feGaussianBlur stdDeviation="30" result="effect1_foregroundBlur_2_13"/>
-      </filter>
-      <filter id="filter4_f_2_13" x="254" y="33.5" width="89" height="90.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-      <feGaussianBlur stdDeviation="5" result="effect1_foregroundBlur_2_13"/>
-      </filter>
-      <filter id="filter5_f_2_13" x="162" y="73" width="181.5" height="198" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-      <feGaussianBlur stdDeviation="5" result="effect1_foregroundBlur_2_13"/>
-      </filter>
-      <filter id="filter6_f_2_13" x="275" y="57" width="17.4907" height="25" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-      <feGaussianBlur stdDeviation="3.5" result="effect1_foregroundBlur_2_13"/>
-      </filter>
-      <filter id="filter7_f_2_13" x="247" y="52" width="18" height="25" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-      <feGaussianBlur stdDeviation="3.5" result="effect1_foregroundBlur_2_13"/>
-      </filter>
-      <filter id="filter8_dii_2_13" x="9" y="-12" width="352" height="352" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-      <feOffset dx="15" dy="-2"/>
-      <feGaussianBlur stdDeviation="40"/>
-      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.57 0"/>
-      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_13"/>
-      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_13" result="shape"/>
-      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-      <feOffset/>
-      <feGaussianBlur stdDeviation="1"/>
-      <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
-      <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.1 0"/>
-      <feBlend mode="normal" in2="shape" result="effect2_innerShadow_2_13"/>
-      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-      <feOffset dy="4"/>
-      <feGaussianBlur stdDeviation="4"/>
-      <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
-      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-      <feBlend mode="normal" in2="effect2_innerShadow_2_13" result="effect3_innerShadow_2_13"/>
-      </filter>
-      <filter id="filter9_f_2_13" x="72" y="68" width="196" height="196" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-      <feGaussianBlur stdDeviation="1" result="effect1_foregroundBlur_2_13"/>
-      </filter>
-      <filter id="filter10_f_2_13" x="94" y="90" width="152" height="152" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-      <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_2_13"/>
-      </filter>
-      <filter id="filter11_f_2_13" x="77.9854" y="73.9853" width="184.029" height="184.029" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-      <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_2_13"/>
-      </filter>
-      <linearGradient id="paint0_linear_2_13" x1="58.4999" y1="277.5" x2="360.181" y2="214.456" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#316FD2"/>
-      <stop offset="0.552083" stop-color="#426BC2"/>
-      <stop offset="1" stop-color="#4839B5"/>
-      </linearGradient>
-      <linearGradient id="paint1_linear_2_13" x1="25.5" y1="166" x2="323" y2="166" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#393939"/>
-      <stop offset="0.27649" stop-color="#49454F" stop-opacity="0.5"/>
-      <stop offset="0.700589" stop-color="#3F3B44" stop-opacity="0.740395"/>
-      <stop offset="1" stop-color="#343038"/>
-      </linearGradient>
-      <linearGradient id="paint2_linear_2_13" x1="206.277" y1="205.787" x2="139.574" y2="122.702" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#EFD99E"/>
-      <stop offset="0.208333" stop-color="#D29F5D"/>
-      <stop offset="0.369792" stop-color="#C86734"/>
-      <stop offset="0.71875" stop-color="#9D3374"/>
-      <stop offset="1" stop-color="#3932AB"/>
-      </linearGradient>
-      <linearGradient id="paint3_linear_2_13" x1="268" y1="58.5" x2="336" y2="87" gradientUnits="userSpaceOnUse">
-      <stop/>
-      <stop offset="0.911758" stop-opacity="0"/>
-      </linearGradient>
-      <linearGradient id="paint4_linear_2_13" x1="268" y1="165" x2="336" y2="193.5" gradientUnits="userSpaceOnUse">
-      <stop/>
-      <stop offset="0.911758" stop-opacity="0"/>
-      </linearGradient>
-      <linearGradient id="paint5_linear_2_13" x1="252.5" y1="82" x2="288" y2="53.5" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#EFD99E"/>
-      <stop offset="0.208333" stop-color="#D29F5D"/>
-      <stop offset="0.369792" stop-color="#C86734"/>
-      <stop offset="0.71875" stop-color="#9D3374"/>
-      <stop offset="1" stop-color="#3932AB"/>
-      </linearGradient>
-      <linearGradient id="paint6_linear_2_13" x1="100.553" y1="229.319" x2="245.574" y2="112.894" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#FFE399"/>
-      <stop offset="0.208333" stop-color="#E0A85E"/>
-      <stop offset="0.369792" stop-color="#D76A30"/>
-      <stop offset="0.71875" stop-color="#B0317F"/>
-      <stop offset="1" stop-color="#3D36BB"/>
-      </linearGradient>
-      <linearGradient id="paint7_linear_2_13" x1="100.553" y1="229.319" x2="245.574" y2="112.894" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#FFE399"/>
-      <stop offset="0.208333" stop-color="#E0A85E"/>
-      <stop offset="0.369792" stop-color="#D76A30"/>
-      <stop offset="0.71875" stop-color="#B0317F"/>
-      <stop offset="1" stop-color="#3D36BB"/>
-      </linearGradient>
-      <linearGradient id="paint8_linear_2_13" x1="83.5" y1="122" x2="246.5" y2="230.5" gradientUnits="userSpaceOnUse">
-      <stop stop-color="white"/>
-      <stop offset="0.211314" stop-color="white" stop-opacity="0"/>
-      <stop offset="0.78987" stop-color="white" stop-opacity="0.0915453"/>
-      <stop offset="1" stop-color="white" stop-opacity="0.890625"/>
-      </linearGradient>
-      <linearGradient id="paint9_linear_2_13" x1="64.2778" y1="112.222" x2="263.5" y2="244.833" gradientUnits="userSpaceOnUse">
-      <stop stop-color="white"/>
-      <stop offset="0.189888" stop-color="white" stop-opacity="0"/>
-      <stop offset="0.812649" stop-color="white" stop-opacity="0.0915453"/>
-      <stop offset="1" stop-color="white" stop-opacity="0.890625"/>
-      </linearGradient>
-      <clipPath id="clip0_2_13">
-      <rect width="332" height="332" fill="white" transform="translate(4)"/>
-      </clipPath>
-      </defs>
+    <div class="h-full">
+      <svg class="animate-spin h-5 w-5 mr-3 ..." viewBox="0 0 24 24">
+        <!-- ... -->
       </svg>
-  </div> 
-  <div class="absolute bottom-0 pb-4">
-    <svg class="pl" viewBox="0 0 200 200" width="40" height="40" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <linearGradient id="pl-grad1" x1="1" y1="0.5" x2="0" y2="0.5">
-          <stop offset="0%" stop-color="hsl(312,90%,55%)" /> 
-          <stop offset="100%" stop-color="hsl(313,90%,55%)" />
-        </linearGradient>
-        <linearGradient id="pl-grad2" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stop-color="hsl(203,90%,55%)" />
-          <stop offset="100%" stop-color="hsl(313,90%,55%)" />
-        </linearGradient>
-      </defs>
-      <circle class="pl__ring" cx="100" cy="100" r="82" fill="none" stroke="url(#pl-grad1)" stroke-width="36" stroke-dasharray="0 257 1 257" stroke-dashoffset="0.01" stroke-linecap="round" transform="rotate(-90,100,100)" />
-      <line class="pl__ball" stroke="url(#pl-grad2)" x1="100" y1="18" x2="100.01" y2="182" stroke-width="36" stroke-dasharray="1 165" stroke-linecap="round" />
-    </svg>
-  </div>
+      
+    </div>
    </div>
-
-
-    <div class="max-w-lg h-full mx-auto z-10 relative">
+  
+   <!-- all code for size mobile -->
+   <div class="w-full h-full relative  xl:flex gap-x-5 justify-center">
+    <div class="max-w-lg h-full  mx-auto xl:mx-0   z-10 relative">
       <!-- ---------- header -->
       <header
-        class="h-11 w-full border-b border-zinc-200  dark:bg-transparent dark:border-none"
+        class="h-11 w-full border-b border-zinc-200  dark:bg-transparent dark:border-none lg:hidden"
       >
         <div class="h-full flex justify-between gap-1 items-center px-4">
           <div>
@@ -560,7 +359,7 @@ start project
       <!-- ===================== -->
       <!-- ----------section menu button -->
       <section
-        class="h-14 max-w-[20rem]  mx-auto fixed bottom-0  mb-2 left-0 right-0 z-10 flex justify-center items-center"
+        class="lg:hidden  h-14 max-w-[20rem]   mx-auto fixed bottom-0  mb-2 left-0 right-0 z-10 flex justify-center items-center"
       >
         <div class="h-full w-full bg-white dark:bg-black rounded-2xl">
           <div
@@ -570,14 +369,14 @@ start project
               <svg class="w-full h-full"><use href="#home"></use></svg>
             </a>
 
-            <a href="./search.html" class="link-spa">
+            <a href="./explor.html" class="link-spa">
               <svg class="w-full h-full"><use href="#eart"></use></svg>
             </a>
 
             <a href="./addPost.html" class="link-spa">
               <svg class="w-full h-full"><use href="#newposts"></use></svg>
             </a>
-            <a href="./addPost.html" class="link-spa">
+            <a href="/addPost" class="link-spa">
               <svg class="w-full h-full"><use href="#search"></use></svg>
             </a>
 
@@ -599,159 +398,216 @@ start project
       <!-- --------------- section button end -->
       <!-- 
 
-start main project ====> for mobile 
+         start main project ====> for mobile 
 
- -->
-         <!-- slider status ===== start -->
-         <section
-         class="overflow-x-hidden overscroll-x-contain border-b dark:border-none p-4 w-full auto-cols-max"
-         id="scroll-users-status"
-       >
-         <div class="grid grid-flow-col gap-4 child:cursor-pointer">
-           <!-- content -->
-           <div class="grid m-0 text-center relative hover:scale-110">
-             <div
-               class="w-14 h-14 rounded-full befor-status-user after:bg-zinc-500 before:bg-zinc-500 after:dark:bg-zinc-300 before:dark:bg-zinc-300"
-             >
-               <img
-                 src="./images/027410390877dbe19c213b2e6ee60b75.png"
-                 alt="statusUser"
-                 class="rounded-full w-full h-full object-cover clip-path"
-               />
-             </div>
-             <div>
-               <p class="font-staus-bar text-zinc-500">status</p>
-             </div>
-           </div>
-           <!-- content end -->
-           <!-- content -->
-           <div class="grid m-0 text-center relative hover:scale-110">
-             <div class="w-14 h-14 rounded-full background_color">
-               <img
-                 src="./images/027410390877dbe19c213b2e6ee60b75.png"
-                 alt=""
-                 class="rounded-full w-full h-full object-cover clip-path"
-               />
-             </div>
-             <div>
-               <p class="font-staus-bar">poriya</p>
-             </div>
-           </div>
-           <!-- content end -->
-           <!-- content -->
-           <div class="grid m-0 text-center relative hover:scale-110">
-             <div
-               class="inline-block w-14 h-14 rounded-full background_color live-box"
-             >
-               <img
-                 src="./images/48f1801e657b098f5792c61365f65c75.png"
-                 alt=""
-                 class="rounded-full w-[100%] h-[100%] object-cover clip-path"
-               />
-             </div>
-             <div>
-               <p class="font-staus-bar">ali</p>
-             </div>
-           </div>
-           <!-- content end -->
-           <!-- content -->
-           <div class="grid m-0 text-center relative hover:scale-110">
-             <div class="inline-block w-14 h-14 rounded-full background_color">
-               <img
-                 src="./images/18583bf15a6bdc083bcee64acc58ed55.png"
-                 alt=""
-                 class="rounded-full w-[100%] h-[100%] object-cover clip-path"
-               />
-             </div>
-             <div>
-               <p class="font-staus-bar">mariya</p>
-             </div>
-           </div>
-           <!-- content end -->
-           <!-- content -->
-           <div class="grid m-0 text-center relative hover:scale-110">
-             <div class="inline-block w-14 h-14 rounded-full background_color">
-               <img
-                 src="./images/2ccd27fc12336a7a8e13d5879814b13c.png"
-                 alt=""
-                 class="rounded-full w-[100%] h-[100%] object-cover clip-path"
-               />
-             </div>
-             <div>
-               <p class="font-staus-bar">mahdi</p>
-             </div>
-           </div>
-           <!-- content end -->
-           <!-- content -->
-           <div class="grid m-0 text-center relative hover:scale-110">
-             <div class="inline-block w-14 h-14 rounded-full background_color">
-               <img
-                 src="./images/027410390877dbe19c213b2e6ee60b75.png"
-                 alt=""
-                 class="rounded-full w-[100%] h-[100%] object-cover clip-path"
-               />
-             </div>
-             <div>
-               <p class="font-staus-bar">ahmad</p>
-             </div>
-           </div>
-           <!-- content end -->
-           <!-- content -->
-           <div class="grid m-0 text-center relative hover:scale-110">
-             <div class="inline-block w-14 h-14 rounded-full background_color">
-               <img
-                 src="./images/18583bf15a6bdc083bcee64acc58ed55.png"
-                 alt=""
-                 class="rounded-full w-[100%] h-[100%] object-cover clip-path"
-               />
-             </div>
-             <div>
-               <p class="font-staus-bar">malika</p>
-             </div>
-           </div>
-           <!-- content end -->
-           <!-- content -->
-           <div class="grid m-0 text-center relative hover:scale-110">
-             <div class="inline-block w-14 h-14 rounded-full background_color">
-               <img
-                 src="./images/48f1801e657b098f5792c61365f65c75.png"
-                 alt=""
-                 class="rounded-full w-[100%] h-[100%] object-cover clip-path"
-               />
-             </div>
-             <div>
-               <p class="font-staus-bar">baback</p>
-             </div>
-           </div>
-           <!-- content end -->
-           <!-- content -->
-           <div class="grid m-0 text-center relative hover:scale-110">
-             <div class="inline-block w-14 h-14 rounded-full background_color">
-               <img
-                 src="./images/027410390877dbe19c213b2e6ee60b75.png"
-                 alt=""
-                 class="rounded-full w-[100%] h-[100%] object-cover clip-path"
-               />
-             </div>
-             <div>
-               <p class="font-staus-bar">hadi</p>
-             </div>
-           </div>
-           <!-- content end -->
-         </div>
-       </section>
-       <!-- slider status end ===== -->
-      <main
-        class="w-full h-full bg-white dark:bg-transparent overscroll-y-auto overflow-y-scroll"
+       -->
+     <main
+        class="w-full h-full bg-white dark:bg-transparent overscroll-y-auto overflow-y-scroll relative"
       >
+      <!-- ---------- status section -->
+      <div class="h-auto mb-1 overflow-x-auto overscroll-x-contain  py-4 px-5 w-full auto-cols-max">
+        <!-- div scroll  --> <div class="grid  grid-flow-col gap-x-4 child-hover:hover:scale-110 scroll-none
+         child:background_color child:p-1 child:dark:text-white child:transition-transform child:duration-300">
+        <div class="w-[4rem] h-[4rem] rounded-full pop" id="box_status_user">
+             <img class="h-full  w-full rounded-full object-cover " src="./images/face/5904c9ce3cfb08e4c032b5a473d5648d.png" alt="">
+        </div>
+        <div class=" w-[4rem] h-[4rem] rounded-full" id="box_status_user">
+          <img class="h-full  w-full rounded-full object-cover " src="./images/face/65769a04f3b5bad56365e101c778a7c1.png" alt="">
+        </div>
+        <div class=" w-[4rem] h-[4rem] rounded-full" id="box_status_user">
+          <img class="h-full  w-full rounded-full object-cover " src="./images/face/ce7e32c5013518aa6e932c543a55a3c9 - Copy.png" alt="">
+        </div>
+        <div class=" w-[4rem] h-[4rem] rounded-full" id="box_status_user">
+          <img class="h-full  w-full rounded-full object-cover " src="./images/face/5904c9ce3cfb08e4c032b5a473d5648d.png" alt="">
+        </div>
+        <div class=" w-[4rem] h-[4rem] rounded-full" id="box_status_user">
+          <img class="h-full  w-full rounded-full object-cover " src="./images/face/5904c9ce3cfb08e4c032b5a473d5648d.png" alt="">
+        </div>
+        <div class=" w-[4rem] h-[4rem] rounded-full" id="box_status_user">
+          <img class="h-full  w-full rounded-full object-cover " src="./images/face/5904c9ce3cfb08e4c032b5a473d5648d.png" alt="">
+       </div>
+       <div class=" w-[4rem] h-[4rem] rounded-full" id="box_status_user">
+        <img class="h-full  w-full rounded-full object-cover " src="./images/face/5904c9ce3cfb08e4c032b5a473d5648d.png" alt="">
+      </div>
+      <div class=" w-[4rem] h-[4rem] rounded-full" id="box_status_user">
+        <img class="h-full  w-full rounded-full object-cover " src="./images/face/5904c9ce3cfb08e4c032b5a473d5648d.png" alt="">
+      </div>
+      <div class=" w-[4rem] h-[4rem] rounded-full" id="box_status_user">
+        <img class="h-full  w-full rounded-full object-cover " src="./images/face/5904c9ce3cfb08e4c032b5a473d5648d.png" alt="">
+      </div>
+      </div>
+      </div>
+      <!-- --------- -->    
+      <!-- status section end :) -->
         <!-- section main all opshtion -->
         <section class="w-ful h-full mt-[11px]">
-          <div class="pb-[100px]">
+          <div class="pb-[100px] xl:pb-0">
             <!-- ----------- all post main  -->
 
 
             <!-- ====post==== -->
-            <div class="border-b border-zinc-200 dark:border-zinc-600 mb-2" id="post-user">
+            <div class=" mb-4" id="post-user">
+              <!-- -------===> box - user optshpion -->
+              <div class="w-full h-full px-1">
+                <!-- ------ box titile -->
+                <div
+                  class="w-full h-full  flex justify-between items-center relative"
+                >
+                  <!-- --- img user -->
+                  <div class="flex items-center">
+                    <div class="w-10 h-10 rounded-full border-[3px] border-red-400 ">
+                      <img
+                        src="./images/2ccd27fc12336a7a8e13d5879814b13c.png"
+                        class="w-full h-full object-cover rounded-full"
+                        alt="img-user"
+                      />
+                    </div>
+                    <div
+                      class="pl-[10px] child:text-sm leading-none tracking-tighter dark:text-white"
+                    >
+                      <p class="font-medium cursor-pointer">joshua_I</p>
+                      <p class="font-normal">tokyo, Japan</p>
+                    </div>
+                  </div>
+                  <!-- --- img user end -->
+                  <!-- ----- ... -->
+                  <div
+                    class=" w-auto flex justify-center items-center p-2 cursor-pointer  relative"
+                    id="moreIcon-post"
+                  >
+                    <svg class="w-6 h-6 dark:text-white cursor-pointer">
+                      <use href="#more-icon"></use>
+                    </svg>
+                  </div>
+                  <!-- ----- ... -->
+                  <div class="hidden  w-28 h-36 shadow-md bg-primary-with
+                   dark:bg-primeryColor-Chat absolute right-9
+                    -bottom-28 z-50 rounded-md  items-center py-1  px-2 text-center flex-col 
+                    child:dark:text-primary-with" id="box-infos-postUser">
+                    <ul class=" child:dark:border-none child:transition-colors child:duration-300">
+                      <li class="border-b py-1 cursor-pointer  dark:hover:text-pink-500 Delet">Delet post</li>
+                      <li class="border-b py-1 cursor-pointer hover:text-pink-400 dark:hover:text-pink-500">Comment</li>
+                      <li class="border-b py-1 cursor-pointer hover:text-pink-400 dark:hover:text-pink-500">Save</li>
+                      <li class=" py-1  cursor-pointer hover:text-pink-400 dark:hover:text-pink-500 report">Report</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- ------===> box - user optshpion end  -->
+              <div class="my-2">
+                <!-- Slider main container -->
+                <div class="swiper h-96 xl:h-[33rem] z-40">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                      <!-- <div class="absolute  right-0 left-0 bottom-0 top-0  transition-all delay-200
+                      flex justify-center items-center " id="alertBoxShow_post_videos">
+                        <svg class="w-16 h-16 dark:text-white"><use href="#user"></use></svg>
+                      </div> -->
+                      <video src="./video/video_2023-10-22_18-54-21.mp4"
+                      class="videoPostUser w-full h-full"
+                      webkit-playsinline="true"
+                      playsinline="true"
+                    
+                      >
+                      </video>
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="./images/face/65769a04f3b5bad56365e101c778a7c1.png"
+                        class="active_image object-cover "
+                        alt=""
+                      />
+                    </div>
+                    <div class="swiper-slide relative">
+          
+                      <video class="videoPostUser w-full h-full">
+                        <source
+                          src="./video/Designed for Mac. Accessories for your Mac_2.mp4"
+                          type="video/mp4"
+                        />
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                  </div>
+                  <!-- ------------------ -->
+                  <div class="swiper-pagination mb-1 flex gap-x-1 justify-center w-full "></div> 
+                </div>
+                <!-- nav bar main option -->
+                <div class="w-full h-8 relative flex justify-between mt-4 child:cursor-pointer items-center px-1">
+             
+                  <div
+                    class="flex justify-center items-center child:dark:text-white child:w-7 child:h-7 gap-x-2"
+                  >
+                    <!-- ------ icon comment -->
+                    <svg id="like" class="">
+                      <use href="#activityfeed"></use>
+                    </svg>
+                    <svg id="comment_icon">
+                      <use href="#comment"></use>
+                    </svg>
+                    <svg>
+                      <use href="#massege"></use>
+                    </svg>
+                  </div>
+                  <!-- ------- icon comment end -->
+                  <!-- -----------swiper pagination -->
+                  <!-- ------------- swiper pagination end -->
+                  <!-- ---------- save comment -->
+                  <div
+                    class="child:w-7 child:h-7 flex text-black justify-center items-center"
+                  >
+                    <svg class="text-black dark:text-white" id="save_post_icon">
+                      <use href="#save"></use>
+                    </svg>
+                  </div>
+                </div>
+                <!-- ---------- comment for post main user -->
+                <!-- 
+            about post user
+            -->
+                <div class="w-full px-[10px] tracking-[0.07px] mt-1">
+                  <p
+                    class="text-zinc-500 dark:text-zinc-200 text-base pb-1 font-medium"
+                  >
+                    <span id="likePostValue" class="text-sm mr-1">100</span
+                    >likes
+                  </p>
+                  <div class="dark:text-zinc-400 mb-2">
+                    <p class="font-medium">comments <span class="text-sm">100</span></p>
+                  </div>
+                  <div
+                    class="flex justify-start items-center gap-x-2 child:dark:text-white"
+                  >
+                    <img
+                      src="./images/48f1801e657b098f5792c61365f65c75.png"
+                      class="w-5 h-5 rounded-full"
+                      alt="post-user"
+                    />
+                    <span class="inline-block text-sm text-zinc-500 dark:text-zinc-400"
+                      >Liked by craig_love and <span class="text-zinc-600 dark:text-zinc-100 font-medium text-[1rem]">44,686</span> others</span
+                    >
+                  </div>
+                  <div
+                    class="text-sm mt-1 flex justify-end child:dark:text-white"
+                  >
+                    <p class="line-clamp-2" id="text_more_post">
+                      <span class="font-medium">joshua_I </span>The game in
+                      Japan was amazing and I want to share some photos Lorem
+                      ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                      ab quae nostrum non, voluptatibus adipisci nobis sunt
+                      possimus? Nulla, fugiat!
+                    </p>
+                  </div>
+                  <!-- ------------------------------ commnet end -->
+                </div>
+                <!-- ----- slider main end -->
+              </div>
+            </div>
+            <!-- -------------- -->
+                    <!-- ====post==== -->
+            <div class="mb-4" id="post-user">
               <!-- -------===> box - user optshpion -->
               <div class="w-full h-full px-1">
                 <!-- ------ box titile -->
@@ -801,7 +657,7 @@ start main project ====> for mobile
               <!-- ------===> box - user optshpion end  -->
               <div class="my-2">
                 <!-- Slider main container -->
-                <div class="swiper z-40">
+                <div class="swiper h-96 xl:h-[35rem] z-40">
                   <!-- Additional required wrapper -->
                   <div class="swiper-wrapper">
                     <!-- Slides -->
@@ -906,6 +762,7 @@ start main project ====> for mobile
               </div>
             </div>
             <!-- -------------- -->
+           
         
             <!------------ all post end  -->
           </div>
@@ -913,7 +770,7 @@ start main project ====> for mobile
         <!--    comment show box -->
         <div
           id="comment_main"
-          class="w-[100%] transition h-[100vh] absolute left-0 right-0 bottom-0 -top-[100vh] bg-white dark:bg-black px-[15px] z-10"
+          class="max-w-lg transition h-[100%] fixed left-0 right-0 bottom-0 top-0 hidden  bg-white dark:bg-black px-[15px] z-50"
         >
           <!-- head comment -->
           <div
@@ -933,10 +790,11 @@ start main project ====> for mobile
             </svg>
           </div>
           <!-- -------- head end -->
-          <!-- 
-      about post user
-      -->
-          <div class="w-full tracking-[0.07px] my-2">
+       <div class="w-full h-full overflow-y-auto">
+               <!-- 
+           about post user
+           -->
+           <div class="w-full  tracking-[0.07px] my-2">
             <div class="flex justify-start items-center gap-x-2">
               <img
                 src="./images/48f1801e657b098f5792c61365f65c75.png"
@@ -953,19 +811,18 @@ start main project ====> for mobile
               >
             </div>
             <div
-              class="text-sm mt-1 flex justify-end border-b border-zinc-200 dark:border-zinc-600 pb-3"
+              class="text-sm mt-1 flex justify-start border-b border-zinc-200 dark:border-zinc-600 pb-5"
             >
               <p class="text-zinc-600 dark:text-zinc-400">
-                <span class="font-medium text-zinc-700 dark:text-zinc-300"
-                  >joshua_I : </span
-                >The game in Japan was amazing and I want to share some photos
+                <a href="#" class="font-semibold text-lg tracking-tighter text-zinc-700 dark:text-zinc-300">joshua_I : </a>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo debitis provident dignissimos reiciendis tenetur, facilis tempora esse ad quibusdam vel?
               </p>
             </div>
           </div>
           <!-------- about post comment end  -->
           <!-- main box comment all users -->
           <div
-            class="w-full max-h-[100vh] mt-3 overflow-y-scroll"
+            class="w-full h-auto overflow-hidden  overflow-y-scroll  mt-3"
             id="main_comment"
           >
             <!-- --------box 1 -->
@@ -997,25 +854,27 @@ start main project ====> for mobile
             <!-- ----------- box 2 -->
           </div>
           <!-- ------------------end -->
+
+       </div>
           <!-- 
-    --------- > input box comment users  
-    -->
+          --------- > input box comment users  
+          --->
           <div
-            class="w-full h-12 absolute left-0 right-0 bottom-0 mb-3  bg-white dark:bg-black"
+            class="max-w-lg h-16 z-10 absolute left-0 right-0 bottom-0   bg-white dark:bg-black"
           >
             <div
-              class="w-[90%] h-full flex justify-center items-center gap-x-1 px-[15px] border-2 dark:border-zinc-500 mx-auto rounded-3xl "
+              class="w-full h-full flex justify-center items-center gap-x-1 px-[15px] shadow-sm mx-auto  "
             >
               <input
                 type="text"
                 placeholder="type..."
                 name="comment_user"
                 id="input_comment_post"
-                class="bg-transparent outline-none text-sm dark:text-white placeholder:text-base w-full px-2 font-medium"
+                class="bg-transparent outline-none text-sm dark:text-white placeholder:text-base w-full  px-2 font-medium"
               />
               <button
                 type="button"
-                class="text-base cursor-pointer text-zinc-300 font-medium"
+                class="text-base cursor-pointer text-blue-500 dark:text-pink-500 font-medium"
                 id="button_creat_post_comment"
               >
                 send
@@ -1027,7 +886,8 @@ start main project ====> for mobile
         <!--    comment show box end -->
         <!--  likes user show  -->
         <div
-          class="w-[85%] h-full absolute -left-[85%] transition-all right-0 top-0 bottom-0 bg-white dark:bg-black z-30 p-1 dark:text-white"
+          class="w-[85%] h-full absolute -left-[85%] transition-all right-0 top-0 bottom-0 bg-white dark:bg-black z-30 p-1 dark:text-white
+          lg:hidden"
         >
           <div id="invis_alert_box" class="invisible h-full w-full">
             <div
@@ -1088,7 +948,21 @@ start main project ====> for mobile
                         >mina</span
                       >follow your post <span>...</span>
                     </p>
-                  </div>
+                  </div>  `````                                                               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                   <img
                     class="w-10 h-10 object-cover"
                     src="./images/img_user_post/1.jpeg"
@@ -1282,16 +1156,292 @@ start main project ====> for mobile
        <p class="text-base font-medium text-primary-with dark:text-black">The post has been reported, thank you </p>
         </div>
         <!-- box report post end -->
-      </main>
+     </main>
+     
     </div>
+    <!-- ------....----- -->
+    <div class=" flex flex-col justify-start pt-5"> 
+      <!-- ================== -->
+      <div class="hidden  p-2 rounded-lg  lg:inline-block relative max-w-[23rem] max-h-[27rem] shadow-md dark:bg-black bg-white  z-40">
+        <span class="py-2 pl-3 inline-flex dark:text-white font-semibold
+        text-lg tracking-wide">suggestions</span>
+        <div class="py-2 w-[22rem] flex justify-between items-center p-1">
+          <div class="flex items-center gap-x-2">     
+             <img src="./images/image-lobayPost/img-1.jpg" alt=""
+             class="w-14 h-14 object-cover rounded-full">
+             <div class="overflow-hidden ">
+              <span class="text-blue-800 dark:text-white">poriya</span>
+              <p class="text-ellipsis overflow-hidden truncate w-40 text-sm text-zinc-500 dark:text-zinc-300 ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, nemo.</p>
+             </div>
+          </div>
+          <div>
+            <button class="bg-blue-500 dark:bg-pink-500 py-1 px-3 rounded-md text-white">Following</button>
+          </div>
+          </div>
+          <!--  -->
+          <div class="py-2 w-[22rem] flex justify-between items-center p-1">
+            <div class="flex items-center gap-x-2">     
+               <img src="./images/image-lobayPost/img-3.jpg" alt=""
+               class="w-14 h-14 object-cover rounded-full">
+               <div class="overflow-hidden ">
+                <span class=" text-blue-800 dark:text-white">poriya</span>
+                <p class="text-ellipsis overflow-hidden truncate w-40 text-sm text-zinc-500 dark:text-zinc-300 ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, nemo.</p>
+               </div>
+            </div>
+            <div>
+              <button class="bg-blue-500 dark:bg-pink-500 py-1 px-3 rounded-md text-white">Following</button>
+            </div>
+            </div>
+            <!--  -->
+            <div class="py-2 w-[22rem] flex justify-between items-center p-1">
+              <div class="flex items-center gap-x-2">     
+                 <img src="./images/image-lobayPost/img-5.jpg" alt=""
+                 class="w-14 h-14 object-cover rounded-full">
+                 <div class="overflow-hidden ">
+                  <span class="text-blue-800 dark:text-white">poriya</span>
+                  <p class="text-ellipsis overflow-hidden truncate w-40 text-sm text-zinc-500 dark:text-zinc-300 ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, nemo.</p>
+                 </div>
+              </div>
+              <div>
+                <button class="bg-blue-500 dark:bg-pink-500 py-1 px-3 rounded-md text-white">Following</button>
+              </div>
+              </div>
+              <!--  -->
+              <div class="py-2 w-[22rem] flex justify-between items-center p-1">
+                <div class="flex items-center gap-x-2">     
+                   <img src="./images/image-lobayPost/img-9.jpg" alt=""
+                   class="w-14 h-14 object-cover rounded-full">
+                   <div class="overflow-hidden ">
+                    <span class="text-blue-800 dark:text-white">poriya</span>
+                    <p class="text-ellipsis overflow-hidden truncate w-40 text-sm text-zinc-500 dark:text-zinc-300 ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, nemo.</p>
+                   </div>
+                </div>
+                <div>
+                  <button class="bg-blue-500 dark:bg-pink-500 py-1 px-3 rounded-md text-white">Following</button>
+                </div>
+                </div>
+                <!--  -->
+                <div class="py-2 w-[22rem] flex justify-between items-center p-1">
+                  <div class="flex items-center gap-x-2">     
+                     <img src="./images/image-lobayPost/img-2.jpg" alt=""
+                     class="w-14 h-14 object-cover rounded-full">
+                     <div class="overflow-hidden ">
+                      <span class="text-blue-800 dark:text-white">poriya</span>
+                      <p class="text-ellipsis overflow-hidden truncate w-40 text-sm text-zinc-500 dark:text-zinc-300 ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, nemo.</p>
+                     </div>
+                  </div>
+                  <div>
+                    <button class="bg-blue-500 dark:bg-pink-500 py-1 px-3 rounded-md text-white">Following</button>
+                  </div>
+                  </div>
+      </div> 
+      <!-- ================== -->
+    <div class="hidden p-2 rounded-lg lg:inline-block relative max-w-[23rem] max-h-[25rem] pb-7 overflow-hidden shadow-md dark:bg-black bg-white z-40 mt-5">
+      <h2 class="dark:text-white font-semibold text-lg py-1">Notifecation</h2>
+      <div class="w-full h-full overflow-y-auto">
+     <ul class="child:dark:text-white">
+      <li  class="flex items-center justify-between shadow-sm my-2 p-2 rounded-md">
+        <div class="flex items-center gap-x-2">
+          <div class="">
+            <img src="./images/image-lobayPost/img-9.jpg" alt="" class="w-11 h-11 rounded-full">
+          </div>
+          <div>
+            <a href="#" class="font-semibold text-[1rem] text-blue-400">mobin</a>
+            <p class="dark:text-zinc-100 text-zinc-500 text-sm font-medium">follow post you 
+              <span class="font-semibold inline-block">: 3m</span>
+            </p>
+          </div>
+        </div>
+        <a class="text-blue-400  py-1 px-3 rounded-md font-semibold inline-flex">Message</a>
+      </li>
+
+      <li  class="flex items-center justify-between shadow-sm my-2 p-2 rounded-md">
+        <div class="flex items-center gap-x-2">
+          <div class="">
+            <img src="./images/face/65769a04f3b5bad56365e101c778a7c1.png" alt="" class="w-11 h-11 rounded-full">
+          </div>
+          <div>
+            <a href="#" class="font-semibold text-[1rem] text-blue-400">lonle_lon_:)</a>
+            <p class="dark:text-zinc-100 text-zinc-500 text-sm font-medium">follow post you 
+              <span class="font-semibold inline-block">: 24m</span>
+            </p>
+          </div>
+        </div>
+        <a class="text-blue-400  py-1 px-3 rounded-md font-semibold inline-flex">Message</a>
+      </li>
+
+      <li  class="flex items-center justify-between shadow-sm my-2 p-2 rounded-md">
+        <div class="flex items-center gap-x-2">
+          <div class="">
+            <img src="./images/face/ce7e32c5013518aa6e932c543a55a3c9 - Copy.png" alt="" class="w-11 h-11 rounded-full">
+          </div>
+          <div>
+            <a href="#" class="font-semibold text-[1rem] text-blue-400">mariya</a>
+            <p class="dark:text-zinc-100 text-zinc-500 text-sm font-medium">follow post you 
+              <span class="font-semibold inline-block">: 1m</span>
+            </p>
+          </div>
+        </div>
+        <a class="text-blue-400  py-1 px-3 rounded-md font-semibold inline-flex">Message</a>
+      </li>
+
+      <li  class="flex items-center justify-between shadow-sm my-2 p-2 rounded-md">
+        <div class="flex items-center gap-x-2">
+          <div class="">
+            <img src="./images/image-lobayPost/img-6.jpg" alt="" class="w-11 h-11 rounded-full">
+          </div>
+          <div>
+            <a href="#" class="font-semibold text-[1rem] text-blue-400">poriya__1385</a>
+            <p class="dark:text-zinc-100 text-zinc-500 text-sm font-medium">send masseag you 
+              <span class="font-semibold inline-block">: 10m</span>
+            </p>
+          </div>
+        </div>
+        <a class="text-blue-400  py-1 px-3 rounded-md font-semibold inline-flex">Message</a>
+      </li>
+
+      <li  class="flex items-center justify-between shadow-sm my-2 p-2 rounded-md">
+        <div class="flex items-center gap-x-2">
+          <div class="">
+            <img src="./images/img_user_post/1.jpeg" alt="" class="w-11 h-11 rounded-full">
+          </div>
+          <div>
+            <a href="#" class="font-semibold text-[1rem] text-blue-400">ali</a>
+            <p class="dark:text-zinc-100 text-zinc-500 text-sm font-medium">following you 
+              <span class="font-semibold inline-block">: 5m</span>
+            </p>
+          </div>
+        </div>
+        <a class="text-blue-400  py-1 px-3 rounded-md font-semibold inline-flex">Following</a>
+      </li>
+
+     </ul>
+      </div>
+    </div>
+    </div>
+  <!-- -----....-------- -->
+    <!-- ----------- -->
+   </div> 
+<!-- all code mobile finish -->
+<dialog class="z-40 w-full h-[100vh] absolute top-0 left-0 right-0 bottom-0  rounded-md" id="boxStatus">
+  <div class="story-full w-full h-full dark:bg-black dark:text-white p-2">
+    <div class="content flex flex-col justify-center w-full h-full">
+      <div class="close-btn cursor-pointer" id="close_status">
+        <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 max-h-6 lg:w-16 lg:h-16">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+        </svg>            
+      </div>
+      <!-- ---- -->
+      <div class="flex items-center mx-auto max-w-[35rem] h-full gap-x-5  justify-center">
+        <div class="left-arrow hidden lg:block">
+          <svg id="prew_status"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6  xl:w-10 xl:h-10">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+          </svg>            
+        </div>
+  
+        <img src="./images/face/5904c9ce3cfb08e4c032b5a473d5648d.png" alt=""
+        class="h-full w-full  xl:max-w-[30rem] object-contain bg-center  rounded-sm" id="img_status">
+  
+        <div class="right-arrow hidden lg:block">
+          <svg id="next-status" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6  xl:w-10 xl:h-10">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+          </svg>            
+        </div>
+      </div>
+    
+
+      <div class="title w-full text-center text-lg py-3">
+        test-title
+      </div>
+    </div>
+  </div>
+</dialog>
+    <!-- menu bar -->
+    <div id="menuDesktop" class="hidden lg:block absolute  bg-white transition-all duration-300  dark:bg-black z-30 top-0 bottom-0 -left-[14rem] 2xl:left-0 w-[14rem]  h-full shadow-md ">
+      <div class="relative w-full h-full">
+
+        <!-- icon change left right -->
+        <div id="boxShow" class="absolute -right-10 top-16 w-10 h-10 bg-white cursor-pointer dark:bg-black shadow-md z-40 " style="border-radius: 0 1rem 1rem 0;">
+        <div class="relative w-full h-full flex justify-center items-center transition-all duration-300 ">
+          <svg id="iconShowBox" class="w-7 h-7 text-blue-500 dark:text-pink-400 delay-100 duration-700 "><use href="#iconChange"></use></svg>
+        </div>
+        </div>
+        <!-- icon change end -->
+
+        <div class="w-full flex justify-center p-3">
+         <h1 class="fontCustom text-3xl dark:text-primary-with flex items-center">
+          <svg class="w-7 h-7  text-blue-500 dark:text-pink-400">
+            <use href="#consInstagram_desktop"></use>
+          </svg>
+           instagram</h1>
+        </div>
+                    <div class="w-full flex justify-center items-center mt-2 flex-col">
+                      <div class="w-28 h-28 xl:w-32 xl:h-32 rounded-full mb-1">
+                        <img src="./images/face/65769a04f3b5bad56365e101c778a7c1.png" alt=""
+                        class="rounded-full w-full h-full object-center object-cover shadow-lg border-[3px] border-blue-500 dark:border-pink-400 p-[3px]">
+                      </div>
+                      <p class="dark:text-primary-with text-xl">poriya</p>
+                      <span class="text-sm text-zinc-500">@pixsellz</span>
+                    </div>
+                    <div class="mt-3  flex justify-start  pl-3">
+                      <ul class=" child:dark:text-primary-with child:cursor-pointer">
+                        <li><a href="./index.html"  class="my-6 font-semibold
+                          flex items-center gap-x-1 text-lg  transition-colors duration-300">
+                          <svg class="w-6 h-6 text-blue-500 dark:text-pink-400"><use href="#home"></use></svg>
+                          Home
+                          
+                        </a></li>
+                        <li><a href="./explor.html" class="my-6 font-semibold
+                          flex items-center gap-x-2 text-xl  transition-colors duration-300">
+                          <svg class="w-6 h-6 text-blue-500 dark:text-pink-400"><use href="#eart"></use></svg>
+                          Explor
+                        
+                        </a></li>
+                        <li><a href="./addPost.html" class="my-6 font-semibold
+                          flex items-center gap-x-2 text-xl  transition-colors duration-300">
+                          <svg class="w-6 h-6 text-blue-500 dark:text-pink-400"><use href="#newposts"></use></svg>
+                          Add post
+                         
+                        </a></li>
+                        <li><a href="./404.html" class="my-6 font-semibold
+                          flex items-center gap-x-2 text-xl  transition-colors duration-300">
+                          <svg class="w-6 h-6 text-blue-500 dark:text-pink-400"><use href="#search"></use></svg>
+                          Search
+  
+                        </a></li>
+                        <li><a href="./acountUser.html" class="my-6 font-semibold
+                          flex items-center gap-x-2 text-xl  transition-colors duration-300">
+                         <svg class="w-6 h-6 text-blue-500 dark:text-pink-400"><use href="#user"></use></svg>
+                          Account
+                  
+                        </a></li>
+                      </ul>
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-3 w-full dark:text-white ">
+                      <div class="flex flex-col gap-y-2 child:cursor-pointer border-t pt-3 dark:border-none">
+                        <div class="flex items-center gap-x-2 text-lg font-semibold">
+                          <svg class="w-7 h-7 text-black dark:text-white" id="icon-them">
+                            <use href="#moon" class="cheng-icon text-blue-500 dark:text-pink-400"></use>
+                          </svg>
+                          change thame
+                        </div>
+                        <div class="">
+                          <a href="./EditProfile.html" class="flex items-center gap-2 text-lg font-semibold">
+                            <svg class="w-7 h-7 text-blue-500 dark:text-pink-400"><use href="#setting"></use></svg>
+                            Satting</a>
+                        </div>
+                      </div>
+                    </div>
+      </div>
+    </div>
+    <!-- menu bar end -->
      <script src="./js/loaded/loaded.js"></script> 
     <script src="./js/switch_them.js"></script>
     <script src="./js/scrolls-status.js"></script>
     <script  src="./js/main.js" type="module"></script>
     <!-- type="module" -->
-    <script src="./js/All-js-libresz/particles.js"></script>
-    <script src="./js/All-js-libresz/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script>
       // const swiperValed = new Swiper(".swiper_2", {
       //   direction: "vertical",
@@ -1311,7 +1461,6 @@ start main project ====> for mobile
       //     //  dynamicBullets: true,
       //   },
       // });
-    </script>
+    </script> 
   </body>
 </html>
-

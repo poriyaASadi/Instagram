@@ -16,7 +16,7 @@ window.addEventListener('load' , () => {
         wifye.classList.add('text-withe')
     }
     back.onclick = () => {
-        window.location = './acountUser.html'
+        window.history.back()
     }
     swichTheme.addEventListener('click' , function () {
         if(localStorage.theme === "dark"){

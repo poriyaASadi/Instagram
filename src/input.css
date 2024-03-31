@@ -7,11 +7,12 @@
 @layer components {
   @font-face {
     font-family: 'ProtestRiot';
-    src: url(../fonts/ProtestRiot-Regular.ttf);
+    src: url(../fonts/SourceSans3-Regular.ttf);
   }
+  
   body{
-    font-family:  'ProtestRiot';
-  }
+    font-family: 'ProtestRiot';
+    }
   /* رنگ اسکرول بار */
   ::-webkit-scrollbar {
     width: 0;
@@ -26,65 +27,10 @@
     /* background: linear-gradient(rgba(226, 3, 55, 1), rgba(198, 1, 136, 1), rgba(119, 0, 195, 1)); */
     background: radial-gradient(rgba(0,0,0,0.15) 60%,transparent 0 ), radial-gradient(white 63%,transparent 0), linear-gradient(to top right,rgba(119, 0, 195, 1),rgba(226, 3, 55, 1));
   }
-  .befor-status-user::after,
-  .befor-status-user::before{
-    content: '';
-    width: .90rem;
-    height: .1rem;
-    position: absolute;
-    right:10%;
-    border-radius: .5rem;
-    bottom: 30%;
-    z-index: 10;
-    -webkit-border-radius: .5rem;
-    -moz-border-radius: .5rem;
-    -ms-border-radius: .5rem;
-    -o-border-radius: .5rem;
-}
-  .befor-status-user::after{
-    transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-}
 
-  .clip-path {
-    clip-path: circle(42%);
-  }
-
-  .font-staus-bar {
-    font-weight: 600;
-    font-size: small;
-    font-style: italic;
-  }
-
-  .font-staus-bar {
-    @apply text-black dark:text-white
-  }
-
-  .live-box::after {
-    content: 'live';
-    position: absolute;
-    left: -5px;
-    top: 60%;
-    right: 0;
-    width: 26px;
-    height: 16px;
+  .live-box{
     background-color:rgba(201, 0, 131, 1) ;
-    /*background: linear-gradient(rgba(201, 0, 131, 1), rgba(210, 36, 99, 1), rgba(225, 0, 56, 1));
-    */font-size:10px;
-    display: flex;
-    padding: .2rem .5rem;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #0e0e0e6c;
-    border-radius: .2rem;
-    -webkit-border-radius: .2rem;
-    -moz-border-radius: .2rem;
-    -ms-border-radius: .2rem;
-    -o-border-radius: .2rem;
-    color: #fff;
+    /*background: linear-gradient(rgba(201, 0, 131, 1), rgba(210, 36, 99, 1), rgba(225, 0, 56, 1));*/
 }
 
   /* ---------- active image */
@@ -92,7 +38,8 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
+
+}
 
   .bg-acount_dialog {
     background: #606c88;
@@ -132,14 +79,5 @@
     height: .6rem !important;
     background-color: #ff68a5;
     
-  }
-
-
-  /* style add Post user for tag video and image */
-  
-  /* finish style add Post user for tag video and image   */
-
-  .borderColor{
-
   }
 }

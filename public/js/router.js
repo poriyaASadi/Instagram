@@ -1,26 +1,16 @@
-
-
-const rot = {
-    "/public/404.html":{
-        template:"404.html"
+const router = {
+    "/" : {
+        template : './public/index.html'
     },
-    "/public/":{
-        template: "index.html",
-        title: "instagram"
+    "/explor" : {
+     template : './public/explor.html'
     },
-    "/public/search":{
-        template:"search.html",
-        title:"instagram"
+    "/addPost" : {
+     template : './public/addPost.html'
     },
-    "/public/addPost":{
-        template:"addPost.html",
-        title:"instagram"
-    },
-    "/public/acountUser":{
-        template:"acountUser.html",
-        title:"instagram"
+    "/acountUser" : {
+        template : './public/acountUser.html'
     }
 }
 
-export default rot;
-
+export default router;

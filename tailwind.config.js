@@ -5,7 +5,10 @@ module.exports = {
   theme: {
     screens:{
      'sm2': '300px',
-     'md2':'400px'
+     'md2':'400px',
+     'lg':'700px',
+     'xl':'1200px',
+     '2xl' : '1400px',
     },
     extend: {
       fontFamily:{

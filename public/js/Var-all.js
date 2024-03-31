@@ -4,40 +4,48 @@ const $ = document;
    === ---$--- ===
 */
 // -------- post box user 
-let post_user = $.getElementById('post-user');
+const post_user = $.querySelectorAll('#post-user');
+const alertBoxShow_post_videos = $.getElementById('alertBoxShow_post_videos');
 // comment main post user / html icon comment
-let comment_icon_user_main = $.querySelectorAll('#comment_icon');
-let back_comment_icon = $.querySelectorAll('#back_icon_comment');
+const comment_icon_user_main = $.querySelectorAll('#comment_icon');
+const back_comment_icon = $.querySelectorAll('#back_icon_comment');
 // --- input comment post 
-let input_comment_post = $.getElementById('input_comment_post');
-let button_creat_post_comment = $.getElementById('button_creat_post_comment');
-let mainComment = $.getElementById('main_comment');
+const input_comment_post = $.getElementById('input_comment_post');
+const button_creat_post_comment = $.getElementById('button_creat_post_comment');
+const mainComment = $.getElementById('main_comment');
 // -------------------------------------------
 //  -------- heart like 
-let like_heart_post = $.querySelectorAll('#like');
-let likePostValue = $.querySelectorAll('#likePostValue');
+const like_heart_post = $.querySelectorAll('#like');
+const likePostValue = $.querySelectorAll('#likePostValue');
 // ----- icon save post 
-let save_post_icon = $.querySelector('#save_post_icon');
+const save_post_icon = $.querySelector('#save_post_icon');
 // ------- icon more post info 
-let moreIcon_post = $.getElementById('moreIcon-post');
+const moreIcon_post = $.getElementById('moreIcon-post');
 // ----- text more post ---> p 
-let text_more_post = $.querySelectorAll('#text_more_post');
-let timeSendUser_comment = $.querySelector('#timeSendUser-comment');
+const text_more_post = $.querySelectorAll('#text_more_post');
+const timeSendUser_comment = $.querySelector('#timeSendUser-comment');
 // ----========== user acount location
-let user_acount = $.getElementById('user_acount');
+const user_acount = $.getElementById('user_acount');
 // ----------------- user likes
-let like_user = $.getElementById('like_user');
+const like_user = $.getElementById('like_user');
 // ----------------- Notification user alert show & hidden
-let active_icon_branch = document.querySelector('#active_icon_branch') 
-let stack = document.querySelectorAll('#stack_icon');
+const active_icon_branch = document.querySelector('#active_icon_branch') 
+const stack = document.querySelectorAll('#stack_icon');
 // ---------------- openBlurAlert
-let openBlurAlert = $.getElementById('openBlurAlert');
-let prantIcon_ShowAlert = $.getElementById('prantIcon_ShowAlert');
-let videoPostUser = $.querySelectorAll('.videoPostUser')
+const openBlurAlert = $.getElementById('openBlurAlert');
+const prantIcon_ShowAlert = $.getElementById('prantIcon_ShowAlert');
+const videoPostUser = $.querySelectorAll('.videoPostUser')
 // ---------------------------------
+
+//  all var for desktop start =====>
+let boxShow = $.getElementById('boxShow');
+let iconShowBox = $.getElementById('iconShowBox');
+let menuDesktop = $.getElementById('menuDesktop');
+// =========================> 
 
 export {
     post_user,
+    alertBoxShow_post_videos,
     comment_icon_user_main,
     back_comment_icon,
     input_comment_post,
@@ -55,5 +63,9 @@ export {
     stack,
     openBlurAlert,
     prantIcon_ShowAlert,
-    videoPostUser
+    videoPostUser,
+    // for destopp starat code ...
+    boxShow,
+   iconShowBox,
+   menuDesktop,
 }

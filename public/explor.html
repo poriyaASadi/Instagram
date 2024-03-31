@@ -13,6 +13,10 @@
       
         icon title
      -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <!-- 
       swiper
       -->
@@ -40,7 +44,7 @@
         grid-template-columns: repeat(3, minmax(auto, 1fr));
         grid-auto-rows: 130px;
         grid-auto-flow: dense;
-        grid-gap:.2rem;
+        grid-gap: 0.2rem;
       }
 
       .image-gallery .image-box {
@@ -59,6 +63,10 @@
         height: 100%;
         object-fit: cover;
         transition: all 0.5s ease;
+      }
+      .swiper {
+        width: 100%;
+        height: 350px;
       }
     </style>
   </head>
@@ -114,21 +122,64 @@
           d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
         />
       </symbol>
-      <symbol id="igtv" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125Z" />
-      </symbol>  
-      <symbol id="hot" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0 1 12 21 8.25 8.25 0 0 1 6.038 7.047 8.287 8.287 0 0 0 9 9.601a8.983 8.983 0 0 1 3.361-6.867 8.21 8.21 0 0 0 3 2.48Z" />
-        <path stroke-linecap="round" stroke-linejoin="round" d="M12 18a3.75 3.75 0 0 0 .495-7.468 5.99 5.99 0 0 0-1.925 3.547 5.975 5.975 0 0 1-2.133-1.001A3.75 3.75 0 0 0 12 18Z" />
-      </symbol>      
+      <symbol
+        id="igtv"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="2.5"
+        stroke="currentColor"
+        class=""
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125Z"
+        />
+      </symbol>
+      <symbol
+        id="hot"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="2.5"
+        stroke="currentColor"
+        class=""
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M15.362 5.214A8.252 8.252 0 0 1 12 21 8.25 8.25 0 0 1 6.038 7.047 8.287 8.287 0 0 0 9 9.601a8.983 8.983 0 0 1 3.361-6.867 8.21 8.21 0 0 0 3 2.48Z"
+        />
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M12 18a3.75 3.75 0 0 0 .495-7.468 5.99 5.99 0 0 0-1.925 3.547 5.975 5.975 0 0 1-2.133-1.001A3.75 3.75 0 0 0 12 18Z"
+        />
+      </symbol>
+      <symbol
+        id="more-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="2.5"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M6.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM18.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+        />
+      </symbol>
+      
     </svg>
-    
+
     <!-- 
 
 //// start code :)
 
  -->
-    <div class="max-w-md h-full mx-auto z-10 relativ">
+    <div class="max-w-lg h-full mx-auto relative overflow-hidden">
       <!-- 
  
             ==== header search 
@@ -139,7 +190,7 @@
           class="flex items-center p-2 border-2 mx-1 mt-3 rounded-md border-zinc-100 pb-2 dark:border-none"
         >
           <div
-            class="flex justify-center items-center gap-x-2 w-full rounded-[10px]  p-1"
+            class="flex justify-center items-center gap-x-2 w-full rounded-[10px] p-1"
           >
             <label for="search">
               <svg class="w-5 h-5 text-zinc-500">
@@ -166,16 +217,18 @@
             id="scroll-users-status"
           >
             <div
-              class="grid grid-flow-col gap-2 child:dark:text-white child:transition-colors  duration-300 child-hover:text-blue-500 child:flex child:dark:border-none child:cursor-pointer child:justify-center child:items-center child:rounded-lg"
+              class="grid grid-flow-col gap-2 child:dark:text-white child:transition-colors duration-300 child-hover:text-blue-500 child:flex child:dark:border-none child:cursor-pointer child:justify-center child:items-center child:rounded-lg"
             >
               <div
-                class="w-[75px] h-8 bg-transparent border font-medium border-zinc-300">
+                class="w-[75px] h-8 bg-transparent border font-medium border-zinc-300"
+              >
                 <svg class="w-4 h-4"><use href="#igtv"></use></svg>
                 IGTV
               </div>
               <div
-                class="w-[75px] h-8 bg-transparent border font-medium border-zinc-300">
-              <svg class="w-4 h-4"><use href="#shop"></use></svg>
+                class="w-[75px] h-8 bg-transparent border font-medium border-zinc-300"
+              >
+                <svg class="w-4 h-4"><use href="#shop"></use></svg>
                 Shop
               </div>
               <div
@@ -199,7 +252,8 @@
                 Mode
               </div>
               <div
-                class="w-[75px] h-8 bg-transparent border font-medium border-zinc-300">
+                class="w-[75px] h-8 bg-transparent border font-medium border-zinc-300"
+              >
                 <svg class="w-4 h-4"><use href="#hot"></use></svg>
                 Fone
               </div>
@@ -208,8 +262,8 @@
         </div>
       </div>
       <!-- ----------- post random users  -->
-      <div class="h-full overflow-y-auto">
-        <div class="image-gallery">
+      <div class="h-full overflow-y-auto  -z-50">
+        <div class="image-gallery mb-32">
           <!-- =====box=========== -->
           <div class="image-box">
             <img src="./images/image-lobayPost/img-9.jpg" alt="" />
@@ -481,236 +535,243 @@
             </div>
           </div>
           <!-- =====box end======= -->
-            <!-- =====box=========== -->
-            <div class="image-box">
-                <img src="./images/image-lobayPost/img-9.jpg" alt="" />
-                <div class="overly">
-                  <div class="details">
-                    <h3 class="title">
-                      <a href="#">your title</a>
-                    </h3>
-                    <span class="category">
-                      <a href="#">catagory</a>
-                    </span>
-                  </div>
-                </div>
+          <!-- =====box=========== -->
+          <div class="image-box">
+            <img src="./images/image-lobayPost/img-9.jpg" alt="" />
+            <div class="overly">
+              <div class="details">
+                <h3 class="title">
+                  <a href="#">your title</a>
+                </h3>
+                <span class="category">
+                  <a href="#">catagory</a>
+                </span>
               </div>
-              <!-- =====box end======= -->
-              <!-- =====box=========== -->
-              <div class="image-box">
-                <img src="./images/image-lobayPost/img-8.jpg" alt="" />
-                <div class="overly">
-                  <div class="details">
-                    <h3 class="title">
-                      <a href="#">your title</a>
-                    </h3>
-                    <span class="category">
-                      <a href="#">catagory</a>
-                    </span>
-                  </div>
-                </div>
+            </div>
+          </div>
+          <!-- =====box end======= -->
+          <!-- =====box=========== -->
+          <div class="image-box">
+            <img src="./images/image-lobayPost/img-8.jpg" alt="" />
+            <div class="overly">
+              <div class="details">
+                <h3 class="title">
+                  <a href="#">your title</a>
+                </h3>
+                <span class="category">
+                  <a href="#">catagory</a>
+                </span>
               </div>
-              <!-- =====box end======= -->
-              <!-- =====box=========== -->
-              <div class="image-box">
-                <img src="./images/image-lobayPost/img-3.jpg" alt="" />
-                <div class="overly">
-                  <div class="details">
-                    <h3 class="title">
-                      <a href="#">your title</a>
-                    </h3>
-                    <span class="category">
-                      <a href="#">catagory</a>
-                    </span>
-                  </div>
-                </div>
+            </div>
+          </div>
+          <!-- =====box end======= -->
+          <!-- =====box=========== -->
+          <div class="image-box">
+            <img src="./images/image-lobayPost/img-3.jpg" alt="" />
+            <div class="overly">
+              <div class="details">
+                <h3 class="title">
+                  <a href="#">your title</a>
+                </h3>
+                <span class="category">
+                  <a href="#">catagory</a>
+                </span>
               </div>
-              <!-- =====box end======= -->
-              <!-- =====box=========== -->
-              <div class="image-box">
-                <img src="./images/image-lobayPost/img-10.jpg" alt="" />
-                <div class="overly">
-                  <div class="details">
-                    <h3 class="title">
-                      <a href="#">your title</a>
-                    </h3>
-                    <span class="category">
-                      <a href="#">catagory</a>
-                    </span>
-                  </div>
-                </div>
+            </div>
+          </div>
+          <!-- =====box end======= -->
+          <!-- =====box=========== -->
+          <div class="image-box">
+            <img src="./images/image-lobayPost/img-10.jpg" alt="" />
+            <div class="overly">
+              <div class="details">
+                <h3 class="title">
+                  <a href="#">your title</a>
+                </h3>
+                <span class="category">
+                  <a href="#">catagory</a>
+                </span>
               </div>
-              <!-- =====box end======= -->
-              <!-- =====box=========== -->
-              <div class="image-box">
-                <img src="./images/image-lobayPost/img-12.jpg" alt="" />
-                <div class="overly">
-                  <div class="details">
-                    <h3 class="title">
-                      <a href="#">your title</a>
-                    </h3>
-                    <span class="category">
-                      <a href="#">catagory</a>
-                    </span>
-                  </div>
-                </div>
+            </div>
+          </div>
+          <!-- =====box end======= -->
+          <!-- =====box=========== -->
+          <div class="image-box">
+            <img src="./images/image-lobayPost/img-12.jpg" alt="" />
+            <div class="overly">
+              <div class="details">
+                <h3 class="title">
+                  <a href="#">your title</a>
+                </h3>
+                <span class="category">
+                  <a href="#">catagory</a>
+                </span>
               </div>
-              <!-- =====box end======= -->
-    
-              <!-- =====box=========== -->
-              <div class="image-box">
-                <img src="./images/image-lobayPost/img-7.jpg" alt="" />
-                <div class="overly">
-                  <div class="details">
-                    <h3 class="title">
-                      <a href="#">your title</a>
-                    </h3>
-                    <span class="category">
-                      <a href="#">catagory</a>
-                    </span>
-                  </div>
-                </div>
+            </div>
+          </div>
+          <!-- =====box end======= -->
+
+          <!-- =====box=========== -->
+          <div class="image-box">
+            <img src="./images/image-lobayPost/img-7.jpg" alt="" />
+            <div class="overly">
+              <div class="details">
+                <h3 class="title">
+                  <a href="#">your title</a>
+                </h3>
+                <span class="category">
+                  <a href="#">catagory</a>
+                </span>
               </div>
-              <!-- =====box end======= -->
-              <!-- =====box=========== -->
-              <div class="image-box">
-                <img src="./images/image-lobayPost/img-3.jpg" alt="" />
-                <div class="overly">
-                  <div class="details">
-                    <h3 class="title">
-                      <a href="#">your title</a>
-                    </h3>
-                    <span class="category">
-                      <a href="#">catagory</a>
-                    </span>
-                  </div>
-                </div>
+            </div>
+          </div>
+          <!-- =====box end======= -->
+          <!-- =====box=========== -->
+          <div class="image-box">
+            <img src="./images/image-lobayPost/img-3.jpg" alt="" />
+            <div class="overly">
+              <div class="details">
+                <h3 class="title">
+                  <a href="#">your title</a>
+                </h3>
+                <span class="category">
+                  <a href="#">catagory</a>
+                </span>
               </div>
-              <!-- =====box end======= -->
-              <!-- =====box=========== -->
-              <div class="image-box">
-                <img src="./images/image-lobayPost/img-5.jpg" alt="" />
-                <div class="overly">
-                  <div class="details">
-                    <h3 class="title">
-                      <a href="#">your title</a>
-                    </h3>
-                    <span class="category">
-                      <a href="#">catagory</a>
-                    </span>
-                  </div>
-                </div>
+            </div>
+          </div>
+          <!-- =====box end======= -->
+          <!-- =====box=========== -->
+          <div class="image-box">
+            <img src="./images/image-lobayPost/img-5.jpg" alt="" />
+            <div class="overly">
+              <div class="details">
+                <h3 class="title">
+                  <a href="#">your title</a>
+                </h3>
+                <span class="category">
+                  <a href="#">catagory</a>
+                </span>
               </div>
-              <!-- =====box end======= -->
-              <!-- =====box=========== -->
-              <div class="image-box">
-                <img src="./images/image-lobayPost/img-1.jpg" alt="" />
-                <div class="overly">
-                  <div class="details">
-                    <h3 class="title">
-                      <a href="#">your title</a>
-                    </h3>
-                    <span class="category">
-                      <a href="#">catagory</a>
-                    </span>
-                  </div>
-                </div>
+            </div>
+          </div>
+          <!-- =====box end======= -->
+          <!-- =====box=========== -->
+          <div class="image-box">
+            <img src="./images/image-lobayPost/img-1.jpg" alt="" />
+            <div class="overly">
+              <div class="details">
+                <h3 class="title">
+                  <a href="#">your title</a>
+                </h3>
+                <span class="category">
+                  <a href="#">catagory</a>
+                </span>
               </div>
-              <!-- =====box end======= -->
-              <!-- =====box=========== -->
-              <div class="image-box">
-                <img src="./images/image-lobayPost/img-4.jpg" alt="" />
-                <div class="overly">
-                  <div class="details">
-                    <h3 class="title">
-                      <a href="#">your title</a>
-                    </h3>
-                    <span class="category">
-                      <a href="#">catagory</a>
-                    </span>
-                  </div>
-                </div>
+            </div>
+          </div>
+          <!-- =====box end======= -->
+          <!-- =====box=========== -->
+          <div class="image-box">
+            <img src="./images/image-lobayPost/img-4.jpg" alt="" />
+            <div class="overly">
+              <div class="details">
+                <h3 class="title">
+                  <a href="#">your title</a>
+                </h3>
+                <span class="category">
+                  <a href="#">catagory</a>
+                </span>
               </div>
-              <!-- =====box end======= -->
-              <!-- =====box=========== -->
-              <div class="image-box">
-                <img src="./images/image-lobayPost/img-3.jpg" alt="" />
-                <div class="overly">
-                  <div class="details">
-                    <h3 class="title">
-                      <a href="#">your title</a>
-                    </h3>
-                    <span class="category">
-                      <a href="#">catagory</a>
-                    </span>
-                  </div>
-                </div>
+            </div>
+          </div>
+          <!-- =====box end======= -->
+          <!-- =====box=========== -->
+          <div class="image-box">
+            <img src="./images/image-lobayPost/img-3.jpg" alt="" />
+            <div class="overly">
+              <div class="details">
+                <h3 class="title">
+                  <a href="#">your title</a>
+                </h3>
+                <span class="category">
+                  <a href="#">catagory</a>
+                </span>
               </div>
-              <!-- =====box end======= -->
-              <!-- =====box=========== -->
-              <div class="image-box">
-                <img src="./images/image-lobayPost/img-8.jpg" alt="" />
-                <div class="overly">
-                  <div class="details">
-                    <h3 class="title">
-                      <a href="#">your title</a>
-                    </h3>
-                    <span class="category">
-                      <a href="#">catagory</a>
-                    </span>
-                  </div>
-                </div>
+            </div>
+          </div>
+          <!-- =====box end======= -->
+          <!-- =====box=========== -->
+          <div class="image-box">
+            <img src="./images/image-lobayPost/img-8.jpg" alt="" />
+            <div class="overly">
+              <div class="details">
+                <h3 class="title">
+                  <a href="#">your title</a>
+                </h3>
+                <span class="category">
+                  <a href="#">catagory</a>
+                </span>
               </div>
-              <!-- =====box end======= -->
-              <!-- =====box=========== -->
-              <div class="image-box">
-                <img src="./images/image-lobayPost/img-6.jpg" alt="" />
-                <div class="overly">
-                  <div class="details">
-                    <h3 class="title">
-                      <a href="#">your title</a>
-                    </h3>
-                    <span class="category">
-                      <a href="#">catagory</a>
-                    </span>
-                  </div>
-                </div>
+            </div>
+          </div>
+          <!-- =====box end======= -->
+          <!-- =====box=========== -->
+          <div class="image-box">
+            <img src="./images/image-lobayPost/img-6.jpg" alt="" />
+            <div class="overly">
+              <div class="details">
+                <h3 class="title">
+                  <a href="#">your title</a>
+                </h3>
+                <span class="category">
+                  <a href="#">catagory</a>
+                </span>
               </div>
-              <!-- =====box end======= -->
-              <!-- =====box=========== -->
-              <div class="image-box">
-                <img src="./images/image-lobayPost/img-5.jpg" alt="" />
-                <div class="overly">
-                  <div class="details">
-                    <h3 class="title">
-                      <a href="#">your title</a>
-                    </h3>
-                    <span class="category">
-                      <a href="#">catagory</a>
-                    </span>
-                  </div>
-                </div>
+            </div>
+          </div>
+          <!-- =====box end======= -->
+          <!-- =====box=========== -->
+          <div class="image-box">
+            <img src="./images/image-lobayPost/img-5.jpg" alt="" />
+            <div class="overly">
+              <div class="details">
+                <h3 class="title">
+                  <a href="#">your title</a>
+                </h3>
+                <span class="category">
+                  <a href="#">catagory</a>
+                </span>
               </div>
-              <!-- =====box end======= -->
-              <!-- =====box=========== -->
-              <div class="image-box">
-                <img src="./images/image-lobayPost/img-12.jpg" alt="" />
-                <div class="overly">
-                  <div class="details">
-                    <h3 class="title">
-                      <a href="#">your title</a>
-                    </h3>
-                    <span class="category">
-                      <a href="#">catagory</a>
-                    </span>
-                  </div>
-                </div>
+            </div>
+          </div>
+          <!-- =====box end======= -->
+          <!-- =====box=========== -->
+          <div class="image-box">
+            <img src="./images/image-lobayPost/img-12.jpg" alt="" />
+            <div class="overly">
+              <div class="details">
+                <h3 class="title">
+                  <a href="#">your title</a>
+                </h3>
+                <span class="category">
+                  <a href="#">catagory</a>
+                </span>
               </div>
-              <!-- =====box end======= -->
+            </div>
+          </div>
+          <!-- =====box end======= -->
         </div>
       </div>
       <!-- ------------- post random end -->
-    </div>
-    <script src="./js/scrolls-status.js"></script>
+      </div>
+
+    <script src="./js/explor.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>
+
+
+
+
+

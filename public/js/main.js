@@ -3,26 +3,29 @@ const $ = document;
 
 import * as name from './Var-all.js';
 
-import {post_user , mainComment , comment_icon_user_main , back_comment_icon , input_comment_post , button_creat_post_comment  , likePostValue 
+import {post_user , alertBoxShow_post_videos , mainComment , comment_icon_user_main , back_comment_icon , input_comment_post , button_creat_post_comment  , likePostValue 
 , like_heart_post , save_post_icon , text_more_post , active_icon_branch , stack , openBlurAlert , prantIcon_ShowAlert ,
 videoPostUser,timeSendUser_comment, moreIcon_post   } from './Var-all.js';
 
 // ------------- post user 
-post_user.addEventListener('click' , (event) => {
-  //console.log(event.currentTarget);
-  let parentEkm = event.currentTarget;
-if (event.target.className.includes('Delet')){
-  parentEkm.remove();
-  close_box_infoPost()
-}
-if (event.target.className.includes('report')) {
-  document.querySelector('.box-report').classList.remove('hidden');
-  close_box_infoPost()
-  setInterval(() => {
-    document.querySelector('.box-report').classList.add('hidden');
-  }, 3000);
-}
-});
+post_user.forEach(item => {
+  item.addEventListener('click' , (event) => {
+    //console.log(event.currentTarget);
+    let parentEkm = event.currentTarget;
+  if (event.target.className.includes('Delet')){
+    close_box_infoPost()
+    parentEkm.remove();
+  }
+  if (event.target.className.includes('report')) {
+    document.querySelector('.box-report').classList.remove('hidden');
+    close_box_infoPost()
+    setInterval(() => {
+      document.querySelector('.box-report').classList.add('hidden');
+    }, 3000);
+  }
+  });
+})
+
 
 
 // --------- btn click icon info post user
@@ -31,19 +34,21 @@ moreIcon_post.addEventListener('click' , () => {
 });
 
 function close_box_infoPost () {
-  $.querySelector('#box-infos-postUser').classList.toggle('hidden');
+  $.querySelectorAll('#box-infos-postUser').forEach(item => {
+  item.classList.toggle('hidden');
+  })
 }
 
 //  ----- icon comment open chat 
 comment_icon_user_main.forEach((item) => {
 item.addEventListener('click' , () => {
-  $.getElementById('comment_main').classList.remove('-top-[100vh]')
+  $.getElementById('comment_main').classList.remove('hidden')
 })
 })
 // ----- icon back comment
 back_comment_icon.forEach((item) => {
  item.addEventListener('click' , () => {
-  $.getElementById('comment_main').classList.add('-top-[100vh]');
+  $.getElementById('comment_main').classList.add('hidden');
  })
 })
 
@@ -112,10 +117,7 @@ function LikeUserPost () {
     item.innerHTML = likePost;
    })
  }
-
- 
 }
-
 let likeUserGenariat = new LikeUserPost();
 
 like_heart_post.forEach(function heart_like (item) {
@@ -218,10 +220,6 @@ prantIcon_ShowAlert.addEventListener('click' , () => {
 const swiper = new Swiper(".swiper", {
   loop: true,
   //direction:'vertical',   // عمودی
-  navigation: {
-    nexrEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -230,28 +228,14 @@ const swiper = new Swiper(".swiper", {
   on: { 
      slideChange: function (items) {
         
-     }
+     },
+     mousewheel: true,
+     keyboard: true,
   }
   });
 
-//  swiper post style user end
 
-    //   let swiperSlide = document.querySelectorAll('.swiper-slide');
-    //   let indexSwiperSlide = items.slides[items.activeIndex].children[0]
-    //   let windowUser =  window.innerHeight / 2 + window.scrollY;
-         
-    //   swiperSlide.forEach(slide => {
-    //     let slideAbout = slide.getBoundingClientRect();
-    //     if (slideAbout.top <= windowUser && slideAbout.bottom >= windowUser){
-    //       if (indexSwiperSlide.tagName === 'VIDEO'){ 
-    //         indexSwiperSlide.play()
-    //       }else if  (indexSwiperSlide.pause){
-    //         indexSwiperSlide.play();
-    //       }
-    //     } 
-    //   })     
-
-    
+//  swiper post style user end    
 window.addEventListener('click' , (e) => {
   if (e.target.tagName  === 'VIDEO') {
     let videos =  document.querySelectorAll('video')
@@ -260,8 +244,8 @@ window.addEventListener('click' , (e) => {
      let slideAbout = item.getBoundingClientRect();
      if (slideAbout.top <= windowUser && slideAbout.bottom >= windowUser){
       if (item.parentElement.className == 'swiper-slide swiper-slide-active'){
-        item.play();
-        item.setAttribute('loop' , 'true');
+       item.play();
+       item.setAttribute('loop' , 'true'); 
       }else {
         item.pause()
         item.removeAttribute('loop');
@@ -274,11 +258,17 @@ window.addEventListener('click' , (e) => {
  item.removeAttribute('loop');
 }
   })
- 
   }
+});
+
+// ---------------------- finish code for mobile . . .
+
+//  ========== > start code for desktop :) ....
+
+// icon change left right box menu /
+
+boxShow.addEventListener('click' , () => {
+  menuDesktop.classList.toggle('-left-[14rem]');
+  iconShowBox.classList.toggle('rotate-180');
 })
 
-// function stop (item) {
-//   item.pause();
-//   item.removeAttribute('loop');   
-// } 
