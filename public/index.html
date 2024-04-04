@@ -321,12 +321,17 @@
 start project 
 
  -->
-  <div id="loaded-welcome" class="flex w-full h-full relative   z-50  bg-primary-with dark:bg-primeryColor-2   justify-center items-center flex-col">
-    <div class="h-full">
-      <svg class="animate-spin h-5 w-5 mr-3 ..." viewBox="0 0 24 24">
-        <!-- ... -->
-      </svg>
-      
+  <div id="loaded-welcome" class="flex w-full h-full relative   z-50  bg-primary-with dark:bg-black   justify-center items-center flex-col">
+    <div class=" h-full w-full relative flex flex-col justify-center items-center">
+      <div class="w-20 h-20">
+        <img src="./images/logo-instagram-png-13554.png" alt="logo instagram"
+        class="w-full h-full">
+      </div>
+      <span class="dark:text-white text-[2rem] mt-1 fontCustom">Instagram</span>
+      <div class="absolute bottom-5 dark:text-white text-xl flex items-center gap-x-1">
+       <span class="tracking-tighter font-medium inline-flex">welcome</span>
+        <span class="loader border-[5px] border-white border-b-pink-500"></span>
+      </div>
     </div>
    </div>
   
@@ -475,7 +480,7 @@ start project
                     class=" w-auto flex justify-center items-center p-2 cursor-pointer  relative"
                     id="moreIcon-post"
                   >
-                    <svg class="w-6 h-6 dark:text-white cursor-pointer">
+                    <svg class="w-6 h-6 dark:text-white cursor-pointer icon-more">
                       <use href="#more-icon"></use>
                     </svg>
                   </div>
@@ -486,7 +491,7 @@ start project
                     child:dark:text-primary-with" id="box-infos-postUser">
                     <ul class=" child:dark:border-none child:transition-colors child:duration-300">
                       <li class="border-b py-1 cursor-pointer  dark:hover:text-pink-500 Delet">Delet post</li>
-                      <li class="border-b py-1 cursor-pointer hover:text-pink-400 dark:hover:text-pink-500">Comment</li>
+                      <li class="border-b py-1 cursor-pointer hover:text-pink-400 dark:hover:text-pink-500 commentShow">Comment</li>
                       <li class="border-b py-1 cursor-pointer hover:text-pink-400 dark:hover:text-pink-500">Save</li>
                       <li class=" py-1  cursor-pointer hover:text-pink-400 dark:hover:text-pink-500 report">Report</li>
                     </ul>
@@ -606,284 +611,12 @@ start project
               </div>
             </div>
             <!-- -------------- -->
-                    <!-- ====post==== -->
-            <div class="mb-4" id="post-user">
-              <!-- -------===> box - user optshpion -->
-              <div class="w-full h-full px-1">
-                <!-- ------ box titile -->
-                <div
-                  class="w-full h-full  flex justify-between items-center relative"
-                >
-                  <!-- --- img user -->
-                  <div class="flex items-center">
-                    <div class="w-10 h-10 rounded-full border-[3px] border-red-400 ">
-                      <img
-                        src="./images/2ccd27fc12336a7a8e13d5879814b13c.png"
-                        class="w-full h-full object-cover rounded-full"
-                        alt="img-user"
-                      />
-                    </div>
-                    <div
-                      class="pl-[10px] child:text-sm leading-none tracking-tighter dark:text-white"
-                    >
-                      <p class="font-medium cursor-pointer">joshua_I</p>
-                      <p class="font-normal">tokyo, Japan</p>
-                    </div>
-                  </div>
-                  <!-- --- img user end -->
-                  <!-- ----- ... -->
-                  <div
-                    class=" w-auto flex justify-center items-center p-2 cursor-pointer  relative"
-                    id="moreIcon-post"
-                  >
-                    <svg class="w-6 h-6 dark:text-white cursor-pointer">
-                      <use href="#more-icon"></use>
-                    </svg>
-                  </div>
-                  <!-- ----- ... -->
-                  <div class="hidden  w-28 h-36 shadow-md bg-primary-with
-                   dark:bg-primeryColor-Chat absolute right-9
-                    -bottom-28 z-50 rounded-md  items-center py-1  px-2 text-center flex-col 
-                    child:dark:text-primary-with" id="box-infos-postUser">
-                    <ul class=" child:dark:border-none child:transition-colors child:duration-300">
-                      <li class="border-b py-1 cursor-pointer hover:text-pink-400 dark:hover:text-pink-500 Delet">Delet post</li>
-                      <li class="border-b py-1 cursor-pointer hover:text-pink-400 dark:hover:text-pink-500">Comment</li>
-                      <li class="border-b py-1 cursor-pointer hover:text-pink-400 dark:hover:text-pink-500">Save</li>
-                      <li class=" py-1  cursor-pointer hover:text-pink-400 dark:hover:text-pink-500 report">Report</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <!-- ------===> box - user optshpion end  -->
-              <div class="my-2">
-                <!-- Slider main container -->
-                <div class="swiper h-96 xl:h-[35rem] z-40">
-                  <!-- Additional required wrapper -->
-                  <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                      <video src="./video/video_2023-10-22_18-54-21.mp4"
-                      class="videoPostUser w-full h-full"
-                      webkit-playsinline="true"
-                      playsinline="true"
-                    
-                      >
-                      </video>
-                    </div>
-                    <div class="swiper-slide">
-                      <img
-                        src="./images/face/65769a04f3b5bad56365e101c778a7c1.png"
-                        class="active_image object-cover "
-                        alt=""
-                      />
-                    </div>
-                    <div class="swiper-slide">
-                      <video class="videoPostUser w-full h-full">
-                        <source
-                          src="./video/Designed for Mac. Accessories for your Mac_2.mp4"
-                          type="video/mp4"
-                        />
-                        Your browser does not support the video tag.
-                      </video>
-                    </div>
-                  </div>
-                  <!-- ------------------ -->
-                  <div class="swiper-pagination mb-1 flex gap-x-1 justify-center w-full "></div> 
-                </div>
-                <!-- nav bar main option -->
-                <div class="w-full h-8 relative flex justify-between mt-4 child:cursor-pointer items-center px-1">
              
-                  <div
-                    class="flex justify-center items-center child:dark:text-white child:w-7 child:h-7 gap-x-2"
-                  >
-                    <!-- ------ icon comment -->
-                    <svg id="like" class="">
-                      <use href="#activityfeed"></use>
-                    </svg>
-                    <svg id="comment_icon">
-                      <use href="#comment"></use>
-                    </svg>
-                    <svg>
-                      <use href="#massege"></use>
-                    </svg>
-                  </div>
-                  <!-- ------- icon comment end -->
-                  <!-- -----------swiper pagination -->
-                  <!-- ------------- swiper pagination end -->
-                  <!-- ---------- save comment -->
-                  <div
-                    class="child:w-7 child:h-7 flex text-black justify-center items-center"
-                  >
-                    <svg class="text-black dark:text-white" id="save_post_icon">
-                      <use href="#save"></use>
-                    </svg>
-                  </div>
-                </div>
-                <!-- ---------- comment for post main user -->
-                <!-- 
-            about post user
-            -->
-                <div class="w-full px-[10px] tracking-[0.07px] mt-1">
-                  <p
-                    class="text-zinc-500 dark:text-zinc-200 text-base pb-1 font-medium"
-                  >
-                    <span id="likePostValue" class="text-sm mr-1">100</span
-                    >likes
-                  </p>
-                  <div class="dark:text-zinc-400 mb-2">
-                    <p class="font-medium">comments <span class="text-sm">100</span></p>
-                  </div>
-                  <div
-                    class="flex justify-start items-center gap-x-2 child:dark:text-white"
-                  >
-                    <img
-                      src="./images/48f1801e657b098f5792c61365f65c75.png"
-                      class="w-5 h-5 rounded-full"
-                      alt="post-user"
-                    />
-                    <span class="inline-block text-sm text-zinc-500 dark:text-zinc-400"
-                      >Liked by craig_love and <span class="text-zinc-600 dark:text-zinc-100 font-medium text-[1rem]">44,686</span> others</span
-                    >
-                  </div>
-                  <div
-                    class="text-sm mt-1 flex justify-end child:dark:text-white"
-                  >
-                    <p class="line-clamp-2" id="text_more_post">
-                      <span class="font-medium">joshua_I </span>The game in
-                      Japan was amazing and I want to share some photos Lorem
-                      ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                      ab quae nostrum non, voluptatibus adipisci nobis sunt
-                      possimus? Nulla, fugiat!
-                    </p>
-                  </div>
-                  <!-- ------------------------------ commnet end -->
-                </div>
-                <!-- ----- slider main end -->
-              </div>
-            </div>
-            <!-- -------------- -->
            
         
             <!------------ all post end  -->
           </div>
         </section>
-        <!--    comment show box -->
-        <div
-          id="comment_main"
-          class="max-w-lg transition h-[100%] fixed left-0 right-0 bottom-0 top-0 hidden  bg-white dark:bg-black px-[15px] z-50"
-        >
-          <!-- head comment -->
-          <div
-            class="w-full h-12 flex justify-between items-center border-b dark:border-none border-zinc-200"
-          >
-            <p class="flex text-lg font-medium dark:text-white">
-              comment
-              <svg class="w-6 h-6">
-                <use href="#comment_icon_chat"></use>
-              </svg>
-            </p>
-            <svg
-              class="w-6 h-6 cursor-pointer dark:text-white"
-              id="back_icon_comment"
-            >
-              <use href="#back"></use>
-            </svg>
-          </div>
-          <!-- -------- head end -->
-       <div class="w-full h-full overflow-y-auto">
-               <!-- 
-           about post user
-           -->
-           <div class="w-full  tracking-[0.07px] my-2">
-            <div class="flex justify-start items-center gap-x-2">
-              <img
-                src="./images/48f1801e657b098f5792c61365f65c75.png"
-                class="w-10 h-10 rounded-full border-2 p-[2px] border-zinc-600 dark:border-zinc-300"
-                alt="post-user"
-              />
-              <span
-                class="inline-block text-sm text-zinc-600 dark:text-zinc-400"
-                >Liked by craig_love and
-                <u class="font-medium text-zinc-700 dark:text-zinc-300">
-                  44,686
-                </u>
-                others</span
-              >
-            </div>
-            <div
-              class="text-sm mt-1 flex justify-start border-b border-zinc-200 dark:border-zinc-600 pb-5"
-            >
-              <p class="text-zinc-600 dark:text-zinc-400">
-                <a href="#" class="font-semibold text-lg tracking-tighter text-zinc-700 dark:text-zinc-300">joshua_I : </a>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo debitis provident dignissimos reiciendis tenetur, facilis tempora esse ad quibusdam vel?
-              </p>
-            </div>
-          </div>
-          <!-------- about post comment end  -->
-          <!-- main box comment all users -->
-          <div
-            class="w-full h-auto overflow-hidden  overflow-y-scroll  mt-3"
-            id="main_comment"
-          >
-            <!-- --------box 1 -->
-            <!-- <div class="mb-2 ">
-              <div class="flex justify-between items-center mb-2">
-             <div class="flex justify-center items-center gap-x-2">
-              <div class="w-9 h-9 rounded-full border-2 border-red-400 cursor-pointer ">
-                <img src="./images/face/5904c9ce3cfb08e4c032b5a473d5648d.png"
-                 class="w-full h-full object-cover rounded-full" alt="">
-              </div>
-              <h6 class="dark:text-zinc-300">mariya</h6>
-             </div>
-             <div class="ml-2 w-full">
-              <p
-              class="text-zinc-500 dark:text-zinc-400" id="text_more_post"
-              >Lorem ipsum dolor sit amet consectetur </p>
-             </div>
-              </div>
-             <div>
-              <div class="flex justify-start items-center gap-x-2">
-                <span id="timeSendUser-comment"></span>
-                <svg class="w-5 h-5 text-white">|
-                  <use href="#activityfeed"></use>
-                </svg>
-                <span class="text-sm text-zinc-500  dark:text-zinc-400">Replay</span>
-              </div>
-             </div>
-            </div> -->
-            <!-- ----------- box 2 -->
-          </div>
-          <!-- ------------------end -->
-
-       </div>
-          <!-- 
-          --------- > input box comment users  
-          --->
-          <div
-            class="max-w-lg h-16 z-10 absolute left-0 right-0 bottom-0   bg-white dark:bg-black"
-          >
-            <div
-              class="w-full h-full flex justify-center items-center gap-x-1 px-[15px] shadow-sm mx-auto  "
-            >
-              <input
-                type="text"
-                placeholder="type..."
-                name="comment_user"
-                id="input_comment_post"
-                class="bg-transparent outline-none text-sm dark:text-white placeholder:text-base w-full  px-2 font-medium"
-              />
-              <button
-                type="button"
-                class="text-base cursor-pointer text-blue-500 dark:text-pink-500 font-medium"
-                id="button_creat_post_comment"
-              >
-                send
-              </button>
-            </div>
-          </div>
-          <!-- ------- end -->
-        </div>
-        <!--    comment show box end -->
         <!--  likes user show  -->
         <div
           class="w-[85%] h-full absolute -left-[85%] transition-all right-0 top-0 bottom-0 bg-white dark:bg-black z-30 p-1 dark:text-white
@@ -1145,12 +878,6 @@ start project
         </div>
         <!-- ===== likes user show end -->
         <!-- ....................... -->
-        <!-- open bolur like user show -->
-        <div
-          id="openBlurAlert"
-          class="w-full h-full invisible backdrop-blur transition-opacity absolute left-0 top-0 right-0 bottom-0 z-10"
-        ></div>
-        <!-- ------------------------- -->
         <!-- box report post  -->
         <div class="box-report hidden absolute bottom-20  w-[80%] p-2 z-40 rounded-sm bg-zinc-500 dark:bg-zinc-400 text-center mx-auto left-0 right-0">
        <p class="text-base font-medium text-primary-with dark:text-black">The post has been reported, thank you </p>
@@ -1159,6 +886,125 @@ start project
      </main>
      
     </div>
+    <!-- ----------- -->
+            <!--    comment show box -->
+        <div
+          id="comment_main"
+          class="max-w-lg mx-auto transition h-[100vh] absolute left-0 bottom-0 right-0  top-0 hidden  bg-white dark:bg-black px-[15px] z-50"
+        >
+          <!-- head comment -->
+          <div
+            class="w-full h-12 flex justify-between items-center border-b dark:border-none border-zinc-200"
+          >
+            <p class="flex text-lg font-medium dark:text-white">
+              comment
+              <svg class="w-6 h-6">
+                <use href="#comment_icon_chat"></use>
+              </svg>
+            </p>
+            <svg
+              class="w-6 h-6 cursor-pointer dark:text-white"
+              id="back_icon_comment"
+            >
+              <use href="#back"></use>
+            </svg>
+          </div>
+          <!-- -------- head end -->
+       <div class="w-full h-full overflow-y-auto">
+               <!-- 
+           about post user
+           -->
+           <div class="w-full  tracking-[0.07px] my-2">
+            <div class="flex justify-start items-center gap-x-2">
+              <img
+                src="./images/48f1801e657b098f5792c61365f65c75.png"
+                class="w-10 h-10 rounded-full border-2 p-[2px] border-zinc-600 dark:border-zinc-300"
+                alt="post-user"
+              />
+              <span
+                class="inline-block text-sm text-zinc-600 dark:text-zinc-400"
+                >Liked by craig_love and
+                <u class="font-medium text-zinc-700 dark:text-zinc-300">
+                  44,686
+                </u>
+                others</span
+              >
+            </div>
+            <div
+              class="text-sm mt-1 flex justify-start border-b border-zinc-200 dark:border-zinc-600 pb-5"
+            >
+              <p class="text-zinc-600 dark:text-zinc-400">
+                <a href="#" class="font-semibold text-lg tracking-tighter text-zinc-700 dark:text-zinc-300">joshua_I : </a>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo debitis provident dignissimos reiciendis tenetur, facilis tempora esse ad quibusdam vel?
+              </p>
+            </div>
+          </div>
+          <!-------- about post comment end  -->
+          <!-- main box comment all users -->
+          <div
+            class="w-full h-auto overflow-hidden  overflow-y-scroll  mt-3"
+            id="main_comment"
+          >
+            <!-- --------box 1 -->
+            <!-- <div class="mb-2 ">
+              <div class="flex justify-between items-center mb-2">
+             <div class="flex justify-center items-center gap-x-2">
+              <div class="w-9 h-9 rounded-full border-2 border-red-400 cursor-pointer ">
+                <img src="./images/face/5904c9ce3cfb08e4c032b5a473d5648d.png"
+                 class="w-full h-full object-cover rounded-full" alt="">
+              </div>
+              <h6 class="dark:text-zinc-300">mariya</h6>
+             </div>
+             <div class="ml-2 w-full">
+              <p
+              class="text-zinc-500 dark:text-zinc-400" id="text_more_post"
+              >Lorem ipsum dolor sit amet consectetur </p>
+             </div>
+              </div>
+             <div>
+              <div class="flex justify-start items-center gap-x-2">
+                <span id="timeSendUser-comment"></span>
+                <svg class="w-5 h-5 text-white">|
+                  <use href="#activityfeed"></use>
+                </svg>
+                <span class="text-sm text-zinc-500  dark:text-zinc-400">Replay</span>
+              </div>
+             </div>
+            </div> -->
+            <!-- ----------- box 2 -->
+          </div>
+          <!-- ------------------end -->
+
+       </div>
+          <!-- 
+          --------- > input box comment users  
+          --->
+          <div
+            class="max-w-lg h-16 z-10 absolute left-0 right-0 bottom-0   bg-white dark:bg-black"
+          >
+            <div
+              class="w-full h-full flex justify-center items-center gap-x-1 px-[15px] shadow-sm mx-auto  "
+            >
+              <input
+                type="text"
+                placeholder="type..."
+                name="comment_user"
+                id="input_comment_post"
+                class="bg-transparent outline-none text-sm dark:text-white placeholder:text-base w-full  px-2 font-medium"
+              />
+              <button
+                type="button"
+                class="text-base cursor-pointer text-blue-500 dark:text-pink-500 font-medium"
+                id="button_creat_post_comment"
+              >
+                send
+              </button>
+            </div>
+          </div>
+          <!-- ------- end -->
+        </div>
+        <!--    comment show box end -->
+
     <!-- ------....----- -->
     <div class=" flex flex-col justify-start pt-5"> 
       <!-- ================== -->
@@ -1321,6 +1167,12 @@ start project
     </div>
   <!-- -----....-------- -->
     <!-- ----------- -->
+                    <!-- open bolur like user show -->
+                    <div
+                    id="openBlurAlert"
+                    class="w-full h-full invisible backdrop-blur transition-opacity absolute left-0 top-0 right-0 bottom-0 z-10"
+                  ></div>
+                  <!-- ------------------------- -->
    </div> 
 <!-- all code mobile finish -->
 <dialog class="z-40 w-full h-[100vh] absolute top-0 left-0 right-0 bottom-0  rounded-md" id="boxStatus">
@@ -1442,25 +1294,5 @@ start project
     <!-- type="module" -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-    <script>
-      // const swiperValed = new Swiper(".swiper_2", {
-      //   direction: "vertical",
-      //   mousewheel: true,
-      //   speed: 500,
-      //   enabled: true,
-      //   touch: {
-      //     threshold: 1,
-      //   },
-      //   navigation: {
-      //     nexrEl: ".swiper-button-next",
-      //     prevEl: ".swiper-button-prev",
-      //   },
-      //   pagination: {
-      //     el: ".swiper-pagination",
-      //     clickable: true,
-      //     //  dynamicBullets: true,
-      //   },
-      // });
-    </script> 
   </body>
 </html>

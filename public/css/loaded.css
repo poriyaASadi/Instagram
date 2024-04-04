@@ -26,3 +26,25 @@ background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transpar
 }
 
 /* -------------- */
+
+.loader {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+}
+    } 

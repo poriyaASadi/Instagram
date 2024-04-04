@@ -13,16 +13,25 @@
   body{
     font-family: 'ProtestRiot';
     }
+    *{
+      scrollbar-width: none;
+    }
   /* رنگ اسکرول بار */
   ::-webkit-scrollbar {
     width: 0;
   }
   ::-webkit-scrollbar-thumb {
-    background-color: #474747;
+    background-color: transparent;
   }
   ::-webkit-scrollbar-track {
     background-color: transparent;
   }
+  ::-webkit-scrollbar {
+    display: none;
+}
+
+
+
   .background_color {
     /* background: linear-gradient(rgba(226, 3, 55, 1), rgba(198, 1, 136, 1), rgba(119, 0, 195, 1)); */
     background: radial-gradient(rgba(0,0,0,0.15) 60%,transparent 0 ), radial-gradient(white 63%,transparent 0), linear-gradient(to top right,rgba(119, 0, 195, 1),rgba(226, 3, 55, 1));
