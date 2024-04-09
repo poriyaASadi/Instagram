@@ -41,50 +41,66 @@ start code
     <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15M12 9l3 3m0 0-3 3m3-3H2.25" />
   </symbol>  
  </svg>
- <div class="max-w-lg h-[100vh] mx-auto relative lg:hidden overflow-hidden">
+ <div class=" h-[100vh] mx-auto relative  overflow-hidden flex items-center justify-center">
+  <img src="./images/singUp/image_processing20220405-15220-1l0scsf.jpg" class="
+  absolute z-0 w-full h-full object-cover" alt="">
+  <span class="absolute w-full h-full top-0 left-0 z-10 sinUpUser"></span>
 <!--  required -->
-<div class="w-full h-full flex items-center justify-center flex-col">
-  <h1 class=" fontCustom text-center mb-5" >instagram</h1>
-  <div class="w-full flex items-center justify-center gap-x-1">
-    <h2 class="text-lg">Sing up</h2>
-      <svg class="w-6 h-6">
-        <use href="#arrow"></use>
-      </svg>
+<div class=" z-20 xl:w-[45%] h-auto lg:flex items-center lg:justify-center xl:gap-x-3 shadow-lg rounded-lg p-6 bg-white dark:bg-zinc-800 text-white">
+  <div class="hidden lg:inline-block  w-auto h-full border-r-2 dark:border-zinc-500">
+    <img src="./images/singUp/2.png" alt="logo_singUp"
+    class="w-[25rem] h-[25rem] object-cover">
   </div>
-   <div >
-    <form action="" method="post" class="w-full p-2 flex flex-col gap-y-3  items-center">
-      <input type="text" placeholder="full name" name="" required class="
-      border-2 w-[15rem] p-2  rounded-md placeholder:text-sm outline-none dark:text-white text-zinc-600">
-      <input type="text" placeholder="Username" name="" required class="
-      border-2 w-[15rem] p-2  rounded-md placeholder:text-sm outline-none dark:text-white text-zinc-600">
-      <input type="email" placeholder="Email" name="" id="email_Input" required class="  
-      border-2 w-[15rem] p-2  rounded-md placeholder:text-sm outline-none dark:text-white text-zinc-600">
-      <div class="w-full flex justify-start text-sm">
-        <span class="Emailviewer text-pink-500 inline-flex"></span>
-      </div>
-      <input type="text" placeholder="number" name="" required class="
-      border-2 w-[15rem] p-2  rounded-md placeholder:text-sm outline-none dark:text-white text-zinc-600">
-      <input type="text" placeholder="Password" id="password" name="" class="
-      border-2 w-[15rem] p-2  rounded-md placeholder:text-sm outline-none dark:text-white text-zinc-600">
-      <input type="text" placeholder="reprat password" id="password_repeat" name=""  class="
-      border-2 w-[15rem] p-2  rounded-md placeholder:text-sm outline-none dark:text-white text-zinc-600">
-      <div class="w-full flex justify-start text-sm">
-        <span class="Passwordviewer text-pink-500 inline-flex"></span>
-      </div>
-      <div class="flex items-center gap-x-4 mb-2 child:cursor-pointer">
-      <label for="option">
-        mayle
-        <input type="radio" name="option" checked class="" >
-      </label>
-      <label for="option">
-        famyle
-        <input type="radio" name="option" class="">
-      </label>
+  <!-- -------- -->
+  <div class="w-auto h-full flex items-center justify-center flex-col px-5 lg:px-2 lg:ml-2 ">
+    <h1 class=" fontCustom text-center text-4xl mb-5" >instagram</h1>
+    <div class="w-full flex items-center justify-center gap-x-1">
+      <h2 class="text-lg">Sing up</h2>
+        <svg class="w-6 h-6">
+          <use href="#arrow"></use>
+        </svg>
+    </div>
+     <div >
+      <form action="" method="post" class="w-full p-2 flex flex-col gap-y-3  items-center">
+        <input type="text" placeholder="full name" name="" required class="
+        border-2 w-[15rem] p-2  rounded-md placeholder:text-sm placeholder:font-medium outline-none dark:text-white text-zinc-600 font-medium
+        dark:bg-zinc-600 dark:border-none dark:placeholder:text-zinc-300">
+        <input type="text" placeholder="Username" name="" id="inputUsername" required class="
+        border-2 w-[15rem] p-2  rounded-md placeholder:text-sm placeholder:font-medium outline-none dark:text-white text-zinc-600 font-medium
+        dark:bg-zinc-600 dark:border-none dark:placeholder:text-zinc-300">
+        <div class="userNameViwer text-blue-500 hidden w-full text-left"></div>
+        <input type="email" placeholder="Email" name="" id="email_Input" required class="  
+        border-2 w-[15rem] p-2  rounded-md placeholder:text-sm placeholder:font-medium outline-none dark:text-white text-zinc-600 font-medium
+        dark:bg-zinc-600 dark:border-none dark:placeholder:text-zinc-300">
+          <div class="Emailviewer text-pink-500  hidden text-left w-full"></div>
+        <input type="text" placeholder="number" name="" required class="
+        border-2 w-[15rem] p-2  rounded-md placeholder:text-sm placeholder:font-medium outline-none dark:text-white text-zinc-600 font-medium
+        dark:bg-zinc-600 dark:border-none dark:placeholder:text-zinc-300">
+        <input type="text" placeholder="Password" id="password" name="" class="
+        border-2 w-[15rem] p-2  rounded-md placeholder:text-sm placeholder:font-medium outline-none dark:text-white text-zinc-600 font-medium
+        dark:bg-zinc-600 dark:border-none dark:placeholder:text-zinc-300">
+        <input type="text" placeholder="reprat password" id="password_repeat" name=""  class="
+        border-2 w-[15rem] p-2  rounded-md placeholder:text-sm placeholder:font-medium outline-none dark:text-white text-zinc-600 font-medium
+        dark:bg-zinc-600 dark:border-none dark:placeholder:text-zinc-300">
+        <div class="w-full flex justify-start text-sm">
+          <span class="Passwordviewer text-pink-500 inline-flex"></span>
+        </div>
+        <div class="flex items-center gap-x-4 mb-2 child:cursor-pointer">
+        <label for="option">
+          mayle
+          <input type="radio" name="option" checked class=" accent-pink-500">
+        </label>
+        <label for="option">
+          famyle
+          <input type="radio" name="option" class="accent-pink-500 ">
+        </label>
+       </div>
+        <input type="submit" name="" id="" value="send" class="bg-pink-500 dark:bg-pink-600 py-[7px] px-24  cursor-pointer rounded-md text-white ">
+      </form>
      </div>
-      <input type="submit" name="" id="" value="send" class="bg-blue-500 py-[5px] px-24  cursor-pointer rounded-md text-white ">
-    </form>
-   </div>
+  </div>
 </div>
+
 
  
  </div>

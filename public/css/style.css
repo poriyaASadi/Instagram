@@ -130,3 +130,7 @@
   top: calc(50% - 10px);
   left: calc(50% - 20px);
 }
+
+.sinUpUser {
+  background: linear-gradient(rgba(0,0,0,0.1) , rgba(0,0,0,0.8));
+}

@@ -6,10 +6,22 @@ const password_repeat = $.getElementById("password_repeat");
 const password = $.getElementById("password");
 let Passwordviewer = $.querySelector(".Passwordviewer");
 
+const userNameViwer = document.querySelector('.userNameViwer');
+const inputUsername = document.querySelector('#inputUsername');
+
+
+inputUsername.addEventListener('keyup' , () => {
+  
+})
+
+
+
 //  add regex for input email
 email_Input.addEventListener("keyup", () => {
   let Condition = /[a-z A-Z 0-9]+@gmail.com/g;
   let valueInput = email_Input.value;
+  Emailviewer.classList.remove('hidden')
+  Emailviewer.classList.add('inline-flex')
 
   if (Condition.test(valueInput)) {
     Emailviewer.innerHTML = "It is suitable";
