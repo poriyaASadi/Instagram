@@ -137,3 +137,26 @@
            </div>
          </section>
          <!-- slider status end ===== -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                           <div class="w-28 h-28 xl:w-32 xl:h-32 rounded-full mb-1">
+                          <img src="./images/face/65769a04f3b5bad56365e101c778a7c1.png" alt=""
+                          class="rounded-full w-full h-full object-center object-cover shadow-lg border-[3px] border-blue-500 dark:border-pink-400 p-[3px]">
+                        </div>
+                        <p class="dark:text-primary-with text-xl">poriya</p>
+                        <span class="text-sm text-zinc-500">@pixsellz</span>

@@ -7,6 +7,7 @@ module.exports = {
      'sm2': '300px',
      'md2':'400px',
      'lg':'700px',
+     'lg2':'1000px',
      'xl':'1200px',
      '2xl' : '1400px',
     },

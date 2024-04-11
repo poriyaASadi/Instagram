@@ -319,6 +319,6 @@ window.addEventListener("click", (e) => {
 // icon change left right box menu /
 
 boxShow.addEventListener("click", () => {
-  menuDesktop.classList.toggle("-left-[14rem]");
+  menuDesktop.classList.toggle("-left-[15rem]");
   iconShowBox.classList.toggle("rotate-180");
 });

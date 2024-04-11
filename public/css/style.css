@@ -134,3 +134,16 @@
 .sinUpUser {
   background: linear-gradient(rgba(0,0,0,0.1) , rgba(0,0,0,0.8));
 }
+#followBox{
+  opacity: 0;
+  visibility: hidden;
+}
+#partFallow:hover #followBox{
+ opacity: 1;
+ transition: all .4s ease;
+ visibility: visible;
+ -webkit-transition: all .4s ease;
+ -moz-transition: all .4s ease;
+ -ms-transition: all .4s ease;
+ -o-transition: all .4s ease;
+}
