@@ -22,6 +22,7 @@ import {
   videoPostUser,
   timeSendUser_comment,
   moreIcon_post,
+  menuDesktop,
 } from "./Var-all.js";
 
 // ------------- post user
@@ -320,5 +321,6 @@ window.addEventListener("click", (e) => {
 
 boxShow.addEventListener("click", () => {
   menuDesktop.classList.toggle("-left-[15rem]");
+  menuDesktop.classList.toggle('left-0');
   iconShowBox.classList.toggle("rotate-180");
 });
