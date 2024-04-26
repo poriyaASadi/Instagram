@@ -982,6 +982,26 @@ body{
   z-index: 50;
 }
 
+.z-\[\]{
+  z-index: ;
+}
+
+.z-\[10000\]{
+  z-index: 10000;
+}
+
+.z-\[1\]{
+  z-index: 1;
+}
+
+.z-\[50\]{
+  z-index: 50;
+}
+
+.z-\[1000\]{
+  z-index: 1000;
+}
+
 .m-auto{
   margin: auto;
 }

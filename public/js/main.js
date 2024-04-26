@@ -244,9 +244,9 @@ window.addEventListener("load", () => {
 
 prantIcon_ShowAlert.addEventListener("click", () => {
   if (!falseValue) {
-    openBlurAlert.classList.remove("invisible");
+ //   openBlurAlert.classList.remove("invisible");
     prantIcon_ShowAlert.parentElement.className =
-      "w-[85%] h-full absolute left-0 transition-all right-0 top-0 bottom-0 bg-white dark:bg-black z-30 p-1 dark:text-white";
+      "w-[85%] h-full absolute left-0 transition-all right-0 top-0 bottom-0 bg-white dark:bg-black z-[1000] p-1 dark:text-white";
     $.getElementById("invis_alert_box").classList.remove("invisible");
     falseValue = true;
     prantIcon_ShowAlert.firstElementChild.lastElementChild.firstElementChild.setAttribute(
@@ -257,7 +257,7 @@ prantIcon_ShowAlert.addEventListener("click", () => {
   } else {
     openBlurAlert.classList.add("invisible");
     prantIcon_ShowAlert.parentElement.className =
-      "w-[85%] h-full absolute -left-[85%] transition-all right-0 top-0 bottom-0 bg-white dark:bg-black z-30 p-1 dark:text-white";
+      "w-[85%] h-full absolute -left-[85%] transition-all right-0 top-0 bottom-0 bg-white dark:bg-black z-[1000] p-1 dark:text-white";
     $.getElementById("invis_alert_box").classList.add("invisible");
     falseValue = false;
   }
