@@ -2857,20 +2857,8 @@ body{
     display: flex;
   }
 
-  .lg\:h-16{
-    height: 4rem;
-  }
-
   .lg\:h-20{
     height: 5rem;
-  }
-
-  .lg\:w-16{
-    width: 4rem;
-  }
-
-  .lg\:w-2{
-    width: 0.5rem;
   }
 
   .lg\:w-20{
