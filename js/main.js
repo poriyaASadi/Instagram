@@ -323,4 +323,6 @@ boxShow.addEventListener("click", () => {
   menuDesktop.classList.toggle("-left-[15rem]");
   menuDesktop.classList.toggle('left-0');
   iconShowBox.classList.toggle("rotate-180");
+  //openBlurAlert.classList.toggle("invisible");
 });
+

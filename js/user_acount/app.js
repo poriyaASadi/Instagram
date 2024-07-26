@@ -51,7 +51,7 @@ let num = userIdCopy.addEventListener('click' , (event) => {
    let copyBoxShow = document.querySelector('.userIDCopy-box');
    copyBoxShow.classList.remove('-right-16');
    setInterval(() => {
-    copyBoxShow.classList.add('-right-16');
+    copyBoxShow.classList.add('hidden');
    },2500);
 })
 

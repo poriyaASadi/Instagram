@@ -1037,10 +1037,6 @@ body{
   margin-top: 11px;
 }
 
-.mt-24 {
-  margin-top: 6rem;
-}
-
 .box-border {
   box-sizing: border-box;
 }
@@ -3970,6 +3966,10 @@ body{
   font-weight: 500;
 }
 
+.child\:font-semibold > * {
+  font-weight: 600;
+}
+
 .child\:text-neutral-700 > * {
   --tw-text-opacity: 1;
   color: rgb(64 64 64 / var(--tw-text-opacity));
@@ -3978,6 +3978,11 @@ body{
 .child\:text-slate-700 > * {
   --tw-text-opacity: 1;
   color: rgb(51 65 85 / var(--tw-text-opacity));
+}
+
+.child\:text-black > * {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .child\:transition-colors > * {
