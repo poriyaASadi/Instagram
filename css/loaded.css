@@ -1,9 +1,7 @@
-
 @font-face {
 	font-family: "instagram";
 	src: url("../fonts/instagrom-logo-font/Instagram.ttf");
 }
-
 .pl {
 	display: block;
 }
@@ -24,9 +22,7 @@ background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transpar
 .fontCustom{
 	font-family:"instagram";
 }
-
-/* -------------- */
-
+/* style for loader project */
 .loader {
     width: 25px;
     height: 25px;
@@ -35,11 +31,14 @@ background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transpar
     box-sizing: border-box;
     animation: rotation 1s linear infinite;
     }
-
     @keyframes rotation {
     0% {
         transform: rotate(0deg);
-    }
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+}
     100% {
         transform: rotate(360deg);
         -webkit-transform: rotate(360deg);
